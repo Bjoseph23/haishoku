@@ -99,6 +99,7 @@ export async function loadFrame(photoUrl, maskUrl) {
   const cover = new Uint8Array(w * h);
   const light = new Float32Array(w * h);
   const sums = new Map();
+  const sumsq = new Map();
   const counts = new Map();
   for (let i = 0, p = 0; i < region.length; i += 1, p += 4) {
     const id = md[p];
@@ -109,17 +110,24 @@ export async function loadFrame(photoUrl, maskUrl) {
     light[i] = lab[0];
     if (region[i]) {
       sums.set(region[i], (sums.get(region[i]) || 0) + lab[0]);
+      sumsq.set(region[i], (sumsq.get(region[i]) || 0) + lab[0] * lab[0]);
       counts.set(region[i], (counts.get(region[i]) || 0) + 1);
     }
   }
   const mean = {};
-  for (const [id, sum] of sums) mean[id] = sum / counts.get(id);
-  return { w, h, src, region, cover, light, smooth: boxBlur(light, w, h), mean };
+  const spread = {};
+  for (const [id, sum] of sums) {
+    const n = counts.get(id);
+    mean[id] = sum / n;
+    spread[id] = Math.sqrt(Math.max(0, sumsq.get(id) / n - mean[id] * mean[id]));
+  }
+  return { w, h, src, region, cover, light, smooth: boxBlur(light, w, h), mean, spread };
 }
 
 export function paintFrame(frame, colorByRegion, canvas, options = {}) {
-  const { w, h, src, region, cover, light, smooth, mean } = frame;
+  const { w, h, src, region, cover, light, smooth, mean, spread } = frame;
   const translucent = options.translucent || new Set();
+  const texture = !!options.texture;
   const image = new ImageData(w, h);
   const out = image.data;
   const lab = {};
@@ -146,14 +154,18 @@ export function paintFrame(frame, colorByRegion, canvas, options = {}) {
     // Lift near-black and cap near-white so a flat plate still shows the cloth.
     const tLread = Math.min(0.86, Math.max(0.38, tL));
     const lift = tLread / Math.max(0.08, tL);
-    const detail = (light[i] - smooth[i]) * 0.75;
-    let L = tLread + (smooth[i] - (mean[id] ?? tLread)) * 0.9 + detail;
-    L = Math.min(0.93, Math.max(0.2, L));
+    const srcL = texture ? light[i] : smooth[i];
+    const detail = (light[i] - smooth[i]) * (texture ? 0.55 : 0.4);
+    const deviation = spread?.[id] ?? 0.08;
+    // A small object such as a lamp shade has a gentle gradient. Stretch it so the shade still reads.
+    const gain = texture ? (deviation < 0.04 ? 1.7 : 1.2) : 0.82;
+    let L = tLread + (srcL - (mean[id] ?? tLread)) * gain + detail;
+    L = Math.min(0.95, Math.max(texture ? 0.1 : 0.22, L));
     const rgb = oklabToRgb(L, target[1] * lift, target[2] * lift);
-    // Multiply keeps weave and pile. OKLab keeps the plate hue when the cloth is flat.
-    rgb[0] = rgb[0] * 0.62 + src[p] * (targetRgb[0] / 255) * 0.38;
-    rgb[1] = rgb[1] * 0.62 + src[p + 1] * (targetRgb[1] / 255) * 0.38;
-    rgb[2] = rgb[2] * 0.62 + src[p + 2] * (targetRgb[2] / 255) * 0.38;
+    const mix = texture ? 0.48 : 0.22;
+    rgb[0] = rgb[0] * (1 - mix) + src[p] * (targetRgb[0] / 255) * mix;
+    rgb[1] = rgb[1] * (1 - mix) + src[p + 1] * (targetRgb[1] / 255) * mix;
+    rgb[2] = rgb[2] * (1 - mix) + src[p + 2] * (targetRgb[2] / 255) * mix;
     let blend = cov;
     if (translucent.has(Number(id))) blend *= 0.42;
     out[p] = src[p] * (1 - blend) + rgb[0] * blend;

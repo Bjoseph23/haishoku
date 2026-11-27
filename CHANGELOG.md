@@ -7,7 +7,8 @@ All notable changes to this project are documented here.
 The photographic studios keep more of the cloth and the room.
 
 - Recoloring runs in OKLab. The plate supplies the hue. The photograph supplies the folds. Near-black and near-white plates are lifted just enough that a shirt does not turn into a flat hole, and a multiply mix keeps weave on a rug or a blazer.
-- Outfit masks are rebuilt so the collar, tie, blazer, trousers, and shoes are separate regions. Skin and hands are left out of the cloth. Room masks are feathered. Curtains stay partly see-through.
+- Outfit masks are rebuilt so the collar, tie, blazer, trousers, and shoes are separate regions. Skin and hands are left out of the cloth. The blazer silhouette is feathered, and the shirt between the lapels is not painted as the jacket.
+- The living-room rug follows the pile instead of a trapezoid, and the other room and facade masks are pulled back onto their objects. Curtains stay partly see-through. A lamp shade keeps its shading.
 - Twenty-two looks (eleven women, eleven men) cover tee, polo, shirt, and knit, with and without a jacket or blazer, and jeans, chinos, or trousers. The controls still snap when a combination was not photographed.
 - A cold outfit view transfers about 50 KB of images plus the shared 262 KB dataset. The studio asset folder is under a megabyte.
 

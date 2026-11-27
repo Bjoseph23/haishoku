@@ -44,7 +44,7 @@ async function paint() {
   const map = assignment();
   const byRegion = {};
   for (const [region, color] of Object.entries(map)) byRegion[region] = color.hex;
-  paintFrame(frame, byRegion, canvas);
+  paintFrame(frame, byRegion, canvas, { texture: true });
   document.getElementById("palette").innerHTML = `<h2>#${pad(comboNumber)}</h2><div class="swatch-list">${colors().map((color) => `
     <div class="surface-btn" style="cursor:default"><i class="swatch-pip" style="background:${color.hex}"></i><span>${esc(color.name)}<br><span class="muted">${color.hex}</span></span>
     <button type="button" class="dot" data-hex="${color.hex}" aria-label="Copy ${color.hex}" style="margin-left:auto">${copyIcon()}</button></div>`).join("")}</div>`;
