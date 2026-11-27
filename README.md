@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <a href="viewer/index.html"><strong>Open the viewer</strong></a>
+  <a href="https://bjoseph23.github.io/haishoku/viewer/"><strong>Open the live viewer</strong></a>
   &nbsp;·&nbsp;
   <a href="data/colors.csv">colors.csv</a>
   &nbsp;·&nbsp;
@@ -61,7 +61,7 @@ For anything on a screen, use **`display_hex`**. It is the scanned reference swa
 
 | You want to… | Open |
 | --- | --- |
-| Look, search, and copy a hex | [`viewer/index.html`](viewer/index.html), or the [Pages site](https://bjoseph23.github.io/haishoku/viewer/) once Pages is on |
+| Look, search, and copy a hex | [Live viewer](https://bjoseph23.github.io/haishoku/viewer/), or [`viewer/index.html`](viewer/index.html) on your computer |
 | Sort and filter in Excel or Google Sheets | [`data/colors.csv`](data/colors.csv), [`data/combinations.csv`](data/combinations.csv) |
 | Drop a color into Canva or Figma | The viewer. Click a swatch, paste the hex into the color field |
 | Load swatches in Illustrator or Photoshop | [`data/derived/haishoku-rgb.ase`](data/derived/haishoku-rgb.ase) (screen) or [`haishoku-cmyk.ase`](data/derived/haishoku-cmyk.ase) (printed inks) |
@@ -73,7 +73,7 @@ For anything on a screen, use **`display_hex`**. It is the scanned reference swa
 
 **Viewer.** Download the repository (Code → Download ZIP) and double-click `viewer/index.html`, or clone and open that file. It loads `viewer/palette-data.js` from the same folder, so it works from your desktop with no server. Search by name, hex, or combination number. Filter to 2, 3, or 4 colors. “Book colors” shows `display_hex`. “CMYK colors” shows the plain ink conversion. Click a swatch to copy one hex. Click the caption to copy every hex in the combination. Click a color’s name in the grid below to list every combination that uses it.
 
-GitHub’s own file view will show the HTML source and will not run the page. The hosted viewer is [bjoseph23.github.io/haishoku/viewer/](https://bjoseph23.github.io/haishoku/viewer/). Turning that on is a one-time setting, described under [GitHub Pages](#github-pages).
+The hosted viewer is [bjoseph23.github.io/haishoku/viewer/](https://bjoseph23.github.io/haishoku/viewer/). GitHub’s own file view shows the HTML source and does not run the page.
 
 **Spreadsheets.** Download the two CSVs. In Excel, open them directly. In Google Sheets, use File → Import → Upload. The column to copy into a design tool is `display_hex`. In `combinations.csv`, filter `size` to `2`, `3`, or `4`. Empty `color_3` / `color_4` cells mean the combination is shorter than four. Four-color rows are ordered top, left, right, bottom — the way the book prints them, as a cross.
 
@@ -362,18 +362,8 @@ GitHub can also build a citation from [`CITATION.cff`](CITATION.cff).
 
 ## GitHub Pages
 
-The viewer is ready to host from this repository. The site URL will be:
-
-**https://bjoseph23.github.io/haishoku/**
-
-and the viewer itself:
+The viewer is published from this repository:
 
 **https://bjoseph23.github.io/haishoku/viewer/**
 
-The workflow [`.github/workflows/pages.yml`](.github/workflows/pages.yml) deploys with GitHub Actions on every push to `main`. Pages has to be switched on once, by the repository owner:
-
-1. Open **Settings → Pages**.
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
-3. If the first run failed before that setting existed, open **Actions → GitHub Pages → Re-run**.
-
-A public repository is what makes the raw JSON links and the Pages site available without a login. The validation workflow runs on its own and does not need Pages.
+The site root redirects there. [`.github/workflows/pages.yml`](.github/workflows/pages.yml) deploys on every push to `main`, with Pages set to build from GitHub Actions. A public repository is what makes the raw JSON links and the Pages site available without a login. The validation workflow runs on its own.
