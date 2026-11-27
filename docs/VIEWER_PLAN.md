@@ -12,11 +12,11 @@ Retail color tools fall into two families.
 
 Photographic recoloring, with photographs generated for this project and released under CC BY 4.0. See [CREDITS.md](../CREDITS.md).
 
-- **Outfits.** Twelve full-length studio photographs on a green screen (six women’s looks, six men’s): tee and jeans, polo and chinos, shirt and trousers, knit and trousers, shirt with blazer and tie, tee with jacket and jeans. A mask separates top, outer layer, trousers, shoes, and tie. The page tints those regions and leaves skin, hair, and the backdrop alone. The lookbook grid is those twelve frames. Choosing a garment snaps to the nearest photograph, because a tee and a blazer are different pictures, not layers that can be stacked from one shoot.
-- **Rooms and facade.** One photograph each for living room, bedroom, kitchen, patio, bar, and a house front. Polygons mark the large surfaces. Edges are approximate. Shading inside the polygon stays photographic.
+- **Outfits.** Twenty-two full-length studio photographs on a green screen (eleven women’s looks, eleven men’s). Tops are tee, polo, shirt, and knit. Outer layers are none, blazer, or jacket. Bottoms are jeans, chinos, or trousers. A mask separates top, outer layer, trousers, shoes, and tie, and it leaves skin and hair alone. The page tints in OKLab and mixes a little of the original luminance so weave survives. Choosing a garment snaps to the nearest photograph, because a tee and a blazer are different pictures.
+- **Rooms and facade.** One photograph each for living room, bedroom, kitchen, patio, bar, and a house front. Polygons mark the large surfaces. Edges are feathered and still approximate. Curtains stay translucent. Shading inside a region stays photographic.
 - **Why not 3D.** `<model-viewer>` is the right widget once a licensed, good-looking clothed body exists. It does not, at a size and quality that would beat these photographs on a phone. Draco and KTX2 would matter for that future model. They do not help a JPEG.
 
-Each studio page loads one photograph and one mask, then the shared dataset. A cold outfit load on a desktop test was about 340 KB including the visible thumbnails. Room and facade loads were about 40–50 KB plus the dataset if it was not already cached. The asset folder is about 530 KB on disk.
+Each studio page loads one photograph and one mask, then the shared dataset. A cold outfit load transfers about 50 KB of images (one plate, its mask, and the visible thumbnails) plus the 262 KB dataset. The studio asset folder is under a megabyte.
 
 ## Pages
 
@@ -37,4 +37,4 @@ Palettes still search, filter, and copy a whole plate or one hex. Studios still 
 
 ## Limits
 
-Masks do not follow every collar, cuff, or sofa curve. Hands can pick up a little color. Sheer curtains and small objects are coarse. There is no photo for every mix of shirt, jacket, and trouser, so the controls snap to the nearest look. `file://` still cannot load the modules.
+Masks still miss some cuffs and the exact outline of a rug or a sofa. Hands are excluded more strictly than before, and a few sleeve edges stay rough. There is no photo for every mix of shirt, jacket, and trouser, so the controls snap to the nearest look. `file://` still cannot load the modules.

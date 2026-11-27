@@ -12,9 +12,9 @@ Matt DesLauriers, [dictionary-of-colour-combinations](https://github.com/mattdes
 
 ## Studio photographs
 
-The outfit, room, and facade photographs were generated for this repository. They are original assets of the project, released under the same [CC BY 4.0](LICENSE-DATA) terms as the data compilation. No stock photo, Sketchfab model, or Quaternius file is included.
+The outfit, room, and facade photographs were generated for this repository. There are twenty-two full-length looks and six room or facade photographs. They are original assets of the project, released under the same [CC BY 4.0](LICENSE-DATA) terms as the data compilation. No stock photo, Sketchfab model, or Quaternius file is included.
 
-Masks that mark cloth and room surfaces were derived from those photographs in `scripts/build_studio_assets.py`.
+Masks that mark cloth and room surfaces were derived from those photographs in `scripts/build_studio_assets.py`. The page tints a region in OKLab and leaves skin, hair, and the backdrop as photographed.
 
 ## What we did not ship
 

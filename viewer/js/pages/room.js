@@ -57,7 +57,8 @@ async function paint() {
   const map = assignment();
   const byRegion = {};
   for (const [region, color] of Object.entries(map)) byRegion[region] = color.hex;
-  paintFrame(frame, byRegion, canvas);
+  const translucent = new Set(scene.surfaces.filter((item) => item.translucent).map((item) => item.index));
+  paintFrame(frame, byRegion, canvas, { translucent, texture: true });
   document.getElementById("status").textContent = "Masks follow the main surfaces. Edges are approximate.";
   document.getElementById("palette").innerHTML = `<h2>#${pad(comboNumber)}</h2><div class="swatch-list">${colors().map((color) => `
     <div class="surface-btn" style="cursor:default"><i class="swatch-pip" style="background:${color.hex}"></i><span>${esc(color.name)}<br><span class="muted">${color.hex}</span></span>
