@@ -1,0 +1,3 @@
+# Byte-for-byte copies of data/ files, made by scripts/build_kaggle_package.py for the Kaggle upload.
+combinations_wide.csv
+wada_colors_and_combinations.json

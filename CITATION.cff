@@ -17,6 +17,13 @@ date-released: "2026-11-27"
 license: CC-BY-4.0
 repository-code: "https://github.com/Bjoseph23/haishoku"
 url: "https://github.com/Bjoseph23/haishoku"
+identifiers:
+  - type: url
+    value: "https://github.com/Bjoseph23/haishoku"
+    description: "Source repository"
+  - type: url
+    value: "https://www.kaggle.com/datasets/billmageni/haishoku-sanzo-wada-color-combinations"
+    description: "Kaggle dataset (analysis-ready tables, datapackage.json, starter notebook)"
 keywords:
   - color
   - palette
@@ -24,6 +31,7 @@ keywords:
   - Haishoku Soukan
   - design
   - open data
+  - kaggle
 preferred-citation:
   type: dataset
   title: "Haishoku: a verified data compilation of Sanzo Wada's color combinations"

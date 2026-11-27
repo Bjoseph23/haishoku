@@ -21,6 +21,7 @@
   <img src="https://img.shields.io/badge/combinations-348-C86B1D?style=flat-square" alt="348 combinations">
   <img src="https://img.shields.io/badge/colors-159-7E374B?style=flat-square" alt="159 named colors">
   <a href="https://bjoseph23.github.io/haishoku/viewer/"><img src="https://img.shields.io/badge/viewer-GitHub%20Pages-2D632F?style=flat-square" alt="Palette viewer on GitHub Pages"></a>
+  <a href="https://www.kaggle.com/datasets/billmageni/haishoku-sanzo-wada-color-combinations"><img src="https://img.shields.io/badge/Kaggle-dataset-20BEFF?style=flat-square&logo=kaggle&logoColor=white" alt="Dataset on Kaggle"></a>
 </p>
 
 <p align="center">
@@ -31,6 +32,8 @@
   <a href="data/combinations.csv">combinations.csv</a>
   &nbsp;·&nbsp;
   <a href="data/wada_colors_and_combinations.json">JSON</a>
+  &nbsp;·&nbsp;
+  <a href="https://www.kaggle.com/datasets/billmageni/haishoku-sanzo-wada-color-combinations">Kaggle</a>
   &nbsp;·&nbsp;
   <a href="docs/AI_GUIDE.md">Use with AI</a>
 </p>
@@ -48,6 +51,20 @@ The combinations were made for seeing, and they travel. The same balances of tem
 <p align="center">
   <sub>Twelve of the 348 combinations, drawn from <code>display_hex</code>. The strip above them is every named color, in the book’s reference order. Regenerate it with <code>python scripts/generate_preview.py</code>.</sub>
 </p>
+
+## Get the data
+
+The dataset is published for analysis under CC BY 4.0. Anyone can use it, including commercially, as long as they credit it.
+
+| Where | What you get |
+| --- | --- |
+| **[Kaggle: Haishoku: Sanzo Wada Color Combinations](https://www.kaggle.com/datasets/billmageni/haishoku-sanzo-wada-color-combinations)** | Tidy tables (`colors.csv` with CMYK, RGB, CIELAB/LCh, and HSL; `combinations.csv`; the long join table `combination_colors.csv`), the canonical JSON, a Frictionless `datapackage.json`, and an executed starter notebook. Open a notebook on it in one click. |
+| [`kaggle/`](kaggle/) in this repository | The same package, built from the JSON by `python scripts/build_kaggle_package.py`, with the data card in [`kaggle/README.md`](kaggle/README.md). The build validates the data on every run. |
+| [`data/`](data/) in this repository | The original CSV and JSON files, plus the swatch files for CSS, Tailwind, GIMP, and Adobe. |
+
+The Kaggle tables join on `combination_colors.color_id` → `colors.id` and `combination_colors.combination_number` → `combinations.number`. The build checks 159 colors, 348 combinations, and 1,032 slots, with no nulls in key fields, no duplicates, valid hex values, and full referential integrity.
+
+**Cite it as:** Mageni, B. (2026). *Haishoku: a verified data compilation of Sanzo Wada's color combinations* (Version 1.0.0) [Data set]. GitHub: https://github.com/Bjoseph23/haishoku. Kaggle: https://www.kaggle.com/datasets/billmageni/haishoku-sanzo-wada-color-combinations. Please also credit Sanzo Wada (*Haishoku Sōkan*, 1933–34) and Seigensha (*A Dictionary of Color Combinations*, 2010). The BibTeX is under [Citation](#citation).
 
 ## What this is
 
@@ -247,6 +264,16 @@ Wada printed the swatches at equal size. In a room, a poster, or an interface yo
 │   ├── outfit.html, room.html, facade.html, brand.html
 │   ├── css/site.css, js/            page modules, loaded one page at a time
 │   └── palette-data.js              generated copy of the JSON
+├── kaggle/                          analysis package published on Kaggle
+│   ├── README.md                    data card (description, columns, provenance, citation)
+│   ├── colors.csv                   159 colors + RGB, CIELAB/LCh, HSL, hue family
+│   ├── combinations.csv             348 combinations, tidy
+│   ├── combination_colors.csv       1,032 slots, the join table
+│   ├── (combinations_wide.csv, JSON: copies of data/, made at build time)
+│   ├── datapackage.json             Frictionless schemas and keys
+│   ├── haishoku_starter.ipynb       executed starter notebook
+│   ├── cover.png                    dataset cover image
+│   └── huggingface/README.md        dataset card ready for a Hugging Face mirror
 ├── docs/
 │   ├── AI_GUIDE.md
 │   ├── DATA_DICTIONARY.md
@@ -258,6 +285,10 @@ Wada printed the swatches at equal size. In a room, a poster, or an interface yo
     ├── generate_derived.py
     ├── generate_preview.py
     ├── haishoku.py
+    ├── build_kaggle_package.py      tidy CSVs + checks for kaggle/
+    ├── build_kaggle_meta.py         datapackage.json and dataset-metadata.json
+    ├── build_kaggle_cover.py        kaggle/cover.png
+    ├── build_kaggle_notebook.py     kaggle/haishoku_starter.ipynb
     └── requirements.txt             Pillow, only for the preview
 ```
 
@@ -365,6 +396,7 @@ Cite the compilation, and credit Wada for the work it transcribes.
   year      = {2026},
   version   = {1.0.0},
   url       = {https://github.com/Bjoseph23/haishoku},
+  howpublished = {Kaggle: \url{https://www.kaggle.com/datasets/billmageni/haishoku-sanzo-wada-color-combinations}},
   license   = {CC-BY-4.0}
 }
 ```

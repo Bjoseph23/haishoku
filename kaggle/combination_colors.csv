@@ -1,0 +1,1033 @@
+combination_number,slot,position,color_id,color_name,display_hex,page_sample_hex,label_ocr_match,delta_e
+1,1,left,66,English Red,#E45B1E,#CF3B0B,1.0,4.5
+1,2,right,118,Cerulian Blue,#1C93B2,#0C75A4,1.0,5.1
+2,1,left,130,Dark Tyrian Blue,#2C2C47,#172044,1.0,4.7
+2,2,right,62,Yellow Orange,#FF9B17,#F07A06,0.92,6.2
+3,1,left,40,Pale Lemon Yellow,#FFF2BF,#CCC398,1.0,3.2
+3,2,right,14,Raw Sienna,#C86B1D,#9C4918,1.0,6.7
+4,1,left,151,Red Violet,#541D58,#351746,1.0,3.8
+4,2,right,51,Isabella Color,#D9B06A,#A38551,1.0,5.1
+5,1,left,107,Cossack Green,#2D632F,#2A501C,0.92,3.5
+5,2,right,129,Vandar Poel's Blue,#1A3F6D,#0F2D54,0.97,2.7
+6,1,left,132,Deep Indigo,#21192D,#1F181B,1.0,8.5
+6,2,right,8,Grenadine Pink,#FA784A,#D85931,1.0,3.3
+7,1,left,89,Glaucous Green,#C8D9D1,#97AAAD,1.0,3.7
+7,2,right,64,Orange,#FF6B1B,#D25614,1.0,1.5
+8,1,left,67,Cinnamon Rufous,#C66837,#A55326,1.0,1.8
+8,2,right,134,Grayish Lavender (variant a),#CBBFE7,#A19AC6,0.9,1.9
+9,1,left,141,Dull Blue Violet,#886AAA,#64469A,1.0,7.0
+9,2,right,37,Violet Red,#621F4B,#3E1443,1.0,5.8
+10,1,left,74,Dark Citrine,#93854B,#776D39,1.0,1.9
+10,2,right,67,Cinnamon Rufous,#C66837,#B34E19,1.0,4.7
+11,1,left,156,Mineral Gray,#C1C2BE,#8D949C,0.92,5.5
+11,2,right,42,Ivory Buff,#F4DBB1,#C2B393,0.8,2.2
+12,1,left,120,Green Blue,#319199,#226F86,1.0,6.3
+12,2,right,51,Isabella Color,#D9B06A,#AA8D5A,1.0,2.5
+13,1,left,14,Raw Sienna,#C86B1D,#B54B0D,1.0,6.7
+13,2,right,146,Vernonia Purple,#7E374B,#732540,1.0,3.6
+14,1,left,41,Naples Yellow,#FFECAC,#D4C48A,1.0,2.4
+14,2,right,10,Spinel Red,#E67191,#C34C79,1.0,4.4
+15,1,left,134,Grayish Lavender (variant a),#CBBFE7,#9E97C3,1.0,2.8
+15,2,right,101,Benzol Green,#028884,#036E7C,1.0,6.0
+16,1,left,112,Pale King's Blue,#C7E8F0,#9EBCD1,0.9,3.2
+16,2,right,34,Vandyke Red,#842021,#62171F,1.0,3.6
+17,1,left,13,Eugenia Red (variant b),#DE5556,#BD2C2F,1.0,6.4
+17,2,right,100,Sea Green,#24AD94,#0E947C,1.0,2.9
+18,1,left,153,Dusky Madder Violet,#3E1938,#3C1534,1.0,2.5
+18,2,right,4,Fawn,#CEB3AD,#B49B99,1.0,2.8
+19,1,left,93,Night Green,#AAC01A,#7C9119,1.0,5.5
+19,2,right,86,Mars Brown/Tobacco,#65301B,#4B221A,0.92,3.9
+20,1,left,136,Laelia Pink,#D19CB6,#A87D9C,1.0,2.0
+20,2,right,116,Calamine Blue,#86D6DE,#73AFBC,1.0,1.8
+21,1,left,8,Grenadine Pink,#FA784A,#D46043,1.0,2.7
+21,2,right,100,Sea Green,#24AD94,#0B978F,1.0,3.8
+22,1,left,127,Deep Lyons Blue,#1C2E82,#142A8B,1.0,4.0
+22,2,right,55,Yellow,#FFEB01,#E6C601,1.0,1.6
+23,1,left,139,Light Mauve,#A36FB9,#845CA0,1.0,0.6
+23,2,right,46,Cinnamon Buff,#FFD282,#D1AA70,1.0,2.0
+24,1,left,146,Vernonia Purple,#7E374B,#6E334B,1.0,2.3
+24,2,right,84,Sepia,#613F1B,#523521,1.0,3.9
+25,1,left,19,Etruscan Red,#C74A38,#B32C1F,1.0,4.5
+25,2,right,111,Nile Blue,#D7F0F0,#A5C7D5,1.0,3.0
+26,1,left,83,Pale Raw Umber,#714328,#5A3121,1.0,3.3
+26,2,right,48,Golden Yellow,#FFA83F,#DE8329,1.0,4.7
+27,1,left,2,Corinthian Pink,#F8C1C9,#C59DAB,1.0,1.7
+27,2,right,158,Slate Color,#3C393B,#2A2E33,0.91,3.2
+28,1,left,132,Deep Indigo,#21192D,#1B1827,1.0,2.4
+28,2,right,85,Madder Brown,#722519,#5C221B,1.0,1.6
+29,1,left,114,Salvia Blue,#B2BCDC,#8696C7,1.0,4.6
+29,2,right,76,Kronbergs Green,#8E8A4A,#727043,1.0,2.0
+30,1,left,156,Mineral Gray,#C1C2BE,#909BAC,1.0,6.9
+30,2,right,30,Pompeian Red,#A81928,#90051A,1.0,2.7
+31,1,left,40,Pale Lemon Yellow,#FFF2BF,#CCC5A4,1.0,2.4
+31,2,right,18,Red Orange,#E43919,#B52C17,1.0,1.9
+32,1,left,93,Night Green,#AAC01A,#83971E,1.0,3.4
+32,2,right,50,Ochraceous Salmon,#EDAE77,#B88E74,1.0,5.1
+33,1,left,14,Raw Sienna,#C86B1D,#B64A0E,1.0,7.2
+33,2,right,158,Slate Color,#3C393B,#29282F,1.0,3.2
+34,1,left,9,Eosine Pink,#E6748C,#C8557B,1.0,3.5
+34,2,right,155,Neutral Gray,#C1CBD2,#A2A7B7,1.0,3.4
+35,1,left,29,Carmine Red,#99202B,#7A141F,1.0,1.8
+35,2,right,5,Light Brown Drab,#B9949A,#99858D,1.0,4.0
+36,1,left,69,Sulphine Yellow,#CC9D0A,#A38111,1.0,1.5
+36,2,right,88,Turquoise Green,#CAE7D8,#A3BFBB,1.0,0.9
+37,1,left,151,Red Violet,#541D58,#40125C,1.0,5.1
+37,2,right,28,Brick Red,#A6331F,#9E200E,1.0,4.7
+38,1,left,106,Diamine Green,#277629,#116323,1.0,1.3
+38,2,right,127,Deep Lyons Blue,#1C2E82,#0F2B8D,1.0,4.2
+39,1,left,23,Carmine,#CA1A2A,#9E0F1E,1.0,2.1
+39,2,right,124,Helvetia Blue,#1B4F9E,#0D418A,1.0,0.6
+40,1,left,15,Vinaceous Tawny,#D35219,#A5451C,1.0,2.1
+40,2,right,71,Citron Yellow,#BFB317,#9A951D,1.0,1.1
+41,1,left,74,Dark Citrine,#93854B,#7B6C33,1.0,3.5
+41,2,right,116,Calamine Blue,#86D6DE,#6CB5C7,1.0,1.4
+42,1,left,150,Violet,#4A2B7B,#371D71,1.0,2.6
+42,2,right,60,Yellow Ocher,#F4B527,#CC9309,1.0,2.4
+43,1,left,140,Aconite Violet,#AB69B5,#894D92,1.0,3.6
+43,2,right,2,Corinthian Pink,#F8C1C9,#C8A1AF,1.0,0.9
+44,1,left,121,Olympic Blue,#6484C5,#546AA6,1.0,2.3
+44,2,right,102,Light Porcelain Green,#1E8E89,#1C7073,1.0,2.7
+45,1,left,43,Seashell Pink,#FEDFCF,#D0B8B7,1.0,2.7
+45,2,right,56,Lemon Yellow,#FFEA2A,#D5C309,1.0,1.1
+46,1,left,64,Orange,#FF6B1B,#E4510C,1.0,2.8
+46,2,right,159,Black,#1E1D21,#18171C,1.0,0.3
+47,1,left,135,Grayish Lavender (variant b),#CBB6C2,#9F91A6,0.94,2.9
+47,2,right,19,Etruscan Red,#C74A38,#9C2F28,0.92,3.7
+48,1,left,25,Rosolane Purple,#AC2960,#871E4D,0.93,1.8
+48,2,right,124,Helvetia Blue,#1B4F9E,#11387F,1.0,3.3
+49,1,left,112,Pale King's Blue,#C7E8F0,#8ABDD9,0.97,5.4
+49,2,right,122,Blue,#1C66CE,#094ECB,1.0,4.4
+50,1,left,153,Dusky Madder Violet,#3E1938,#3B1534,1.0,2.3
+50,2,right,42,Ivory Buff,#F4DBB1,#C6B185,0.56,4.7
+51,1,left,122,Blue,#1C66CE,#0E47AC,0.75,5.0
+51,2,right,29,Carmine Red,#99202B,#7E1623,1.0,0.8
+52,1,left,159,Black,#1E1D21,#1C1B22,1.0,1.6
+52,2,right,39,Sulphur Yellow,#FEF2D2,#C9C7B6,1.0,2.2
+53,1,left,62,Yellow Orange,#FF9B17,#EC8007,1.0,4.1
+53,2,right,153,Dusky Madder Violet,#3E1938,#39123E,1.0,4.7
+54,1,left,101,Benzol Green,#028884,#047D8A,1.0,6.5
+54,2,right,113,Light Glaucous Blue,#C4DAE5,#94B4CD,1.0,3.4
+55,1,left,11,Old Rose,#CD6979,#9F4E62,1.0,3.6
+55,2,right,154,White,#FDFDFD,#CFD2DB,1.0,0.7
+56,1,left,135,Grayish Lavender (variant b),#CBB6C2,#A396AC,0.94,2.1
+56,2,right,150,Violet,#4A2B7B,#36266E,0.8,1.9
+57,1,left,148,Taupe Brown,#70394B,#5F2542,1.0,4.1
+57,2,right,158,Slate Color,#3C393B,#1F2637,1.0,8.1
+58,1,left,100,Sea Green,#24AD94,#068E8D,1.0,5.9
+58,2,right,33,Hay's Russet,#792B25,#5D181A,0.96,3.1
+59,1,left,72,Citrine,#A98D11,#7D6D0B,1.0,4.2
+59,2,right,9,Eosine Pink,#E6748C,#BA5D78,1.0,1.4
+60,1,left,130,Dark Tyrian Blue,#2C2C47,#1D243B,1.0,2.9
+60,2,right,40,Pale Lemon Yellow,#FFF2BF,#D0C697,1.0,3.4
+61,1,left,152,Cotinga Purple,#491A36,#370D30,1.0,3.5
+61,2,right,92,Light Green Yellow,#D9D12F,#ACAA16,1.0,1.8
+62,1,left,159,Black,#1E1D21,#17161C,1.0,0.9
+62,2,right,55,Yellow,#FFEB01,#E2C401,1.0,1.0
+63,1,left,38,Vistoris Lake,#713F45,#4C2A34,1.0,4.6
+63,2,right,118,Cerulian Blue,#1C93B2,#1B779D,1.0,2.5
+64,1,left,140,Aconite Violet,#AB69B5,#8A5297,1.0,2.1
+64,2,right,142,Dark Soft Violet,#6651A0,#4C438E,0.97,2.0
+65,1,left,69,Sulphine Yellow,#CC9D0A,#A97D08,1.0,3.3
+65,2,right,116,Calamine Blue,#86D6DE,#4EB1C6,1.0,3.6
+66,1,left,80,Olive Green,#656329,#4D4E1E,1.0,1.8
+66,2,right,59,Olive Ocher,#E8B321,#BE9008,1.0,2.1
+67,1,left,130,Dark Tyrian Blue,#2C2C47,#18203D,1.0,3.2
+67,2,right,121,Olympic Blue,#6484C5,#4160A7,1.0,5.4
+68,1,left,55,Yellow,#FFEB01,#D9C002,1.0,1.4
+68,2,right,5,Light Brown Drab,#B9949A,#937D87,1.0,2.1
+69,1,left,159,Black,#1E1D21,#161518,1.0,1.8
+69,2,right,157,Warm Gray,#B9B2A6,#8F9197,1.0,5.8
+70,1,left,108,Lincoln Green,#46492A,#414027,1.0,2.5
+70,2,right,14,Raw Sienna,#C86B1D,#B75312,1.0,5.3
+71,1,left,50,Ochraceous Salmon,#EDAE77,#B28D71,1.0,5.0
+71,2,right,30,Pompeian Red,#A81928,#861526,1.0,1.7
+72,1,left,112,Pale King's Blue,#C7E8F0,#A0BFD1,0.97,1.6
+72,2,right,39,Sulphur Yellow,#FEF2D2,#CAC8B8,1.0,2.2
+73,1,left,97,Rainette Green,#848A55,#696F4A,1.0,2.2
+73,2,right,83,Pale Raw Umber,#714328,#59301F,1.0,3.2
+74,1,left,120,Green Blue,#319199,#107892,1.0,5.3
+74,2,right,88,Turquoise Green,#CAE7D8,#9AC3C2,1.0,3.6
+75,1,left,112,Pale King's Blue,#C7E8F0,#8EB5CC,0.97,5.0
+75,2,right,128,Violet Blue,#3E3660,#2F264D,1.0,2.2
+76,1,left,40,Pale Lemon Yellow,#FFF2BF,#D2C99F,1.0,2.1
+76,2,right,157,Warm Gray,#B9B2A6,#8A8B8D,1.0,5.0
+77,1,left,13,Eugenia Red (variant b),#DE5556,#BA2C3C,0.91,4.7
+77,2,right,129,Vandar Poel's Blue,#1A3F6D,#0B306A,0.97,3.0
+78,1,left,117,Venice Green,#65CBCA,#58B1BB,1.0,2.4
+78,2,right,45,Pinkish Cinnamon,#FBBF8A,#D39F72,1.0,1.7
+79,1,left,120,Green Blue,#319199,#1E6F83,1.0,5.3
+79,2,right,85,Madder Brown,#722519,#5D1E18,1.0,1.2
+80,1,left,39,Sulphur Yellow,#FEF2D2,#C9C7B2,1.0,2.6
+80,2,right,139,Light Mauve,#A36FB9,#84599D,1.0,1.5
+81,1,left,48,Golden Yellow,#FFA83F,#DE8427,1.0,4.3
+81,2,right,157,Warm Gray,#B9B2A6,#8D8C91,1.0,5.8
+82,1,left,33,Hay's Russet,#792B25,#661B1A,0.96,2.3
+82,2,right,153,Dusky Madder Violet,#3E1938,#36133B,1.0,3.7
+83,1,left,128,Violet Blue,#3E3660,#2D274A,1.0,2.3
+83,2,right,53,Olive Buff,#D2CEA0,#A9AA84,1.0,1.9
+84,1,left,43,Seashell Pink,#FEDFCF,#C9B6AE,1.0,2.3
+84,2,right,133,Deep Slate Green,#2E3131,#1D272A,1.0,3.8
+85,1,left,123,Antwarp Blue,#0C6B9F,#065A92,1.0,1.3
+85,2,right,15,Vinaceous Tawny,#D35219,#BA390B,1.0,3.3
+86,1,left,14,Raw Sienna,#C86B1D,#B34F0E,1.0,5.4
+86,2,right,100,Sea Green,#24AD94,#10957F,1.0,2.4
+87,1,left,71,Citron Yellow,#BFB317,#968E0C,1.0,2.6
+87,2,right,2,Corinthian Pink,#F8C1C9,#C9A3AF,1.0,1.2
+88,1,left,122,Blue,#1C66CE,#1552AF,1.0,1.4
+88,2,right,43,Seashell Pink,#FEDFCF,#CCB9AE,1.0,3.2
+89,1,left,62,Yellow Orange,#FF9B17,#EE7C06,1.0,5.3
+89,2,right,128,Violet Blue,#3E3660,#2A2757,1.0,3.4
+90,1,left,140,Aconite Violet,#AB69B5,#8F4CAA,1.0,4.5
+90,2,right,9,Eosine Pink,#E6748C,#C5587B,1.0,2.7
+91,1,left,38,Vistoris Lake,#713F45,#523038,1.0,2.9
+91,2,right,68,Orange Rufous,#CD5B19,#A54A1B,1.0,1.6
+92,1,left,6,Coral Red,#F28778,#C37676,1.0,3.8
+92,2,right,101,Benzol Green,#028884,#03667B,0.96,10.0
+93,1,left,113,Light Glaucous Blue,#C4DAE5,#98B2CA,0.95,2.9
+93,2,right,72,Citrine,#A98D11,#927708,1.0,2.1
+94,1,left,126,Dusky Green,#08403B,#093C3B,1.0,1.9
+94,2,right,42,Ivory Buff,#F4DBB1,#CBB590,1.0,2.7
+95,1,left,33,Hay's Russet,#792B25,#5F211E,0.87,1.2
+95,2,right,131,Dull Violet Black,#261B39,#181B38,1.0,4.2
+96,1,left,77,Olive,#847816,#6C6317,1.0,1.0
+96,2,right,60,Yellow Ocher,#F4B527,#C1961E,0.92,2.0
+97,1,left,2,Corinthian Pink,#F8C1C9,#CCA4B8,1.0,2.3
+97,2,right,19,Etruscan Red,#C74A38,#B33621,1.0,4.5
+98,1,left,85,Madder Brown,#722519,#6A1D15,1.0,2.8
+98,2,right,128,Violet Blue,#3E3660,#292B61,1.0,4.9
+99,1,left,40,Pale Lemon Yellow,#FFF2BF,#CFC59C,1.0,2.3
+99,2,right,118,Cerulian Blue,#1C93B2,#1F7697,1.0,1.9
+100,1,left,73,Buffy Citrine,#9E852F,#7E6C2E,1.0,2.2
+100,2,right,141,Dull Blue Violet,#886AAA,#6A538F,1.0,2.2
+101,1,left,127,Deep Lyons Blue,#1C2E82,#122883,0.9,2.8
+101,2,right,3,Cameo Pink,#E4BDC7,#BF9FB0,1.0,1.1
+102,1,left,42,Ivory Buff,#F4DBB1,#C8B792,0.8,2.6
+102,2,right,68,Orange Rufous,#CD5B19,#B9450D,1.0,3.8
+103,1,left,153,Dusky Madder Violet,#3E1938,#33142F,1.0,0.6
+103,2,right,67,Cinnamon Rufous,#C66837,#AD5927,1.0,3.2
+104,1,left,39,Sulphur Yellow,#FEF2D2,#C9C5AF,1.0,2.4
+104,2,right,29,Carmine Red,#99202B,#821A20,1.0,2.6
+105,1,left,3,Cameo Pink,#E4BDC7,#BE9EB0,1.0,1.4
+105,2,right,98,Chromium Green,#819061,#687C5A,1.0,2.0
+106,1,left,131,Dull Violet Black,#261B39,#16193B,1.0,4.4
+106,2,right,123,Antwarp Blue,#0C6B9F,#06569B,1.0,3.7
+107,1,left,75,Light Grayish Olive,#878159,#6D6C50,1.0,1.1
+107,2,right,57,Apricot Yellow,#FFDA03,#DCBA03,1.0,1.3
+108,1,left,9,Eosine Pink,#E6748C,#BA6981,1.0,2.4
+108,2,right,28,Brick Red,#A6331F,#8A2C1B,1.0,0.4
+109,1,left,40,Pale Lemon Yellow,#FFF2BF,#D9CB9C,1.0,2.9
+109,2,right,109,Blackish Olive,#35463D,#3B4036,1.0,5.4
+110,1,left,32,Brown,#7E3723,#722A18,1.0,3.2
+110,2,right,87,Vandyke Brown,#4B3222,#3C2218,1.0,4.0
+111,1,left,40,Pale Lemon Yellow,#FFF2BF,#CDC5A2,1.0,2.0
+111,2,right,91,Yellow Green,#C7CF5A,#A8B058,1.0,1.3
+112,1,left,159,Black,#1E1D21,#1C1B20,0.22,0.9
+112,2,right,8,Grenadine Pink,#FA784A,#C56A53,1.0,4.3
+113,1,left,43,Seashell Pink,#FEDFCF,#D1BCB5,1.0,0.7
+113,2,right,87,Vandyke Brown,#4B3222,#382519,0.92,1.7
+114,1,left,123,Antwarp Blue,#0C6B9F,#0557A3,1.0,4.4
+114,2,right,61,Orange Yellow,#FFB60B,#E69606,1.0,3.6
+115,1,left,41,Naples Yellow,#FFECAC,#CABD85,1.0,3.3
+115,2,right,65,Peach Red,#F9501F,#CB451A,0.89,0.7
+116,1,left,143,Blue Violet,#5B319E,#44308C,0.95,2.5
+116,2,right,3,Cameo Pink,#E4BDC7,#B69CAB,1.0,1.4
+117,1,left,23,Carmine,#CA1A2A,#B70209,1.0,7.2
+117,2,right,159,Black,#1E1D21,#16151A,1.0,0.9
+118,1,left,87,Vandyke Brown,#4B3222,#3E2216,0.96,4.3
+118,2,right,60,Yellow Ocher,#F4B527,#CF9407,1.0,2.7
+119,1,left,130,Dark Tyrian Blue,#2C2C47,#1A233C,1.0,3.3
+119,2,right,113,Light Glaucous Blue,#C4DAE5,#9DB5C5,1.0,1.2
+120,1,left,3,Cameo Pink,#E4BDC7,#BEA3AC,1.0,2.6
+120,2,right,30,Pompeian Red,#A81928,#86101D,1.0,1.6
+121,1,left,108,Lincoln Green,#46492A,#454220,1.0,4.9
+121,2,middle,50,Ochraceous Salmon,#EDAE77,#C58F69,1.0,2.3
+121,3,right,32,Brown,#7E3723,#752714,1.0,4.3
+122,1,left,101,Benzol Green,#028884,#047E8D,1.0,7.4
+122,2,middle,47,Cream Yellow,#FFC86A,#E6A942,1.0,5.0
+122,3,right,23,Carmine,#CA1A2A,#BA0311,1.0,6.4
+123,1,left,6,Coral Red,#F28778,#BD7474,1.0,4.1
+123,2,middle,148,Taupe Brown,#70394B,#613047,1.0,1.9
+123,3,right,56,Lemon Yellow,#FFEA2A,#D0C01F,1.0,1.2
+124,1,left,94,Olive Yellow,#B4A039,#8E8436,1.0,1.9
+124,2,middle,60,Yellow Ocher,#F4B527,#C1971D,1.0,2.2
+124,3,right,36,Pale Burnt Lake,#832525,#681B20,1.0,1.7
+125,1,left,118,Cerulian Blue,#1C93B2,#0B7BB1,1.0,6.2
+125,2,middle,4,Fawn,#CEB3AD,#AD9A9F,1.0,2.3
+125,3,right,128,Violet Blue,#3E3660,#272B61,1.0,5.2
+126,1,left,60,Yellow Ocher,#F4B527,#CC990E,1.0,1.4
+126,2,middle,127,Deep Lyons Blue,#1C2E82,#0C2D95,1.0,5.4
+126,3,right,42,Ivory Buff,#F4DBB1,#C5B695,1.0,2.0
+127,1,left,46,Cinnamon Buff,#FFD282,#D0A466,1.0,3.6
+127,2,middle,99,Pistachio Green,#62886B,#426F66,1.0,5.5
+127,3,right,142,Dark Soft Violet,#6651A0,#46408B,1.0,3.1
+128,1,left,117,Venice Green,#65CBCA,#53A1A7,1.0,2.7
+128,2,middle,139,Light Mauve,#A36FB9,#80589E,1.0,2.0
+128,3,right,2,Corinthian Pink,#F8C1C9,#C7A2AF,1.0,1.4
+129,1,left,70,Khaki,#C78311,#B26E09,1.0,3.9
+129,2,middle,114,Salvia Blue,#B2BCDC,#8899C9,1.0,4.1
+129,3,right,57,Apricot Yellow,#FFDA03,#E6B403,1.0,3.2
+130,1,left,29,Carmine Red,#99202B,#990A16,0.91,7.8
+130,2,middle,150,Violet,#4A2B7B,#361E74,1.0,3.0
+130,3,right,14,Raw Sienna,#C86B1D,#B44C10,1.0,6.5
+131,1,left,66,English Red,#E45B1E,#B44413,0.82,2.7
+131,2,middle,119,Peacock Blue,#048AA1,#037088,0.92,1.5
+131,3,right,14,Raw Sienna,#C86B1D,#A65616,0.9,1.6
+132,1,left,72,Citrine,#A98D11,#8C780D,0.62,0.8
+132,2,middle,48,Golden Yellow,#FFA83F,#D28B36,1.0,0.6
+132,3,right,39,Sulphur Yellow,#FEF2D2,#CBC7B4,0.48,1.5
+133,1,left,100,Sea Green,#24AD94,#099289,1.0,2.8
+133,2,middle,34,Vandyke Red,#842021,#70110F,0.82,4.0
+133,3,right,72,Citrine,#A98D11,#917608,1.0,2.0
+134,1,left,9,Eosine Pink,#E6748C,#C86182,1.0,2.7
+134,2,middle,139,Light Mauve,#A36FB9,#8758B0,1.0,3.6
+134,3,right,151,Red Violet,#541D58,#3B1458,1.0,4.9
+135,1,left,114,Salvia Blue,#B2BCDC,#8795B9,1.0,3.2
+135,2,middle,39,Sulphur Yellow,#FEF2D2,#C8C6B4,1.0,2.4
+135,3,right,107,Cossack Green,#2D632F,#2D5531,1.0,2.1
+136,1,left,151,Red Violet,#541D58,#3C1E57,1.0,4.4
+136,2,middle,22,Scarlet,#C8232A,#A2242C,1.0,1.8
+136,3,right,104,Dull Viridian Green,#13854B,#08684F,1.0,6.6
+137,1,left,19,Etruscan Red,#C74A38,#B4301D,1.0,4.9
+137,2,middle,99,Pistachio Green,#62886B,#47776E,1.0,5.9
+137,3,right,46,Cinnamon Buff,#FFD282,#D7AB68,1.0,2.2
+138,1,left,48,Golden Yellow,#FFA83F,#DF8D2E,1.0,2.5
+138,2,middle,117,Venice Green,#65CBCA,#59B0B4,1.0,2.1
+138,3,right,56,Lemon Yellow,#FFEA2A,#D6C40A,1.0,1.1
+139,1,left,155,Neutral Gray,#C1CBD2,#9FA3AC,1.0,3.6
+139,2,middle,132,Deep Indigo,#21192D,#1B1718,1.0,10.1
+139,3,right,114,Salvia Blue,#B2BCDC,#8B94BA,1.0,3.3
+140,1,left,48,Golden Yellow,#FFA83F,#D18732,1.0,1.9
+140,2,middle,158,Slate Color,#3C393B,#272B32,1.0,3.6
+140,3,right,123,Antwarp Blue,#0C6B9F,#085082,1.0,3.6
+141,1,left,64,Orange,#FF6B1B,#E54E08,1.0,3.3
+141,2,middle,130,Dark Tyrian Blue,#2C2C47,#1A2643,1.0,4.0
+141,3,right,91,Yellow Green,#C7CF5A,#A2AE33,1.0,3.4
+142,1,left,27,Hydrangea Red,#A02C3B,#911A22,1.0,6.7
+142,2,middle,114,Salvia Blue,#B2BCDC,#8999C8,1.0,3.8
+142,3,right,69,Sulphine Yellow,#CC9D0A,#B68107,1.0,5.1
+143,1,left,157,Warm Gray,#B9B2A6,#89898B,1.0,5.4
+143,2,middle,122,Blue,#1C66CE,#0B4CAE,1.0,3.3
+143,3,right,137,Lilac,#C18BBD,#9A71A6,0.8,2.1
+144,1,left,64,Orange,#FF6B1B,#CD581C,1.0,2.2
+144,2,middle,159,Black,#1E1D21,#1C1A20,1.0,1.2
+144,3,right,25,Rosolane Purple,#AC2960,#85224C,1.0,2.2
+145,1,left,131,Dull Violet Black,#261B39,#161639,1.0,4.0
+145,2,middle,32,Brown,#7E3723,#6A2415,1.0,3.0
+145,3,right,71,Citron Yellow,#BFB317,#9D9509,1.0,0.6
+146,1,left,70,Khaki,#C78311,#B26D0A,1.0,4.2
+146,2,middle,106,Diamine Green,#277629,#105D1D,1.0,2.3
+146,3,right,82,Deep Grayish Olive,#5C5030,#4E4227,1.0,1.7
+147,1,left,88,Turquoise Green,#CAE7D8,#A1BAB6,0.93,2.2
+147,2,middle,34,Vandyke Red,#842021,#62161A,0.91,2.5
+147,3,right,10,Spinel Red,#E67191,#B85676,1.0,2.9
+148,1,left,61,Orange Yellow,#FFB60B,#D4940C,1.0,1.7
+148,2,middle,118,Cerulian Blue,#1C93B2,#1B7498,1.0,3.0
+148,3,right,59,Olive Ocher,#E8B321,#B6941F,1.0,2.2
+149,1,left,133,Deep Slate Green,#2E3131,#182427,1.0,5.0
+149,2,middle,64,Orange,#FF6B1B,#E3500A,0.83,2.8
+149,3,right,59,Olive Ocher,#E8B321,#BF960C,1.0,1.0
+150,1,left,43,Seashell Pink,#FEDFCF,#D2BCB5,1.0,0.5
+150,2,middle,71,Citron Yellow,#BFB317,#98950E,1.0,1.2
+150,3,right,89,Glaucous Green,#C8D9D1,#9AB3BB,1.0,3.8
+151,1,left,62,Yellow Orange,#FF9B17,#D57E0B,1.0,1.4
+151,2,middle,129,Vandar Poel's Blue,#1A3F6D,#143152,0.97,2.5
+151,3,right,39,Sulphur Yellow,#FEF2D2,#CCC8B0,1.0,2.5
+152,1,left,19,Etruscan Red,#C74A38,#9C3729,1.0,2.5
+152,2,middle,113,Light Glaucous Blue,#C4DAE5,#92AEC0,1.0,3.3
+152,3,right,33,Hay's Russet,#792B25,#5C231F,0.96,1.8
+153,1,left,9,Eosine Pink,#E6748C,#C75478,1.0,3.4
+153,2,middle,61,Orange Yellow,#FFB60B,#E79105,1.0,5.4
+153,3,right,71,Citron Yellow,#BFB317,#9D9107,1.0,2.0
+154,1,left,23,Carmine,#CA1A2A,#B50510,1.0,6.0
+154,2,middle,55,Yellow,#FFEB01,#E6C502,1.0,1.8
+154,3,right,122,Blue,#1C66CE,#0A50C9,1.0,3.7
+155,1,left,101,Benzol Green,#028884,#03696F,1.0,3.9
+155,2,middle,16,Jasper Red,#F54B15,#C53914,1.0,2.1
+155,3,right,132,Deep Indigo,#21192D,#1E1A1C,1.0,9.5
+156,1,left,150,Violet,#4A2B7B,#372365,1.0,1.6
+156,2,middle,59,Olive Ocher,#E8B321,#B6951D,1.0,2.4
+156,3,right,115,Cobalt Green,#9ED3B8,#87AE9B,1.0,2.3
+157,1,left,35,Pansy Purple,#7C132D,#69061F,1.0,2.9
+157,2,middle,59,Olive Ocher,#E8B321,#C49209,1.0,2.6
+157,3,right,121,Olympic Blue,#6484C5,#3D6ABC,1.0,3.7
+158,1,left,67,Cinnamon Rufous,#C66837,#B4501F,1.0,4.4
+158,2,middle,93,Night Green,#AAC01A,#759A0B,1.0,4.7
+158,3,right,56,Lemon Yellow,#FFEA2A,#D4C204,1.0,1.2
+159,1,left,116,Calamine Blue,#86D6DE,#6CAABA,1.0,3.2
+159,2,middle,70,Khaki,#C78311,#9E6E17,1.0,1.7
+159,3,right,134,Grayish Lavender (variant a),#CBBFE7,#A99FC7,1.0,1.2
+160,1,left,125,Dark Medici Blue,#4E6672,#385769,1.0,2.3
+160,2,middle,83,Pale Raw Umber,#714328,#583A2C,1.0,3.4
+160,3,right,69,Sulphine Yellow,#CC9D0A,#A48214,1.0,1.2
+161,1,left,45,Pinkish Cinnamon,#FBBF8A,#D19C6C,1.0,2.6
+161,2,middle,124,Helvetia Blue,#1B4F9E,#093C97,1.0,3.1
+161,3,right,32,Brown,#7E3723,#6D2818,1.0,2.5
+162,1,left,97,Rainette Green,#848A55,#6E7451,1.0,2.0
+162,2,middle,11,Old Rose,#CD6979,#AF435D,1.0,5.3
+162,3,right,137,Lilac,#C18BBD,#A068AD,1.0,5.4
+163,1,left,88,Turquoise Green,#CAE7D8,#9CB9B6,1.0,2.6
+163,2,middle,123,Antwarp Blue,#0C6B9F,#075288,1.0,3.1
+163,3,right,57,Apricot Yellow,#FFDA03,#D8B601,1.0,1.1
+164,1,left,61,Orange Yellow,#FFB60B,#D5940A,0.92,1.6
+164,2,middle,150,Violet,#4A2B7B,#372367,0.77,1.4
+164,3,right,18,Red Orange,#E43919,#B32A17,1.0,2.5
+165,1,left,38,Vistoris Lake,#713F45,#5D2C38,1.0,3.3
+165,2,middle,10,Spinel Red,#E67191,#C24877,0.9,5.2
+165,3,right,3,Cameo Pink,#E4BDC7,#BC9FB6,1.0,2.8
+166,1,left,8,Grenadine Pink,#FA784A,#D56048,1.0,3.9
+166,2,middle,41,Naples Yellow,#FFECAC,#D2C494,1.0,0.7
+166,3,right,133,Deep Slate Green,#2E3131,#182528,1.0,5.3
+167,1,left,112,Pale King's Blue,#C7E8F0,#A0B9CD,0.97,4.2
+167,2,middle,54,Ecru,#D1BBA1,#A5968A,1.0,2.8
+167,3,right,129,Vandar Poel's Blue,#1A3F6D,#133055,0.97,2.0
+168,1,left,129,Vandar Poel's Blue,#1A3F6D,#163052,0.89,2.5
+168,2,middle,56,Lemon Yellow,#FFEA2A,#D0C128,1.0,1.3
+168,3,right,146,Vernonia Purple,#7E374B,#6D2F44,1.0,1.1
+169,1,left,2,Corinthian Pink,#F8C1C9,#CBA1B4,1.0,1.7
+169,2,middle,157,Warm Gray,#B9B2A6,#8F8C90,1.0,5.4
+169,3,right,40,Pale Lemon Yellow,#FFF2BF,#D4C895,1.0,4.0
+170,1,left,25,Rosolane Purple,#AC2960,#9A144C,0.93,3.8
+170,2,middle,61,Orange Yellow,#FFB60B,#EE9607,1.0,5.5
+170,3,right,151,Red Violet,#541D58,#3F1250,1.0,2.7
+171,1,left,62,Yellow Orange,#FF9B17,#D67C0C,1.0,1.8
+171,2,middle,89,Glaucous Green,#C8D9D1,#9AAEB1,1.0,2.7
+171,3,right,36,Pale Burnt Lake,#832525,#621B1F,1.0,2.6
+172,1,left,123,Antwarp Blue,#0C6B9F,#085186,1.0,3.4
+172,2,middle,151,Red Violet,#541D58,#3C1749,1.0,2.0
+172,3,right,67,Cinnamon Rufous,#C66837,#A55228,1.0,1.7
+173,1,left,56,Lemon Yellow,#FFEA2A,#D8C304,1.0,1.4
+173,2,middle,85,Madder Brown,#722519,#64190E,1.0,2.7
+173,3,right,88,Turquoise Green,#CAE7D8,#96C0BD,1.0,3.8
+174,1,left,148,Taupe Brown,#70394B,#642A46,1.0,3.7
+174,2,middle,135,Grayish Lavender (variant b),#CBB6C2,#A391B1,1.0,5.7
+174,3,right,2,Corinthian Pink,#F8C1C9,#CB9BB5,1.0,4.2
+175,1,left,53,Olive Buff,#D2CEA0,#A5A890,0.9,3.4
+175,2,middle,45,Pinkish Cinnamon,#FBBF8A,#C49C75,1.0,2.7
+175,3,right,143,Blue Violet,#5B319E,#3E2F8B,1.0,3.2
+176,1,left,116,Calamine Blue,#86D6DE,#6DADBF,1.0,2.8
+176,2,middle,1,Hermosa Pink,#FACDDE,#CBB0C5,1.0,2.1
+176,3,right,43,Seashell Pink,#FEDFCF,#CDBBB3,1.0,2.1
+177,1,left,73,Buffy Citrine,#9E852F,#816B1F,1.0,2.3
+177,2,middle,36,Pale Burnt Lake,#832525,#6E1116,1.0,2.9
+177,3,right,134,Grayish Lavender (variant a),#CBBFE7,#9E9CD2,1.0,4.0
+178,1,left,113,Light Glaucous Blue,#C4DAE5,#96B6CF,1.0,3.2
+178,2,middle,42,Ivory Buff,#F4DBB1,#C9B999,0.8,1.3
+178,3,right,120,Green Blue,#319199,#117997,1.0,6.6
+179,1,left,18,Red Orange,#E43919,#AC2414,1.0,4.3
+179,2,middle,127,Deep Lyons Blue,#1C2E82,#15236A,1.0,1.5
+179,3,right,48,Golden Yellow,#FFA83F,#D0883B,1.0,2.3
+180,1,left,139,Light Mauve,#A36FB9,#7D579E,1.0,2.7
+180,2,middle,155,Neutral Gray,#C1CBD2,#9FA7B4,1.0,1.4
+180,3,right,46,Cinnamon Buff,#FFD282,#D1A868,1.0,2.3
+181,1,left,152,Cotinga Purple,#491A36,#350F35,1.0,5.0
+181,2,middle,150,Violet,#4A2B7B,#251C79,1.0,5.6
+181,3,right,29,Carmine Red,#99202B,#8A0A19,1.0,4.7
+182,1,left,87,Vandyke Brown,#4B3222,#35231A,1.0,2.7
+182,2,middle,14,Raw Sienna,#C86B1D,#B04E11,1.0,5.4
+182,3,right,132,Deep Indigo,#21192D,#1A191C,1.0,9.6
+183,1,left,146,Vernonia Purple,#7E374B,#60273B,1.0,2.3
+183,2,middle,151,Red Violet,#541D58,#381445,1.0,2.9
+183,3,right,145,Deep Violet/Plumbeous,#656170,#505063,0.93,1.3
+184,1,left,75,Light Grayish Olive,#878159,#646348,1.0,3.7
+184,2,middle,42,Ivory Buff,#F4DBB1,#C1B18C,1.0,3.5
+184,3,right,10,Spinel Red,#E67191,#B74E6F,1.0,5.1
+185,1,left,40,Pale Lemon Yellow,#FFF2BF,#D2C897,1.0,3.7
+185,2,middle,5,Light Brown Drab,#B9949A,#917886,1.0,2.3
+185,3,right,19,Etruscan Red,#C74A38,#AE2616,0.92,5.4
+186,1,left,33,Hay's Russet,#792B25,#661919,0.96,2.6
+186,2,middle,122,Blue,#1C66CE,#0851CD,1.0,4.0
+186,3,right,50,Ochraceous Salmon,#EDAE77,#BB865D,1.0,3.8
+187,1,left,135,Grayish Lavender (variant b),#CBB6C2,#9A8DA2,1.0,4.2
+187,2,middle,124,Helvetia Blue,#1B4F9E,#0C3981,1.0,2.9
+187,3,right,140,Aconite Violet,#AB69B5,#854D98,1.0,3.6
+188,1,left,115,Cobalt Green,#9ED3B8,#80AC98,1.0,2.2
+188,2,middle,97,Rainette Green,#848A55,#676E4E,1.0,3.6
+188,3,right,114,Salvia Blue,#B2BCDC,#8393BB,1.0,4.3
+189,1,left,117,Venice Green,#65CBCA,#37A9B8,1.0,3.1
+189,2,middle,56,Lemon Yellow,#FFEA2A,#D3C20A,1.0,1.1
+189,3,right,110,Deep Slate Olive,#272D29,#201F20,1.0,5.8
+190,1,left,159,Black,#1E1D21,#1D1B22,1.0,1.8
+190,2,middle,66,English Red,#E45B1E,#C6390D,0.73,4.2
+190,3,right,42,Ivory Buff,#F4DBB1,#C6B38E,0.74,2.8
+191,1,left,122,Blue,#1C66CE,#0C46A7,1.0,5.4
+191,2,middle,5,Light Brown Drab,#B9949A,#9A838E,1.0,2.7
+191,3,right,60,Yellow Ocher,#F4B527,#BE9525,1.0,2.6
+192,1,left,47,Cream Yellow,#FFC86A,#D4A355,1.0,1.6
+192,2,middle,145,Deep Violet/Plumbeous,#656170,#4E506C,0.93,4.5
+192,3,right,87,Vandyke Brown,#4B3222,#34251F,1.0,4.0
+193,1,left,102,Light Porcelain Green,#1E8E89,#097285,1.0,7.9
+193,2,middle,41,Naples Yellow,#FFECAC,#D2C38A,1.0,2.3
+193,3,right,8,Grenadine Pink,#FA784A,#D55D3B,1.0,2.4
+194,1,left,16,Jasper Red,#F54B15,#D63008,1.0,2.7
+194,2,middle,121,Olympic Blue,#6484C5,#346BC1,1.0,4.6
+194,3,right,43,Seashell Pink,#FEDFCF,#D2BAB2,1.0,1.0
+195,1,left,10,Spinel Red,#E67191,#B65273,1.0,4.1
+195,2,middle,40,Pale Lemon Yellow,#FFF2BF,#D0C7A4,1.0,1.3
+195,3,right,155,Neutral Gray,#C1CBD2,#A1A8B8,1.0,2.4
+196,1,left,71,Citron Yellow,#BFB317,#98921B,1.0,1.6
+196,2,middle,143,Blue Violet,#5B319E,#482F89,1.0,1.8
+196,3,right,112,Pale King's Blue,#C7E8F0,#98BCD0,0.97,2.7
+197,1,left,142,Dark Soft Violet,#6651A0,#3E399D,0.94,6.4
+197,2,middle,9,Eosine Pink,#E6748C,#C9597D,1.0,3.0
+197,3,right,155,Neutral Gray,#C1CBD2,#9CA6BC,1.0,3.9
+198,1,left,103,Green,#4E915D,#17775B,1.0,6.4
+198,2,middle,57,Apricot Yellow,#FFDA03,#E4BA02,1.0,1.4
+198,3,right,20,Burnt Sienna,#B74219,#A13112,1.0,2.4
+199,1,left,127,Deep Lyons Blue,#1C2E82,#182266,1.0,2.3
+199,2,middle,21,Ocher Red,#AC4641,#863234,1.0,2.8
+199,3,right,81,Light Brownish Olive,#83653D,#67573B,1.0,3.2
+200,1,left,53,Olive Buff,#D2CEA0,#A6A88B,1.0,2.1
+200,2,middle,29,Carmine Red,#99202B,#7F1621,1.0,1.4
+200,3,right,98,Chromium Green,#819061,#5E7B66,1.0,6.9
+201,1,left,77,Olive,#847816,#70610F,1.0,2.7
+201,2,middle,8,Grenadine Pink,#FA784A,#D55C3E,1.0,3.0
+201,3,right,115,Cobalt Green,#9ED3B8,#7BB09B,1.0,2.2
+202,1,left,115,Cobalt Green,#9ED3B8,#82B5A2,1.0,1.6
+202,2,middle,158,Slate Color,#3C393B,#272B36,1.0,4.7
+202,3,right,88,Turquoise Green,#CAE7D8,#9BC1BE,1.0,2.8
+203,1,left,49,Vinaceous Cinnamon,#F5B292,#C08F7A,1.0,2.4
+203,2,middle,108,Lincoln Green,#46492A,#424020,1.0,4.0
+203,3,right,40,Pale Lemon Yellow,#FFF2BF,#D3C99F,1.0,1.9
+204,1,left,25,Rosolane Purple,#AC2960,#8A234E,0.93,1.6
+204,2,middle,113,Light Glaucous Blue,#C4DAE5,#9CB2C3,1.0,1.4
+204,3,right,67,Cinnamon Rufous,#C66837,#AA5726,1.0,2.6
+205,1,left,49,Vinaceous Cinnamon,#F5B292,#D09076,1.0,2.8
+205,2,middle,36,Pale Burnt Lake,#832525,#6B1315,1.0,2.8
+205,3,right,150,Violet,#4A2B7B,#2F1F7B,1.0,4.5
+206,1,left,2,Corinthian Pink,#F8C1C9,#CEA2B4,1.0,1.4
+206,2,middle,67,Cinnamon Rufous,#C66837,#B6501A,1.0,5.0
+206,3,right,48,Golden Yellow,#FFA83F,#DF8724,1.0,3.6
+207,1,left,159,Black,#1E1D21,#19181C,1.0,0.7
+207,2,middle,89,Glaucous Green,#C8D9D1,#A2B0B0,1.0,1.9
+207,3,right,79,Sudan Brown,#A55B45,#8B4738,1.0,1.9
+208,1,left,120,Green Blue,#319199,#206D7D,1.0,5.1
+208,2,middle,39,Sulphur Yellow,#FEF2D2,#CAC7AE,1.0,3.2
+208,3,right,123,Antwarp Blue,#0C6B9F,#095083,1.0,3.6
+209,1,left,62,Yellow Orange,#FF9B17,#ED7D05,1.0,4.9
+209,2,middle,114,Salvia Blue,#B2BCDC,#8498C7,1.0,4.6
+209,3,right,42,Ivory Buff,#F4DBB1,#C3B38C,1.0,3.7
+210,1,left,56,Lemon Yellow,#FFEA2A,#D8C404,1.0,1.3
+210,2,middle,108,Lincoln Green,#46492A,#44421D,1.0,5.2
+210,3,right,46,Cinnamon Buff,#FFD282,#DAA957,1.0,4.5
+211,1,left,132,Deep Indigo,#21192D,#1D1819,1.0,10.0
+211,2,middle,63,Apricot Orange,#FF8742,#D27235,1.0,1.5
+211,3,right,94,Olive Yellow,#B4A039,#8B8436,1.0,2.7
+212,1,left,78,Orange Citrine,#A26620,#825720,1.0,1.2
+212,2,middle,114,Salvia Blue,#B2BCDC,#8998BC,1.0,2.5
+212,3,right,30,Pompeian Red,#A81928,#831522,1.0,1.4
+213,1,left,57,Apricot Yellow,#FFDA03,#E7B903,1.0,2.2
+213,2,middle,112,Pale King's Blue,#C7E8F0,#96BED8,0.97,4.1
+213,3,right,49,Vinaceous Cinnamon,#F5B292,#CB8972,1.0,4.0
+214,1,left,79,Sudan Brown,#A55B45,#934233,1.0,4.3
+214,2,middle,42,Ivory Buff,#F4DBB1,#C8B48D,1.0,3.2
+214,3,right,150,Violet,#4A2B7B,#331C70,1.0,3.1
+215,1,left,138,Eupatorium Purple,#BC4F94,#97407F,1.0,1.0
+215,2,middle,47,Cream Yellow,#FFC86A,#D3A24B,1.0,2.5
+215,3,right,122,Blue,#1C66CE,#0E4EB1,1.0,2.7
+216,1,left,16,Jasper Red,#F54B15,#C24017,1.0,1.6
+216,2,middle,159,Black,#1E1D21,#1A181F,1.0,1.6
+216,3,right,103,Green,#4E915D,#2C6B4A,1.0,6.0
+217,1,left,36,Pale Burnt Lake,#832525,#741414,1.0,4.0
+217,2,middle,50,Ochraceous Salmon,#EDAE77,#C38D62,1.0,1.8
+217,3,right,106,Diamine Green,#277629,#176211,1.0,2.9
+218,1,left,145,Deep Violet/Plumbeous,#656170,#635A6C,0.93,5.0
+218,2,middle,134,Grayish Lavender (variant a),#CBBFE7,#A8A2D6,1.0,2.8
+218,3,right,124,Helvetia Blue,#1B4F9E,#0E419A,1.0,2.4
+219,1,left,16,Jasper Red,#F54B15,#C23B11,1.0,2.0
+219,2,middle,126,Dusky Green,#08403B,#0B3C38,1.0,2.2
+219,3,right,98,Chromium Green,#819061,#6B7E60,1.0,3.1
+220,1,left,140,Aconite Violet,#AB69B5,#8B5599,1.0,1.2
+220,2,middle,26,Pomegranate Purple,#A91139,#900F30,1.0,1.7
+220,3,right,50,Ochraceous Salmon,#EDAE77,#B98D67,1.0,2.4
+221,1,left,159,Black,#1E1D21,#18171B,1.0,0.8
+221,2,middle,29,Carmine Red,#99202B,#931019,1.0,6.4
+221,3,right,155,Neutral Gray,#C1CBD2,#A1A9BB,1.0,2.7
+222,1,left,62,Yellow Orange,#FF9B17,#EE8306,1.0,4.1
+222,2,middle,60,Yellow Ocher,#F4B527,#CF990C,1.0,1.7
+222,3,right,68,Orange Rufous,#CD5B19,#B6470F,1.0,3.0
+223,1,left,5,Light Brown Drab,#B9949A,#958187,1.0,3.7
+223,2,middle,50,Ochraceous Salmon,#EDAE77,#B58B67,0.94,3.4
+223,3,right,88,Turquoise Green,#CAE7D8,#A8C0BC,1.0,1.4
+224,1,left,125,Dark Medici Blue,#4E6672,#3D515C,1.0,2.2
+224,2,middle,10,Spinel Red,#E67191,#BC5778,1.0,2.3
+224,3,right,148,Taupe Brown,#70394B,#5F3145,1.0,0.9
+225,1,left,147,Dark Slate Purple,#5C2E3F,#592335,1.0,4.5
+225,2,middle,126,Dusky Green,#08403B,#0A3F3A,1.0,3.3
+225,3,right,23,Carmine,#CA1A2A,#B30411,1.0,5.5
+226,1,left,150,Violet,#4A2B7B,#40217B,1.0,3.1
+226,2,middle,47,Cream Yellow,#FFC86A,#E2A338,1.0,5.5
+226,3,right,38,Vistoris Lake,#713F45,#572832,1.0,3.9
+227,1,left,118,Cerulian Blue,#1C93B2,#287790,1.0,2.8
+227,2,middle,113,Light Glaucous Blue,#C4DAE5,#9BB0C2,1.0,2.0
+227,3,right,1,Hermosa Pink,#FACDDE,#CBAEC4,1.0,1.5
+228,1,left,29,Carmine Red,#99202B,#801920,1.0,2.2
+228,2,middle,155,Neutral Gray,#C1CBD2,#A9ADB7,1.0,3.3
+228,3,right,40,Pale Lemon Yellow,#FFF2BF,#D3C79D,1.0,2.0
+229,1,left,155,Neutral Gray,#C1CBD2,#A7AABA,1.0,4.3
+229,2,middle,110,Deep Slate Olive,#272D29,#21211D,1.0,3.9
+229,3,right,48,Golden Yellow,#FFA83F,#E08016,1.0,5.4
+230,1,left,8,Grenadine Pink,#FA784A,#DA603B,1.0,2.5
+230,2,middle,88,Turquoise Green,#CAE7D8,#A4C4C0,1.0,1.2
+230,3,right,115,Cobalt Green,#9ED3B8,#83B094,1.0,4.3
+231,1,left,33,Hay's Russet,#792B25,#5B211E,0.96,2.1
+231,2,middle,3,Cameo Pink,#E4BDC7,#B99FAD,1.0,1.0
+231,3,right,121,Olympic Blue,#6484C5,#486DAD,0.92,1.9
+232,1,left,132,Deep Indigo,#21192D,#1E1D20,1.0,9.8
+232,2,middle,23,Carmine,#CA1A2A,#A31421,1.0,1.1
+232,3,right,45,Pinkish Cinnamon,#FBBF8A,#CB9D6F,1.0,2.5
+233,1,left,128,Violet Blue,#3E3660,#352957,1.0,2.5
+233,2,middle,29,Carmine Red,#99202B,#980C12,1.0,8.6
+233,3,right,73,Buffy Citrine,#9E852F,#866B13,1.0,3.9
+234,1,left,112,Pale King's Blue,#C7E8F0,#A1C4DA,0.97,2.5
+234,2,middle,83,Pale Raw Umber,#714328,#62351F,1.0,2.5
+234,3,right,46,Cinnamon Buff,#FFD282,#DAA657,1.0,4.9
+235,1,left,62,Yellow Orange,#FF9B17,#D37E08,1.0,1.7
+235,2,middle,42,Ivory Buff,#F4DBB1,#C3B493,0.7,2.3
+235,3,right,135,Grayish Lavender (variant b),#CBB6C2,#A798AB,1.0,0.9
+236,1,left,144,Purple Drab,#73404B,#6F414A,0.91,4.5
+236,2,middle,127,Deep Lyons Blue,#1C2E82,#212B74,1.0,1.4
+236,3,right,70,Khaki,#C78311,#A8720F,1.0,1.6
+237,1,left,29,Carmine Red,#99202B,#8C0C14,1.0,6.4
+237,2,middle,114,Salvia Blue,#B2BCDC,#7997CC,1.0,7.4
+237,3,right,85,Madder Brown,#722519,#601C10,1.0,1.8
+238,1,left,157,Warm Gray,#B9B2A6,#8A9093,0.89,5.7
+238,2,middle,152,Cotinga Purple,#491A36,#371339,1.0,5.1
+238,3,right,50,Ochraceous Salmon,#EDAE77,#BA8B64,1.0,2.5
+239,1,left,5,Light Brown Drab,#B9949A,#947D87,1.0,1.8
+239,2,middle,89,Glaucous Green,#C8D9D1,#94B0B5,1.0,4.2
+239,3,right,58,Pyrite Yellow,#D8B039,#AD932F,1.0,1.4
+240,1,left,7,Fresh Color,#F88E71,#CC7865,1.0,0.5
+240,2,middle,118,Cerulian Blue,#1C93B2,#127499,1.0,3.0
+240,3,right,55,Yellow,#FFEB01,#E2C802,1.0,0.8
+241,1,top,18,Red Orange,#E43919,#C71A05,1.0,2.5
+241,2,left,125,Dark Medici Blue,#4E6672,#304C62,1.0,4.9
+241,3,right,40,Pale Lemon Yellow,#FFF2BF,#D8CA94,1.0,4.6
+241,4,bottom,51,Isabella Color,#D9B06A,#A98545,1.0,5.2
+242,1,top,9,Eosine Pink,#E6748C,#BC657D,1.0,1.1
+242,2,left,106,Diamine Green,#277629,#0D5326,1.0,6.3
+242,3,right,20,Burnt Sienna,#B74219,#8A3217,1.0,3.1
+242,4,bottom,159,Black,#1E1D21,#141319,0.8,1.5
+243,1,top,14,Raw Sienna,#C86B1D,#BA4D0C,1.0,6.9
+243,2,left,80,Olive Green,#656329,#5A5819,1.0,3.8
+243,3,right,42,Ivory Buff,#F4DBB1,#C5B690,0.8,3.4
+243,4,bottom,158,Slate Color,#3C393B,#2B2D33,1.0,2.3
+244,1,top,5,Light Brown Drab,#B9949A,#96848C,1.0,4.3
+244,2,left,123,Antwarp Blue,#0C6B9F,#095886,1.0,0.9
+244,3,right,15,Vinaceous Tawny,#D35219,#A84116,1.0,1.8
+244,4,bottom,96,Andover Green,#82877F,#5D6A68,1.0,4.6
+245,1,top,105,Oil Green,#8C8B18,#646C0E,1.0,4.3
+245,2,left,158,Slate Color,#3C393B,#1C2C3B,0.86,8.7
+245,3,right,130,Dark Tyrian Blue,#2C2C47,#13244A,1.0,6.0
+245,4,bottom,29,Carmine Red,#99202B,#8F0E1A,1.0,5.4
+246,1,top,28,Brick Red,#A6331F,#842614,1.0,1.7
+246,2,left,2,Corinthian Pink,#F8C1C9,#C39BAB,1.0,2.3
+246,3,right,39,Sulphur Yellow,#FEF2D2,#C6C6B0,1.0,3.7
+246,4,bottom,46,Cinnamon Buff,#FFD282,#D4A864,1.0,2.8
+247,1,top,14,Raw Sienna,#C86B1D,#B54C0D,1.0,6.4
+247,2,left,101,Benzol Green,#028884,#047F79,1.0,5.4
+247,3,right,127,Deep Lyons Blue,#1C2E82,#1C237C,1.0,2.7
+247,4,bottom,57,Apricot Yellow,#FFDA03,#E9B902,1.0,2.7
+248,1,top,134,Grayish Lavender (variant a),#CBBFE7,#A49BC6,1.0,1.5
+248,2,left,70,Khaki,#C78311,#A36F0F,1.0,0.7
+248,3,right,9,Eosine Pink,#E6748C,#BB657E,1.0,1.3
+248,4,bottom,147,Dark Slate Purple,#5C2E3F,#532837,1.0,2.2
+249,1,top,59,Olive Ocher,#E8B321,#BA9206,1.0,1.6
+249,2,left,125,Dark Medici Blue,#4E6672,#2D556E,1.0,4.7
+249,3,right,33,Hay's Russet,#792B25,#661D16,0.96,2.9
+249,4,bottom,54,Ecru,#D1BBA1,#A1998C,1.0,3.6
+250,1,top,58,Pyrite Yellow,#D8B039,#A49438,1.0,4.4
+250,2,left,65,Peach Red,#F9501F,#C84B1F,1.0,1.8
+250,3,right,100,Sea Green,#24AD94,#0C8985,1.0,5.3
+250,4,bottom,111,Nile Blue,#D7F0F0,#A7C5D0,1.0,2.1
+251,1,top,31,Red,#9E132B,#940119,1.0,6.2
+251,2,left,106,Diamine Green,#277629,#196710,1.0,3.7
+251,3,right,158,Slate Color,#3C393B,#2E2E33,1.0,1.0
+251,4,bottom,55,Yellow,#FFEB01,#E7C602,1.0,1.8
+252,1,top,13,Eugenia Red (variant b),#DE5556,#AE3843,1.0,4.1
+252,2,left,69,Sulphine Yellow,#CC9D0A,#AA830E,1.0,1.1
+252,3,right,120,Green Blue,#319199,#2A7D8B,1.0,1.4
+252,4,bottom,14,Raw Sienna,#C86B1D,#B26817,1.0,5.9
+253,1,top,63,Apricot Orange,#FF8742,#E76E1E,1.0,4.8
+253,2,left,56,Lemon Yellow,#FFEA2A,#D8C502,0.92,1.4
+253,3,right,152,Cotinga Purple,#491A36,#3F1031,1.0,2.5
+253,4,bottom,158,Slate Color,#3C393B,#2A3034,1.0,4.4
+254,1,top,136,Laelia Pink,#D19CB6,#A57B9A,1.0,2.8
+254,2,left,77,Olive,#847816,#665A16,1.0,4.4
+254,3,right,39,Sulphur Yellow,#FEF2D2,#C9C6AF,1.0,2.8
+254,4,bottom,2,Corinthian Pink,#F8C1C9,#C7A2B0,1.0,1.4
+255,1,top,116,Calamine Blue,#86D6DE,#74BAC9,0.92,1.7
+255,2,left,159,Black,#1E1D21,#18171A,1.0,1.4
+255,3,right,58,Pyrite Yellow,#D8B039,#B8950D,1.0,3.3
+255,4,bottom,14,Raw Sienna,#C86B1D,#BB510D,1.0,6.2
+256,1,top,159,Black,#1E1D21,#17171A,1.0,1.8
+256,2,left,64,Orange,#FF6B1B,#D35916,1.0,0.9
+256,3,right,49,Vinaceous Cinnamon,#F5B292,#C59684,1.0,1.6
+256,4,bottom,104,Dull Viridian Green,#13854B,#15713F,1.0,1.1
+257,1,top,122,Blue,#1C66CE,#0A3FBB,1.0,7.9
+257,2,left,17,Spectrum Red,#E21D15,#C70304,1.0,2.8
+257,3,right,140,Aconite Violet,#AB69B5,#8F47A2,1.0,4.9
+257,4,bottom,61,Orange Yellow,#FFB60B,#E79505,1.0,4.1
+258,1,top,45,Pinkish Cinnamon,#FBBF8A,#C69B70,1.0,2.7
+258,2,left,77,Olive,#847816,#6B6314,1.0,0.8
+258,3,right,36,Pale Burnt Lake,#832525,#671F21,1.0,1.4
+258,4,bottom,123,Antwarp Blue,#0C6B9F,#095A8A,1.0,0.3
+259,1,top,120,Green Blue,#319199,#1C849D,1.0,5.9
+259,2,left,157,Warm Gray,#B9B2A6,#96959A,1.0,5.0
+259,3,right,56,Lemon Yellow,#FFEA2A,#D7C509,1.0,1.2
+259,4,bottom,124,Helvetia Blue,#1B4F9E,#0F46A1,1.0,3.2
+260,1,top,11,Old Rose,#CD6979,#A85266,0.88,1.7
+260,2,left,100,Sea Green,#24AD94,#2E9588,1.0,2.1
+260,3,right,89,Glaucous Green,#C8D9D1,#A7B5B8,1.0,1.8
+260,4,bottom,49,Vinaceous Cinnamon,#F5B292,#C59888,1.0,2.5
+261,1,top,157,Warm Gray,#B9B2A6,#919193,1.0,3.7
+261,2,left,31,Red,#9E132B,#95051D,1.0,5.6
+261,3,right,40,Pale Lemon Yellow,#FFF2BF,#D3CA99,1.0,3.7
+261,4,bottom,116,Calamine Blue,#86D6DE,#6CBACA,1.0,1.8
+262,1,top,42,Ivory Buff,#F4DBB1,#C7B69A,1.0,0.6
+262,2,left,13,Eugenia Red (variant b),#DE5556,#AB363E,1.0,4.8
+262,3,right,107,Cossack Green,#2D632F,#34552B,1.0,2.8
+262,4,bottom,72,Citrine,#A98D11,#8F7B12,1.0,1.9
+263,1,top,45,Pinkish Cinnamon,#FBBF8A,#D29F6E,1.0,2.6
+263,2,left,158,Slate Color,#3C393B,#2E3038,1.0,2.6
+263,3,right,20,Burnt Sienna,#B74219,#AB310D,1.0,4.0
+263,4,bottom,88,Turquoise Green,#CAE7D8,#A6C7C4,1.0,1.9
+264,1,top,2,Corinthian Pink,#F8C1C9,#C7A6B3,1.0,2.6
+264,2,left,118,Cerulian Blue,#1C93B2,#257A95,1.0,1.8
+264,3,right,18,Red Orange,#E43919,#B62B13,1.0,1.6
+264,4,bottom,90,Dark Greenish Glaucous,#CACCB6,#A6ABA3,1.0,1.8
+265,1,top,94,Olive Yellow,#B4A039,#958322,1.0,2.3
+265,2,left,11,Old Rose,#CD6979,#B34258,1.0,6.1
+265,3,right,131,Dull Violet Black,#261B39,#161634,1.0,3.1
+265,4,bottom,57,Apricot Yellow,#FFDA03,#E7BB02,1.0,2.0
+266,1,top,17,Spectrum Red,#E21D15,#B21612,1.0,1.7
+266,2,left,42,Ivory Buff,#F4DBB1,#C3B38E,0.8,3.2
+266,3,right,97,Rainette Green,#848A55,#72744A,1.0,1.9
+266,4,bottom,101,Benzol Green,#028884,#037272,0.96,0.4
+267,1,top,122,Blue,#1C66CE,#0E59CD,1.0,3.2
+267,2,left,62,Yellow Orange,#FF9B17,#ED8006,1.0,4.3
+267,3,right,101,Benzol Green,#028884,#047D7D,0.92,3.9
+267,4,bottom,47,Cream Yellow,#FFC86A,#DDA440,1.0,4.2
+268,1,top,110,Deep Slate Olive,#272D29,#232221,1.0,4.8
+268,2,left,5,Light Brown Drab,#B9949A,#947F88,1.0,2.6
+268,3,right,111,Nile Blue,#D7F0F0,#ABC5CE,1.0,1.3
+268,4,bottom,14,Raw Sienna,#C86B1D,#A4521B,1.0,3.6
+269,1,top,140,Aconite Violet,#AB69B5,#8D4DAA,1.0,4.4
+269,2,left,36,Pale Burnt Lake,#832525,#701615,1.0,3.3
+269,3,right,14,Raw Sienna,#C86B1D,#B34F0C,1.0,5.3
+269,4,bottom,159,Black,#1E1D21,#17161B,1.0,0.6
+270,1,top,39,Sulphur Yellow,#FEF2D2,#C9C6B2,1.0,2.1
+270,2,left,13,Eugenia Red (variant b),#DE5556,#AA333B,1.0,5.4
+270,3,right,80,Olive Green,#656329,#525227,1.0,1.0
+270,4,bottom,107,Cossack Green,#2D632F,#2A4E2D,1.0,3.0
+271,1,top,115,Cobalt Green,#9ED3B8,#86B59E,1.0,2.7
+271,2,left,133,Deep Slate Green,#2E3131,#1C2325,1.0,3.2
+271,3,right,26,Pomegranate Purple,#A91139,#9D0129,1.0,5.6
+271,4,bottom,120,Green Blue,#319199,#198093,1.0,3.3
+272,1,top,114,Salvia Blue,#B2BCDC,#8C99BB,1.0,1.8
+272,2,left,88,Turquoise Green,#CAE7D8,#A2BEBB,1.0,1.4
+272,3,right,64,Orange,#FF6B1B,#D55816,1.0,0.7
+272,4,bottom,40,Pale Lemon Yellow,#FFF2BF,#D1C8A0,1.0,1.8
+273,1,top,35,Pansy Purple,#7C132D,#62051E,1.0,2.4
+273,2,left,155,Neutral Gray,#C1CBD2,#9CA5BA,1.0,3.8
+273,3,right,1,Hermosa Pink,#FACDDE,#CDA6C7,1.0,3.6
+273,4,bottom,79,Sudan Brown,#A55B45,#8D3F31,1.0,4.3
+274,1,top,74,Dark Citrine,#93854B,#6D663D,1.0,4.1
+274,2,left,139,Light Mauve,#A36FB9,#7F549D,1.0,3.1
+274,3,right,65,Peach Red,#F9501F,#CC4619,1.0,1.1
+274,4,bottom,121,Olympic Blue,#6484C5,#3F6CAD,1.0,3.4
+275,1,top,19,Etruscan Red,#C74A38,#B2291B,1.0,4.9
+275,2,left,54,Ecru,#D1BBA1,#AC9789,1.0,3.6
+275,3,right,85,Madder Brown,#722519,#671610,1.0,3.1
+275,4,bottom,148,Taupe Brown,#70394B,#652743,1.0,4.1
+276,1,top,43,Seashell Pink,#FEDFCF,#CDB8B1,1.0,1.1
+276,2,left,159,Black,#1E1D21,#151419,1.0,1.2
+276,3,right,9,Eosine Pink,#E6748C,#BB667E,1.0,1.5
+276,4,bottom,91,Yellow Green,#C7CF5A,#A2AD4C,1.0,0.5
+277,1,top,10,Spinel Red,#E67191,#C74873,1.0,5.2
+277,2,left,131,Dull Violet Black,#261B39,#161738,1.0,3.8
+277,3,right,77,Olive,#847816,#665C0E,1.0,3.2
+277,4,bottom,25,Rosolane Purple,#AC2960,#98144E,0.93,3.0
+278,1,top,59,Olive Ocher,#E8B321,#B3911D,1.0,2.8
+278,2,left,126,Dusky Green,#08403B,#083437,1.0,3.2
+278,3,right,107,Cossack Green,#2D632F,#2B4E29,1.0,2.5
+278,4,bottom,47,Cream Yellow,#FFC86A,#D5A050,1.0,2.8
+279,1,top,14,Raw Sienna,#C86B1D,#B64D0D,1.0,6.3
+279,2,left,130,Dark Tyrian Blue,#2C2C47,#192444,1.0,4.0
+279,3,right,49,Vinaceous Cinnamon,#F5B292,#CC9077,1.0,2.2
+279,4,bottom,54,Ecru,#D1BBA1,#A89988,1.0,1.3
+280,1,top,108,Lincoln Green,#46492A,#403F22,1.0,2.9
+280,2,left,148,Taupe Brown,#70394B,#613144,1.0,1.2
+280,3,right,13,Eugenia Red (variant b),#DE5556,#AB393E,1.0,4.3
+280,4,bottom,136,Laelia Pink,#D19CB6,#AD85A3,1.0,1.0
+281,1,top,123,Antwarp Blue,#0C6B9F,#0456A0,1.0,4.3
+281,2,left,101,Benzol Green,#028884,#037888,1.0,6.9
+281,3,right,40,Pale Lemon Yellow,#FFF2BF,#D3C99E,1.0,2.2
+281,4,bottom,115,Cobalt Green,#9ED3B8,#83B6A5,1.0,1.5
+282,1,top,137,Lilac,#C18BBD,#9B71A6,1.0,1.9
+282,2,left,52,Maple,#DBAD72,#A88B5A,1.0,3.6
+282,3,right,115,Cobalt Green,#9ED3B8,#84AF9C,1.0,1.5
+282,4,bottom,13,Eugenia Red (variant b),#DE5556,#AF3D41,1.0,3.1
+283,1,top,36,Pale Burnt Lake,#832525,#701214,1.0,3.5
+283,2,left,98,Chromium Green,#819061,#6E7E5B,1.0,2.0
+283,3,right,117,Venice Green,#65CBCA,#56B0B3,1.0,2.4
+283,4,bottom,21,Ocher Red,#AC4641,#9B312D,1.0,4.2
+284,1,top,12,Eugenia Red (variant a),#E6634F,#B84533,1.0,4.3
+284,2,left,100,Sea Green,#24AD94,#1F8D78,1.0,2.4
+284,3,right,57,Apricot Yellow,#FFDA03,#DAB202,1.0,1.4
+284,4,bottom,126,Dusky Green,#08403B,#0A3933,1.0,2.3
+285,1,top,5,Light Brown Drab,#B9949A,#9A808C,1.0,1.5
+285,2,left,65,Peach Red,#F9501F,#D72B09,1.0,3.3
+285,3,right,20,Burnt Sienna,#B74219,#9B210C,1.0,4.4
+285,4,bottom,88,Turquoise Green,#CAE7D8,#A0C2BE,1.0,1.7
+286,1,top,61,Orange Yellow,#FFB60B,#D89105,1.0,2.7
+286,2,left,119,Peacock Blue,#048AA1,#03697A,1.0,4.9
+286,3,right,20,Burnt Sienna,#B74219,#903115,1.0,2.2
+286,4,bottom,128,Violet Blue,#3E3660,#2E274A,1.0,2.3
+287,1,top,112,Pale King's Blue,#C7E8F0,#92BCD8,0.97,5.0
+287,2,left,9,Eosine Pink,#E6748C,#C84F74,1.0,4.3
+287,3,right,58,Pyrite Yellow,#D8B039,#B29110,1.0,2.8
+287,4,bottom,116,Calamine Blue,#86D6DE,#60B7C8,1.0,2.0
+288,1,top,62,Yellow Orange,#FF9B17,#D6800F,1.0,0.9
+288,2,left,148,Taupe Brown,#70394B,#572B3E,1.0,1.6
+288,3,right,84,Sepia,#613F1B,#48301F,1.0,4.9
+288,4,bottom,159,Black,#1E1D21,#17151B,1.0,1.3
+289,1,top,131,Dull Violet Black,#261B39,#161738,1.0,3.8
+289,2,left,56,Lemon Yellow,#FFEA2A,#D9C403,1.0,1.5
+289,3,right,128,Violet Blue,#3E3660,#2E2651,1.0,2.4
+289,4,bottom,92,Light Green Yellow,#D9D12F,#B3AE04,1.0,1.9
+290,1,top,108,Lincoln Green,#46492A,#3D3B23,1.0,2.8
+290,2,left,38,Vistoris Lake,#713F45,#502931,1.0,3.9
+290,3,right,40,Pale Lemon Yellow,#FFF2BF,#D1C897,1.0,3.8
+290,4,bottom,115,Cobalt Green,#9ED3B8,#8EB199,1.0,4.2
+291,1,top,116,Calamine Blue,#86D6DE,#69B9C6,1.0,1.9
+291,2,left,115,Cobalt Green,#9ED3B8,#92B994,1.0,7.6
+291,3,right,100,Sea Green,#24AD94,#109A83,1.0,3.6
+291,4,bottom,92,Light Green Yellow,#D9D12F,#B8B103,1.0,2.4
+292,1,top,40,Pale Lemon Yellow,#FFF2BF,#CFC89F,1.0,2.6
+292,2,left,54,Ecru,#D1BBA1,#A59883,1.0,3.3
+292,3,right,45,Pinkish Cinnamon,#FBBF8A,#C99E6B,1.0,4.2
+292,4,bottom,51,Isabella Color,#D9B06A,#AB9057,1.0,2.2
+293,1,top,14,Raw Sienna,#C86B1D,#B74C0B,1.0,6.6
+293,2,left,88,Turquoise Green,#CAE7D8,#A5C4BF,1.0,0.9
+293,3,right,95,Artemisia Green,#899E9C,#5D7B81,1.0,5.4
+293,4,bottom,103,Green,#4E915D,#2C7742,1.0,3.9
+294,1,top,107,Cossack Green,#2D632F,#345025,1.0,3.9
+294,2,left,47,Cream Yellow,#FFC86A,#D19E40,1.0,4.0
+294,3,right,114,Salvia Blue,#B2BCDC,#9197B9,1.0,2.7
+294,4,bottom,39,Sulphur Yellow,#FEF2D2,#CBC9B3,1.0,2.6
+295,1,top,47,Cream Yellow,#FFC86A,#DDA037,1.0,5.2
+295,2,left,55,Yellow,#FFEB01,#E8C501,1.0,2.3
+295,3,right,131,Dull Violet Black,#261B39,#191937,1.0,3.1
+295,4,bottom,122,Blue,#1C66CE,#1059CD,1.0,3.3
+296,1,top,83,Pale Raw Umber,#714328,#5C361E,1.0,1.3
+296,2,left,50,Ochraceous Salmon,#EDAE77,#B5885F,1.0,3.7
+296,3,right,39,Sulphur Yellow,#FEF2D2,#CBC5AB,1.0,3.0
+296,4,bottom,158,Slate Color,#3C393B,#2D2D33,1.0,1.6
+297,1,top,20,Burnt Sienna,#B74219,#A1260B,1.0,3.7
+297,2,left,62,Yellow Orange,#FF9B17,#F37A07,0.92,6.8
+297,3,right,128,Violet Blue,#3E3660,#2C2049,1.0,4.1
+297,4,bottom,80,Olive Green,#656329,#55521B,1.0,2.3
+298,1,top,56,Lemon Yellow,#FFEA2A,#CFBE12,1.0,1.7
+298,2,left,65,Peach Red,#F9501F,#C23714,1.0,3.7
+298,3,right,14,Raw Sienna,#C86B1D,#A34916,1.0,6.6
+298,4,bottom,159,Black,#1E1D21,#15151A,1.0,1.2
+299,1,top,105,Oil Green,#8C8B18,#72700B,1.0,2.1
+299,2,left,49,Vinaceous Cinnamon,#F5B292,#D38F6F,1.0,4.4
+299,3,right,123,Antwarp Blue,#0C6B9F,#065A90,1.0,0.9
+299,4,bottom,24,Indian Lake,#BB315D,#A6153C,1.0,6.9
+300,1,top,116,Calamine Blue,#86D6DE,#79B1BA,1.0,2.4
+300,2,left,47,Cream Yellow,#FFC86A,#D3A140,1.0,3.8
+300,3,right,8,Grenadine Pink,#FA784A,#CA6945,1.0,1.3
+300,4,bottom,88,Turquoise Green,#CAE7D8,#A8C2BE,1.0,0.8
+301,1,top,17,Spectrum Red,#E21D15,#C30202,1.0,2.4
+301,2,left,42,Ivory Buff,#F4DBB1,#CDB592,1.0,2.9
+301,3,right,140,Aconite Violet,#AB69B5,#8F45A1,1.0,5.3
+301,4,bottom,97,Rainette Green,#848A55,#72764D,1.0,1.5
+302,1,top,47,Cream Yellow,#FFC86A,#D49F42,1.0,3.7
+302,2,left,54,Ecru,#D1BBA1,#A29081,1.0,4.3
+302,3,right,123,Antwarp Blue,#0C6B9F,#075084,1.0,3.7
+302,4,bottom,111,Nile Blue,#D7F0F0,#A6C5CF,1.0,2.4
+303,1,top,41,Naples Yellow,#FFECAC,#D5C187,1.0,2.9
+303,2,left,65,Peach Red,#F9501F,#DA370D,1.0,2.5
+303,3,right,155,Neutral Gray,#C1CBD2,#9AA5BB,1.0,3.8
+303,4,bottom,110,Deep Slate Olive,#272D29,#1F2020,1.0,4.0
+304,1,top,101,Benzol Green,#028884,#026E72,1.0,1.9
+304,2,left,47,Cream Yellow,#FFC86A,#D39F45,1.0,3.4
+304,3,right,74,Dark Citrine,#93854B,#65613B,1.0,6.5
+304,4,bottom,33,Hay's Russet,#792B25,#561D1D,0.96,3.6
+305,1,top,45,Pinkish Cinnamon,#FBBF8A,#CF9662,1.0,4.3
+305,2,left,57,Apricot Yellow,#FFDA03,#E7B802,1.0,2.4
+305,3,right,88,Turquoise Green,#CAE7D8,#94C1BC,1.0,4.5
+305,4,bottom,71,Citron Yellow,#BFB317,#9A9307,1.0,1.1
+306,1,top,104,Dull Viridian Green,#13854B,#075D42,1.0,7.8
+306,2,left,111,Nile Blue,#D7F0F0,#A6C2CD,1.0,2.3
+306,3,right,101,Benzol Green,#028884,#026370,1.0,7.7
+306,4,bottom,56,Lemon Yellow,#FFEA2A,#D0C11E,1.0,1.2
+307,1,top,152,Cotinga Purple,#491A36,#3E0D2E,1.0,2.8
+307,2,left,134,Grayish Lavender (variant a),#CBBFE7,#A4A1D5,1.0,3.2
+307,3,right,23,Carmine,#CA1A2A,#B5030D,1.0,6.4
+307,4,bottom,140,Aconite Violet,#AB69B5,#954FAA,1.0,3.8
+308,1,top,66,English Red,#E45B1E,#B84513,1.0,2.0
+308,2,left,4,Fawn,#CEB3AD,#AB9695,1.0,1.0
+308,3,right,115,Cobalt Green,#9ED3B8,#83AC94,1.0,3.6
+308,4,bottom,22,Scarlet,#C8232A,#A11B1F,1.0,1.6
+309,1,top,48,Golden Yellow,#FFA83F,#E18121,1.0,5.5
+309,2,left,63,Apricot Orange,#FF8742,#E6671E,1.0,4.5
+309,3,right,129,Vandar Poel's Blue,#1A3F6D,#0C2A55,0.97,3.6
+309,4,bottom,128,Violet Blue,#3E3660,#2A2151,1.0,4.3
+310,1,top,77,Olive,#847816,#655B13,1.0,3.7
+310,2,left,45,Pinkish Cinnamon,#FBBF8A,#C6956A,1.0,3.4
+310,3,right,110,Deep Slate Olive,#272D29,#202120,1.0,3.5
+310,4,bottom,39,Sulphur Yellow,#FEF2D2,#CCC9B3,1.0,2.2
+311,1,top,30,Pompeian Red,#A81928,#960512,1.0,5.6
+311,2,left,90,Dark Greenish Glaucous,#CACCB6,#9DA89D,1.0,2.9
+311,3,right,47,Cream Yellow,#FFC86A,#E09E2C,1.0,6.5
+311,4,bottom,92,Light Green Yellow,#D9D12F,#AFAC08,1.0,1.8
+312,1,top,20,Burnt Sienna,#B74219,#8D2F13,1.0,2.9
+312,2,left,95,Artemisia Green,#899E9C,#59777D,1.0,6.8
+312,3,right,124,Helvetia Blue,#1B4F9E,#153D80,1.0,1.9
+312,4,bottom,62,Yellow Orange,#FF9B17,#DC830B,1.0,0.8
+313,1,top,23,Carmine,#CA1A2A,#B2010D,1.0,6.0
+313,2,left,159,Black,#1E1D21,#171519,1.0,1.2
+313,3,right,106,Diamine Green,#277629,#0F5816,1.0,3.8
+313,4,bottom,55,Yellow,#FFEB01,#E8C502,1.0,2.3
+314,1,top,153,Dusky Madder Violet,#3E1938,#301330,1.0,0.9
+314,2,left,127,Deep Lyons Blue,#1C2E82,#16246A,1.0,1.4
+314,3,right,9,Eosine Pink,#E6748C,#BB5F79,1.0,0.8
+314,4,bottom,33,Hay's Russet,#792B25,#5F211F,0.87,1.4
+315,1,top,48,Golden Yellow,#FFA83F,#DF8517,1.0,4.0
+315,2,left,138,Eupatorium Purple,#BC4F94,#A93387,1.0,3.5
+315,3,right,39,Sulphur Yellow,#FEF2D2,#C9C7B0,1.0,3.0
+315,4,bottom,8,Grenadine Pink,#FA784A,#D8603C,1.0,2.2
+316,1,top,151,Red Violet,#541D58,#42154A,1.0,0.8
+316,2,left,34,Vandyke Red,#842021,#69161B,1.0,1.3
+316,3,right,104,Dull Viridian Green,#13854B,#136B3F,1.0,1.7
+316,4,bottom,150,Violet,#4A2B7B,#3D236A,1.0,0.4
+317,1,top,88,Turquoise Green,#CAE7D8,#99C0BA,1.0,3.2
+317,2,left,44,Light Pinkish Cinnamon,#FFCFA7,#D7AB7B,1.0,5.8
+317,3,right,56,Lemon Yellow,#FFEA2A,#D8C202,1.0,1.6
+317,4,bottom,54,Ecru,#D1BBA1,#A8977C,1.0,4.7
+318,1,top,81,Light Brownish Olive,#83653D,#6B502E,1.0,2.2
+318,2,left,133,Deep Slate Green,#2E3131,#1C2223,1.0,3.3
+318,3,right,126,Dusky Green,#08403B,#083331,1.0,1.0
+318,4,bottom,109,Blackish Olive,#35463D,#3A3C34,1.0,6.5
+319,1,top,57,Apricot Yellow,#FFDA03,#E6B703,1.0,2.4
+319,2,left,62,Yellow Orange,#FF9B17,#ED7F06,1.0,4.5
+319,3,right,14,Raw Sienna,#C86B1D,#B64B0F,1.0,7.0
+319,4,bottom,107,Cossack Green,#2D632F,#36571A,1.0,6.1
+320,1,top,105,Oil Green,#8C8B18,#747312,1.0,1.1
+320,2,left,6,Coral Red,#F28778,#C47672,1.0,2.4
+320,3,right,113,Light Glaucous Blue,#C4DAE5,#9EB2C1,1.0,1.5
+320,4,bottom,39,Sulphur Yellow,#FEF2D2,#CBC8B4,1.0,1.8
+321,1,top,39,Sulphur Yellow,#FEF2D2,#CBC8B0,1.0,2.8
+321,2,left,114,Salvia Blue,#B2BCDC,#8F99C6,1.0,3.1
+321,3,right,5,Light Brown Drab,#B9949A,#9C818D,1.0,1.8
+321,4,bottom,110,Deep Slate Olive,#272D29,#21211F,1.0,3.9
+322,1,top,143,Blue Violet,#5B319E,#492E8C,1.0,1.4
+322,2,left,138,Eupatorium Purple,#BC4F94,#983D7B,1.0,1.6
+322,3,right,28,Brick Red,#A6331F,#892917,1.0,0.9
+322,4,bottom,17,Spectrum Red,#E21D15,#B51914,1.0,1.1
+323,1,top,46,Cinnamon Buff,#FFD282,#DAA65E,1.0,4.6
+323,2,left,71,Citron Yellow,#BFB317,#A69908,1.0,2.3
+323,3,right,159,Black,#1E1D21,#17161A,1.0,1.0
+323,4,bottom,85,Madder Brown,#722519,#631812,0.92,2.2
+324,1,top,30,Pompeian Red,#A81928,#86131E,1.0,1.4
+324,2,left,140,Aconite Violet,#AB69B5,#8E4D94,1.0,3.5
+324,3,right,121,Olympic Blue,#6484C5,#586DA9,1.0,1.9
+324,4,bottom,155,Neutral Gray,#C1CBD2,#ABABB4,1.0,5.1
+325,1,top,133,Deep Slate Green,#2E3131,#1B2223,1.0,3.7
+325,2,left,41,Naples Yellow,#FFECAC,#D5C47C,1.0,5.1
+325,3,right,13,Eugenia Red (variant b),#DE5556,#BF2D2E,1.0,6.6
+325,4,bottom,60,Yellow Ocher,#F4B527,#D09806,1.0,2.1
+326,1,top,93,Night Green,#AAC01A,#849712,1.0,3.2
+326,2,left,39,Sulphur Yellow,#FEF2D2,#CAC6AC,1.0,3.3
+326,3,right,65,Peach Red,#F9501F,#CB4018,1.0,0.8
+326,4,bottom,91,Yellow Green,#C7CF5A,#A7AE4B,1.0,1.1
+327,1,top,54,Ecru,#D1BBA1,#AA9A87,1.0,1.5
+327,2,left,9,Eosine Pink,#E6748C,#C95A7A,1.0,2.6
+327,3,right,135,Grayish Lavender (variant b),#CBB6C2,#AA99B0,1.0,2.5
+327,4,bottom,14,Raw Sienna,#C86B1D,#BC520D,1.0,6.2
+328,1,top,28,Brick Red,#A6331F,#8D2712,1.0,2.1
+328,2,left,102,Light Porcelain Green,#1E8E89,#16716E,1.0,2.8
+328,3,right,63,Apricot Orange,#FF8742,#D56D29,1.0,2.5
+328,4,bottom,87,Vandyke Brown,#4B3222,#3D251A,1.0,2.6
+329,1,top,158,Slate Color,#3C393B,#27272F,1.0,3.8
+329,2,left,47,Cream Yellow,#FFC86A,#E6A02A,1.0,7.1
+329,3,right,135,Grayish Lavender (variant b),#CBB6C2,#A392AA,1.0,3.4
+329,4,bottom,152,Cotinga Purple,#491A36,#3D0D2C,1.0,2.5
+330,1,top,111,Nile Blue,#D7F0F0,#ABC3CB,0.89,1.6
+330,2,left,114,Salvia Blue,#B2BCDC,#8B94B8,1.0,3.2
+330,3,right,53,Olive Buff,#D2CEA0,#AAA97A,0.8,4.1
+330,4,bottom,120,Green Blue,#319199,#1F7180,0.8,3.5
+331,1,top,139,Light Mauve,#A36FB9,#8B50AB,1.0,4.6
+331,2,left,150,Violet,#4A2B7B,#3C1C73,1.0,2.8
+331,3,right,24,Indian Lake,#BB315D,#A40E37,0.87,7.8
+331,4,bottom,131,Dull Violet Black,#261B39,#1B1736,1.0,2.1
+332,1,top,110,Deep Slate Olive,#272D29,#212220,1.0,3.2
+332,2,left,126,Dusky Green,#08403B,#0B3735,1.0,0.5
+332,3,right,6,Coral Red,#F28778,#C3706E,1.0,2.4
+332,4,bottom,22,Scarlet,#C8232A,#A01922,1.0,1.2
+333,1,top,115,Cobalt Green,#9ED3B8,#6CAF94,1.0,5.2
+333,2,left,56,Lemon Yellow,#FFEA2A,#D8C401,1.0,1.4
+333,3,right,20,Burnt Sienna,#B74219,#9E2C0A,1.0,2.5
+333,4,bottom,122,Blue,#1C66CE,#0B55CF,1.0,3.6
+334,1,top,77,Olive,#847816,#685D11,1.0,3.0
+334,2,left,123,Antwarp Blue,#0C6B9F,#074E81,1.0,4.3
+334,3,right,91,Yellow Green,#C7CF5A,#A0AA49,1.0,1.2
+334,4,bottom,43,Seashell Pink,#FEDFCF,#CCB9B2,1.0,1.6
+335,1,top,34,Vandyke Red,#842021,#720F0F,1.0,4.1
+335,2,left,158,Slate Color,#3C393B,#292B31,1.0,2.6
+335,3,right,62,Yellow Orange,#FF9B17,#ED7F06,1.0,4.5
+335,4,bottom,150,Violet,#4A2B7B,#3D217F,1.0,3.9
+336,1,top,33,Hay's Russet,#792B25,#5C201A,0.75,2.0
+336,2,left,9,Eosine Pink,#E6748C,#BA647C,1.0,1.0
+336,3,right,40,Pale Lemon Yellow,#FFF2BF,#CFC699,1.0,3.1
+336,4,bottom,109,Blackish Olive,#35463D,#383D33,1.0,5.1
+337,1,top,38,Vistoris Lake,#713F45,#55222C,1.0,5.6
+337,2,left,149,Violet Carmine,#642730,#4E1522,1.0,3.0
+337,3,right,159,Black,#1E1D21,#151319,1.0,1.6
+337,4,bottom,136,Laelia Pink,#D19CB6,#AC729F,1.0,6.4
+338,1,top,61,Orange Yellow,#FFB60B,#D99205,1.0,2.4
+338,2,left,135,Grayish Lavender (variant b),#CBB6C2,#9A8BA0,0.94,4.7
+338,3,right,126,Dusky Green,#08403B,#083633,1.0,0.5
+338,4,bottom,29,Carmine Red,#99202B,#80151B,1.0,3.5
+339,1,top,66,English Red,#E45B1E,#CD3E0C,1.0,3.9
+339,2,left,50,Ochraceous Salmon,#EDAE77,#C38A60,1.0,2.9
+339,3,right,128,Violet Blue,#3E3660,#322451,1.0,3.4
+339,4,bottom,113,Light Glaucous Blue,#C4DAE5,#96B4CD,1.0,3.2
+340,1,top,65,Peach Red,#F9501F,#C73F15,1.0,1.7
+340,2,left,100,Sea Green,#24AD94,#218D7B,1.0,1.7
+340,3,right,159,Black,#1E1D21,#16141A,1.0,1.4
+340,4,bottom,155,Neutral Gray,#C1CBD2,#A7A9B4,1.0,4.0
+341,1,top,107,Cossack Green,#2D632F,#244D19,1.0,3.6
+341,2,left,113,Light Glaucous Blue,#C4DAE5,#8AB0CB,1.0,5.1
+341,3,right,110,Deep Slate Olive,#272D29,#1F1F1C,1.0,4.1
+341,4,bottom,8,Grenadine Pink,#FA784A,#DD5931,1.0,3.7
+342,1,top,110,Deep Slate Olive,#272D29,#201F1E,1.0,5.0
+342,2,left,47,Cream Yellow,#FFC86A,#D29C41,1.0,4.2
+342,3,right,2,Corinthian Pink,#F8C1C9,#C49CAB,1.0,2.0
+342,4,bottom,78,Orange Citrine,#A26620,#834F1D,1.0,3.4
+343,1,top,42,Ivory Buff,#F4DBB1,#C7B58E,1.0,3.2
+343,2,left,82,Deep Grayish Olive,#5C5030,#54461C,1.0,5.4
+343,3,right,129,Vandar Poel's Blue,#1A3F6D,#103259,0.97,1.3
+343,4,bottom,20,Burnt Sienna,#B74219,#A62F0D,1.0,3.2
+344,1,top,140,Aconite Violet,#AB69B5,#8B5499,1.0,1.4
+344,2,left,46,Cinnamon Buff,#FFD282,#D1A863,1.0,2.6
+344,3,right,159,Black,#1E1D21,#18161C,1.0,1.2
+344,4,bottom,127,Deep Lyons Blue,#1C2E82,#1D2A74,1.0,1.0
+345,1,top,143,Blue Violet,#5B319E,#472395,1.0,2.5
+345,2,left,33,Hay's Russet,#792B25,#691B14,0.96,3.7
+345,3,right,111,Nile Blue,#D7F0F0,#A4C8D5,1.0,3.3
+345,4,bottom,117,Venice Green,#65CBCA,#49AFB5,1.0,2.0
+346,1,top,92,Light Green Yellow,#D9D12F,#A7A61A,1.0,2.9
+346,2,left,25,Rosolane Purple,#AC2960,#861B43,0.93,4.2
+346,3,right,96,Andover Green,#82877F,#51605D,1.0,8.3
+346,4,bottom,88,Turquoise Green,#CAE7D8,#A0C0BC,1.0,1.4
+347,1,top,100,Sea Green,#24AD94,#0E9785,1.0,2.1
+347,2,left,124,Helvetia Blue,#1B4F9E,#0C4096,1.0,2.0
+347,3,right,137,Lilac,#C18BBD,#A367AD,1.0,5.6
+347,4,bottom,94,Olive Yellow,#B4A039,#9A8717,1.0,3.6
+348,1,top,152,Cotinga Purple,#491A36,#31132D,1.0,3.1
+348,2,left,107,Cossack Green,#2D632F,#234824,1.0,3.7
+348,3,right,110,Deep Slate Olive,#272D29,#1E2020,1.0,3.5
+348,4,bottom,53,Olive Buff,#D2CEA0,#AAAB83,0.8,2.2

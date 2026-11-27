@@ -18,3 +18,8 @@ jobs:
 
       - name: Validate dataset and derived files
         run: python scripts/validate_data.py
+
+      - name: Validate the Kaggle package is current
+        run: |
+          python scripts/build_kaggle_package.py
+          git diff --exit-code -- kaggle/colors.csv kaggle/combinations.csv kaggle/combination_colors.csv

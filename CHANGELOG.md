@@ -2,6 +2,15 @@
 
 All notable changes to this project are documented here.
 
+## 1.4.0 — 2026-11-27
+
+The dataset is published on Kaggle as an analysis-ready package.
+
+- New [`kaggle/`](kaggle/) folder with tidy tables. `colors.csv` adds sRGB channels, CIELAB and LCh, HSL, a hue family, and per-size usage counts. `combinations.csv` has one row per combination, and the long table `combination_colors.csv` has one row per slot. A Frictionless `datapackage.json` holds the schemas and keys, the data card is in `README.md`, and there is an executed starter notebook and a cover image.
+- `scripts/build_kaggle_package.py` rebuilds the package from the canonical JSON and checks the counts, keys, nulls, hex format, and referential integrity. CI runs it and fails if `kaggle/` is out of date.
+- The README has a "Get the data" section. CITATION.cff lists the Kaggle URL.
+- The existing `data/` files and column names are unchanged.
+
 ## 1.3.0 — 2026-11-27
 
 The photographic studios keep more of the cloth and the room.

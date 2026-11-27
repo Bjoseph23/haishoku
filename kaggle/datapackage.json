@@ -1,0 +1,459 @@
+{
+  "profile": "data-package",
+  "name": "haishoku-sanzo-wada-color-combinations",
+  "id": "https://github.com/Bjoseph23/haishoku",
+  "title": "Haishoku: Sanzo Wada Color Combinations",
+  "description": "348 verified color combinations and 159 named colors from Sanzo Wada's Haishoku Soukan (1933-34), as printed in Seigensha's A Dictionary of Color Combinations (2010).",
+  "version": "1.0.0",
+  "created": "2026-11-27T00:00:00Z",
+  "homepage": "https://github.com/Bjoseph23/haishoku",
+  "keywords": [
+    "color",
+    "palette",
+    "color harmony",
+    "design",
+    "art",
+    "fashion",
+    "japan",
+    "Sanzo Wada",
+    "tabular"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Bill Mageni (Bjoseph23)",
+      "role": "author",
+      "path": "https://github.com/Bjoseph23"
+    },
+    {
+      "title": "Sanzo Wada",
+      "role": "contributor",
+      "organization": "Original author of Haishoku Soukan (1933-34)"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sanzo Wada, Haishoku Soukan (1933-34)"
+    },
+    {
+      "title": "A Dictionary of Color Combinations, Seigensha 2010, ISBN 978-4-86152-247-5",
+      "path": "https://en.seigensha.com/books/978-4-86152-247-5/"
+    },
+    {
+      "title": "Cross-check: mattdesl/dictionary-of-colour-combinations",
+      "path": "https://github.com/mattdesl/dictionary-of-colour-combinations"
+    }
+  ],
+  "image": "cover.png",
+  "resources": [
+    {
+      "name": "colors",
+      "path": "colors.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "159 named colors: printed CMYK, three hex readings, RGB, CIELAB/LCh, HSL, hue family and usage counts. One row per color.",
+      "schema": {
+        "fields": [
+          {
+            "name": "id",
+            "type": "integer",
+            "description": "Color number 1–159, in the order of the book's reference swatches. Primary key.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "description": "English name as printed (historical spellings kept, e.g. *Cerulian Blue*). Unique.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "base",
+            "type": "string",
+            "description": "`name` without the `(variant a/b)` suffix. Only Eugenia Red and Grayish Lavender have variants."
+          },
+          {
+            "name": "c",
+            "type": "integer",
+            "description": "Printed process-ink percentages, 0–100.",
+            "constraints": {
+              "required": true,
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "m",
+            "type": "integer",
+            "description": "Printed process-ink percentages, 0–100.",
+            "constraints": {
+              "required": true,
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "y",
+            "type": "integer",
+            "description": "Printed process-ink percentages, 0–100.",
+            "constraints": {
+              "required": true,
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "k",
+            "type": "integer",
+            "description": "Printed process-ink percentages, 0–100.",
+            "constraints": {
+              "required": true,
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          {
+            "name": "hex_cmyk",
+            "type": "string",
+            "description": "Naive CMYK→RGB conversion. It runs more saturated than the book.",
+            "constraints": {
+              "pattern": "^#[0-9A-F]{6}$",
+              "required": true
+            }
+          },
+          {
+            "name": "scan_hex",
+            "type": "string",
+            "description": "Raw scanned color of the reference swatch, which has a blue-gray paper cast.",
+            "constraints": {
+              "pattern": "^#[0-9A-F]{6}$",
+              "required": true
+            }
+          },
+          {
+            "name": "display_hex",
+            "type": "string",
+            "description": "**Recommended screen color.** The reference swatch, white-balanced so the paper reads as white.",
+            "constraints": {
+              "pattern": "^#[0-9A-F]{6}$",
+              "required": true
+            }
+          },
+          {
+            "name": "display_r",
+            "type": "integer",
+            "description": "sRGB channels of `display_hex`, 0–255."
+          },
+          {
+            "name": "display_g",
+            "type": "integer",
+            "description": "sRGB channels of `display_hex`, 0–255."
+          },
+          {
+            "name": "display_b",
+            "type": "integer",
+            "description": "sRGB channels of `display_hex`, 0–255."
+          },
+          {
+            "name": "scan_r",
+            "type": "integer",
+            "description": "sRGB channels of `scan_hex`, 0–255."
+          },
+          {
+            "name": "scan_g",
+            "type": "integer",
+            "description": "sRGB channels of `scan_hex`, 0–255."
+          },
+          {
+            "name": "scan_b",
+            "type": "integer",
+            "description": "sRGB channels of `scan_hex`, 0–255."
+          },
+          {
+            "name": "lab_l",
+            "type": "number",
+            "description": "CIELAB (D65) of `display_hex`."
+          },
+          {
+            "name": "lab_a",
+            "type": "number",
+            "description": "CIELAB (D65) of `display_hex`."
+          },
+          {
+            "name": "lab_b",
+            "type": "number",
+            "description": "CIELAB (D65) of `display_hex`."
+          },
+          {
+            "name": "lch_c",
+            "type": "number",
+            "description": "CIE LCh chroma and hue angle (degrees) of `display_hex`."
+          },
+          {
+            "name": "lch_h",
+            "type": "number",
+            "description": "CIE LCh chroma and hue angle (degrees) of `display_hex`."
+          },
+          {
+            "name": "hsl_h",
+            "type": "number",
+            "description": "HSL hue in degrees, with saturation and lightness in %, of `display_hex`."
+          },
+          {
+            "name": "hsl_s",
+            "type": "number",
+            "description": "HSL hue in degrees, with saturation and lightness in %, of `display_hex`."
+          },
+          {
+            "name": "hsl_l",
+            "type": "number",
+            "description": "HSL hue in degrees, with saturation and lightness in %, of `display_hex`."
+          },
+          {
+            "name": "hue_family",
+            "type": "string",
+            "description": "A rule-based family label (red, pink, orange, brown, yellow, olive, green, cyan, blue, violet, magenta, gray, black, white). It is derived from HSL, so treat it as a convenience label, not an authority."
+          },
+          {
+            "name": "is_variant",
+            "type": "boolean",
+            "description": "True for the four variant colors (ids 12, 13, 134, 135)."
+          },
+          {
+            "name": "ref_page",
+            "type": "integer",
+            "description": "Page of the reference swatch in the scanned edition (285–351)."
+          },
+          {
+            "name": "combo_count",
+            "type": "integer",
+            "description": "Number of combinations that use this color."
+          },
+          {
+            "name": "combo_count_2",
+            "type": "integer",
+            "description": "The same count, split by combination size."
+          },
+          {
+            "name": "combo_count_3",
+            "type": "integer",
+            "description": "The same count, split by combination size."
+          },
+          {
+            "name": "combo_count_4",
+            "type": "integer",
+            "description": "The same count, split by combination size."
+          },
+          {
+            "name": "appears_in",
+            "type": "string",
+            "description": "Space-separated, zero-padded combination numbers."
+          },
+          {
+            "name": "note",
+            "type": "string",
+            "description": "Empty except for id 19, Etruscan Red, whose K value was corrected from 0 to 6 to match its swatch page."
+          }
+        ],
+        "primaryKey": [
+          "id"
+        ]
+      }
+    },
+    {
+      "name": "combinations",
+      "path": "combinations.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "348 combinations (2, 3 or 4 colors), with book page, layout, color ids, names and display hexes. One row per combination.",
+      "schema": {
+        "fields": [
+          {
+            "name": "number",
+            "type": "integer",
+            "description": "Combination number 1–348, in book order. Primary key.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "size",
+            "type": "integer",
+            "description": "Number of colors: 2 (numbers 1–120), 3 (121–240) or 4 (241–348).",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "page",
+            "type": "integer",
+            "description": "Page in the scanned edition.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "positions",
+            "type": "string",
+            "description": "Layout on the plate: `left/right`, `left/middle/right`, or `top/left/right/bottom` for the four-color cross."
+          },
+          {
+            "name": "color_ids",
+            "type": "string",
+            "description": "Space-separated color ids in book order."
+          },
+          {
+            "name": "color_names",
+            "type": "string",
+            "description": "Color names in book order, separated by ` \\| `."
+          },
+          {
+            "name": "display_hexes",
+            "type": "string",
+            "description": "Space-separated `display_hex` values in book order."
+          },
+          {
+            "name": "confidence",
+            "type": "string",
+            "description": "`verified-visual` for every row."
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": "Back-index cross-check, e.g. `back-index (OCR) confirms 3/4`, plus a note on which variant was picked where one applies."
+          }
+        ],
+        "primaryKey": [
+          "number"
+        ]
+      }
+    },
+    {
+      "name": "combination_colors",
+      "path": "combination_colors.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "description": "Long-format join table, one row per color slot (1,032), linking combinations to colors with per-swatch measurements.",
+      "schema": {
+        "fields": [
+          {
+            "name": "combination_number",
+            "type": "integer",
+            "description": "Foreign key → `combinations.number`.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "slot",
+            "type": "integer",
+            "description": "1-based position in book order. Together with `combination_number`, this forms the primary key.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "position",
+            "type": "string",
+            "description": "`left`, `middle`, `right`, `top` or `bottom`."
+          },
+          {
+            "name": "color_id",
+            "type": "integer",
+            "description": "Foreign key → `colors.id`.",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "color_name",
+            "type": "string",
+            "description": "Copy of `colors.name`, kept for convenience."
+          },
+          {
+            "name": "display_hex",
+            "type": "string",
+            "description": "Copy of `colors.display_hex`.",
+            "constraints": {
+              "pattern": "^#[0-9A-F]{6}$",
+              "required": true
+            }
+          },
+          {
+            "name": "page_sample_hex",
+            "type": "string",
+            "description": "Color sampled from this swatch on the combination page, before matching.",
+            "constraints": {
+              "pattern": "^#[0-9A-F]{6}$"
+            }
+          },
+          {
+            "name": "label_ocr_match",
+            "type": "number",
+            "description": "0–1 string similarity between the OCR of the printed label and `color_name`."
+          },
+          {
+            "name": "delta_e",
+            "type": "number",
+            "description": "CIEDE2000 distance between the page sample and the matched reference swatch (0.3–10.1)."
+          }
+        ],
+        "primaryKey": [
+          "combination_number",
+          "slot"
+        ],
+        "foreignKeys": [
+          {
+            "fields": [
+              "color_id"
+            ],
+            "reference": {
+              "resource": "colors",
+              "fields": [
+                "id"
+              ]
+            }
+          },
+          {
+            "fields": [
+              "combination_number"
+            ],
+            "reference": {
+              "resource": "combinations",
+              "fields": [
+                "number"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "combinations-wide",
+      "path": "combinations_wide.csv",
+      "format": "csv",
+      "description": "Wide layout identical to data/combinations.csv in the GitHub repo (zero-padded number, up to 4 slot columns)."
+    },
+    {
+      "name": "wada-colors-and-combinations",
+      "path": "wada_colors_and_combinations.json",
+      "format": "json",
+      "description": "Canonical nested JSON (meta, colors, combinations with per-slot page sample, OCR score and delta E)."
+    }
+  ]
+}
