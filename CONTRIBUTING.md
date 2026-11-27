@@ -42,7 +42,7 @@ Spellings that look unusual (Cerulian, Antwarp, Vandar Poel's, Vistoris, Kronber
 
 ## Change the viewer or the docs
 
-The viewer is `viewer/index.html`. It reads `viewer/palette-data.js`, which is generated. Change the page, then regenerate the data file if the JSON changed, and open `viewer/index.html` directly in a browser as well as through a local server. Both should work: the data is a classic script, not a `fetch`, so a double-click loads it.
+The viewer is `viewer/index.html`. It reads `viewer/palette-data.js`, which is generated. Change the page, then regenerate the data file if the JSON changed, and preview it through a local server: run `python3 -m http.server 8000` from the repository root and open http://localhost:8000/viewer/. A double-click (`file://`) does not work, because the pages are ES modules and the studios fetch their catalogs. The header, menu, and footer are shared: edit `scripts/sync_viewer_chrome.py` and run it, rather than editing the eight pages by hand.
 
 Docs live in `docs/` and the README. If you rename a column, update the data dictionary, `llms.txt`, and the validator together.
 

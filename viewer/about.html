@@ -25,6 +25,13 @@
     <a href="index.html">Palettes</a>
     <a href="colors.html">Colors</a>
     <a href="use-cases.html">Use cases</a>
+    <span class="desk-sep" aria-hidden="true"></span>
+    <span class="desk-label" aria-hidden="true">Studios</span>
+    <a href="outfit.html">Outfit<span class="sr"> studio</span></a>
+    <a href="room.html">Room<span class="sr"> studio</span></a>
+    <a href="facade.html">Facade<span class="sr"> studio</span></a>
+    <a href="brand.html">Brand<span class="sr"> studio</span></a>
+    <span class="desk-sep" aria-hidden="true"></span>
     <a href="about.html" aria-current="page">About</a>
   </nav>
   <div class="tools">
@@ -33,13 +40,20 @@
   </div>
 </header>
 <div class="backdrop" id="backdrop" hidden></div>
-<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
-  <p id="sheet-title" class="sheet-label">Pages</p>
-  <nav class="sheet-nav" aria-label="Pages">
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+  <div class="sheet-grip">
+    <span class="mark">haishoku</span>
+    <button type="button" class="text-btn" id="sheet-close">Close</button>
+  </div>
+  <p class="sheet-label" id="sheet-browse">Browse</p>
+  <nav class="sheet-nav" aria-labelledby="sheet-browse">
     <a href="index.html">Palettes</a>
     <a href="colors.html">Colors</a>
     <a href="use-cases.html">Use cases</a>
     <a href="about.html" aria-current="page">About</a>
+  </nav>
+  <p class="sheet-label" id="sheet-studios">Studios</p>
+  <nav class="sheet-nav sheet-studios" aria-labelledby="sheet-studios">
     <a href="outfit.html">Outfit studio</a>
     <a href="room.html">Room studio</a>
     <a href="facade.html">Facade</a>
@@ -59,8 +73,8 @@
     <p><a href="https://github.com/Bjoseph23/haishoku">Repository</a> · <a href="https://github.com/Bjoseph23/haishoku/blob/main/docs/METHODOLOGY.md">How the pages were read</a> · <a href="https://github.com/Bjoseph23/haishoku/blob/main/LICENSE-DATA">Data license</a></p>
   </div>
 </main>
-<footer class="site-foot"><p>Sanzo Wada, <em>A Dictionary of Color Combinations</em>. Compiled by <a href="https://github.com/Bjoseph23">Bill Mageni</a>.</p></footer>
-<div id="toast" role="status"></div>
+<footer class="site-foot"><p>Sanzo Wada, <em>A Dictionary of Color Combinations</em>. Compiled by <a href="https://github.com/Bjoseph23">Bill Mageni</a>. Code MIT, data and studio photographs CC BY 4.0.</p></footer>
+<div id="toast" role="status" aria-live="polite"></div>
 <script type="module">
 import { enhanceChrome } from "./js/chrome.js";
 enhanceChrome();

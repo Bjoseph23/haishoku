@@ -2,6 +2,19 @@
 
 All notable changes to this project are documented here.
 
+## Unreleased — viewer
+
+The use-case pages read like a printed color book.
+
+- Every page reaches every other page. The desktop bar lists the four studios beside Palettes, Colors, Use cases, and About, and marks the page you are on. The phone menu groups Browse and Studios and has a Close button.
+- The use-cases hub is a contents page. Outfit and Rooms lead with photographs from the studios and the default plate under each. Facade and Brand follow. Illustration and events are listed as uses of the plates, not as studios.
+- The studios are spreads: the photograph on the left, a legend on the right in labeled groups (Look, Plate, On the figure or Surfaces, Find a combination). The plate in play is shown as equal chips with a round copy button on each. The stage shows a quiet placeholder while the photograph loads, and a "Try again" button if it fails.
+- The combination picker works from the keyboard. Arrow keys move through the list and the stage follows, Home and End jump, and "Show more" replaces the 40-row cap. Studios accept an optional `#plate=176` in the URL. Old URLs open the same defaults.
+- Room scenes are a proper tab list (arrow keys switch rooms). Shuffle roles now changes the roles on Rooms, Facade, and Brand. Before, the colors were re-sorted by lightness after the shuffle, so nothing moved.
+- Type, spacing, radius, and motion are CSS tokens in `viewer/css/site.css`. Hex labels are 12px instead of 10px. Copy buttons have a 46px hit area and briefly show a check. Motion is short and stops under reduced motion.
+- `scripts/sync_viewer_chrome.py` writes the same header, menu, and footer into all eight pages.
+- README screenshots are retaken.
+
 ## 1.4.0 — 2026-11-27
 
 The dataset is published on Kaggle as an analysis-ready package.

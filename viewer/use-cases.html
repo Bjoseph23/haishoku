@@ -25,6 +25,13 @@
     <a href="index.html">Palettes</a>
     <a href="colors.html">Colors</a>
     <a href="use-cases.html" aria-current="page">Use cases</a>
+    <span class="desk-sep" aria-hidden="true"></span>
+    <span class="desk-label" aria-hidden="true">Studios</span>
+    <a href="outfit.html">Outfit<span class="sr"> studio</span></a>
+    <a href="room.html">Room<span class="sr"> studio</span></a>
+    <a href="facade.html">Facade<span class="sr"> studio</span></a>
+    <a href="brand.html">Brand<span class="sr"> studio</span></a>
+    <span class="desk-sep" aria-hidden="true"></span>
     <a href="about.html">About</a>
   </nav>
   <div class="tools">
@@ -33,13 +40,20 @@
   </div>
 </header>
 <div class="backdrop" id="backdrop" hidden></div>
-<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
-  <p id="sheet-title" class="sheet-label">Pages</p>
-  <nav class="sheet-nav" aria-label="Pages">
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Site menu" hidden>
+  <div class="sheet-grip">
+    <span class="mark">haishoku</span>
+    <button type="button" class="text-btn" id="sheet-close">Close</button>
+  </div>
+  <p class="sheet-label" id="sheet-browse">Browse</p>
+  <nav class="sheet-nav" aria-labelledby="sheet-browse">
     <a href="index.html">Palettes</a>
     <a href="colors.html">Colors</a>
     <a href="use-cases.html" aria-current="page">Use cases</a>
     <a href="about.html">About</a>
+  </nav>
+  <p class="sheet-label" id="sheet-studios">Studios</p>
+  <nav class="sheet-nav sheet-studios" aria-labelledby="sheet-studios">
     <a href="outfit.html">Outfit studio</a>
     <a href="room.html">Room studio</a>
     <a href="facade.html">Facade</a>
@@ -47,50 +61,76 @@
   </nav>
 </div>
 <main id="app">
-  <p class="kicker">From the plates outward</p>
-  <h1>Use cases</h1>
-  <div class="prose">
-    <p>The book prints each color at the same size. A coat, a room, or a poster gives them unequal area. A practical start is 60 / 30 / 10: the quietest field, the support, the accent. Longer notes, with contrast ratios, are in the <a href="https://github.com/Bjoseph23/haishoku/blob/main/docs/USE_CASES.md">use-cases guide</a>.</p>
-    <p>Seigensha describes the series as a reference for designers, fashion and interior specialists, illustrators, photographers, and writers. The studios below use only combinations from this dataset, which is Volume 1: 348 plates of two, three, and four colors.</p>
-  </div>
-  <div class="cards">
-    <article class="hub-card">
-      <p class="kicker">Fashion</p>
-      <h2>Outfit</h2>
-      <p>YesStyle’s stylist column walks through everyday clothes from plates such as 273, 167, and 276, and treats one or two colors as the main area. The studio maps a plate onto a shirt, a layer, trousers, and shoes.</p>
-      <a class="more" href="outfit.html">Open the outfit studio</a>
+  <header class="hub-head">
+    <div>
+      <p class="kicker">From the plates outward</p>
+      <h1>Use cases</h1>
+    </div>
+    <div class="prose">
+      <p>The book prints each color at the same size. A coat, a room, or a poster gives them unequal area. A practical start is 60 / 30 / 10: the quietest field, the support, the accent.</p>
+      <p>Seigensha describes the series as a reference for designers, fashion and interior specialists, illustrators, photographers, and writers. The studios below use only combinations from this dataset, which is Volume 1: 348 plates of two, three, and four colors. Longer notes, with contrast ratios, are in the <a href="https://github.com/Bjoseph23/haishoku/blob/main/docs/USE_CASES.md">use-cases guide</a>.</p>
+    </div>
+  </header>
+
+  <div class="section-label"><h2 class="kicker">Studios</h2><span>Photographs recolored in the browser</span></div>
+  <div class="entries">
+    <article class="entry lead">
+      <a class="entry-media entry-trio" href="outfit.html" tabindex="-1" aria-hidden="true">
+        <img src="assets/looks/f-tee-jeans-thumb.webp" alt="" width="200" height="356">
+        <img src="assets/looks/m-blazer-thumb.webp" alt="" width="200" height="356">
+        <img src="assets/looks/f-knit-trousers-thumb.webp" alt="" width="200" height="356">
+        <span class="entry-strip" aria-hidden="true"><i style="background:#21192D"></i><i style="background:#FA784A"></i></span>
+      </a>
+      <div class="entry-title"><span class="entry-num">01</span><p class="kicker">Fashion</p></div>
+      <h3><a href="outfit.html">Outfit</a></h3>
+      <p>YesStyle’s stylist column walks through everyday clothes from plates such as 273, 167, and 276, and treats one or two colors as the main area. The studio maps a plate onto a shirt, a layer, trousers, and shoes, across 22 photographed looks.</p>
+      <a class="btn" href="outfit.html">Open the outfit studio <span class="arrow" aria-hidden="true">→</span></a>
     </article>
-    <article class="hub-card">
-      <p class="kicker">Interiors</p>
-      <h2>Rooms</h2>
-      <p>KOJO Art describes stylists using the book to hold a room together, from paint to cloth to the art on the wall. Five elevations start with the lightest color on the large surfaces.</p>
-      <a class="more" href="room.html">Open the room studio</a>
+    <article class="entry lead">
+      <a class="entry-media" href="room.html" tabindex="-1" aria-hidden="true">
+        <img src="assets/rooms/living.webp" alt="" width="1200" height="675">
+        <span class="entry-strip" aria-hidden="true"><i style="background:#86D6DE"></i><i style="background:#FACDDE"></i><i style="background:#FEDFCF"></i></span>
+      </a>
+      <div class="entry-title"><span class="entry-num">02</span><p class="kicker">Interiors</p></div>
+      <h3><a href="room.html">Rooms</a></h3>
+      <p>KOJO Art describes stylists using the book to hold a room together, from paint to cloth to the art on the wall. Five photographed rooms start with the lightest color on the large surfaces.</p>
+      <a class="btn" href="room.html">Open the room studio <span class="arrow" aria-hidden="true">→</span></a>
     </article>
-    <article class="hub-card">
-      <p class="kicker">Architecture</p>
-      <h2>Facade</h2>
+    <article class="entry second">
+      <a class="entry-media" href="facade.html" tabindex="-1" aria-hidden="true">
+        <img src="assets/rooms/facade.webp" alt="" width="1200" height="675" loading="lazy" decoding="async">
+        <span class="entry-strip" aria-hidden="true"><i style="background:#24AD94"></i><i style="background:#1B4F9E"></i><i style="background:#C18BBD"></i><i style="background:#B4A039"></i></span>
+      </a>
+      <div class="entry-title"><span class="entry-num">03</span><p class="kicker">Architecture</p></div>
+      <h3><a href="facade.html">Facade</a></h3>
       <p>An exterior is mostly one field plus a door and a frame. The elevation is a target for a paint fan, not the paint itself.</p>
-      <a class="more" href="facade.html">Open the facade</a>
+      <a class="go" href="facade.html">Open the facade <span class="arrow" aria-hidden="true">→</span></a>
     </article>
-    <article class="hub-card">
-      <p class="kicker">Brand and print</p>
-      <h2>Page and poster</h2>
+    <article class="entry second">
+      <a class="entry-media" href="brand.html" tabindex="-1" aria-hidden="true">
+        <span class="entry-poster"><span style="background:#faf6ef;color:#241f1c"><small>Print</small><b>001</b><small>After Sanzo Wada</small></span><span><i style="background:#E45B1E"></i><i style="background:#1C93B2"></i></span></span>
+      </a>
+      <div class="entry-title"><span class="entry-num">04</span><p class="kicker">Brand and print</p></div>
+      <h3><a href="brand.html">Page and poster</a></h3>
       <p>The same plate can color a wordmark, a short page, and a poster. Type stays in a neutral ink. Check contrast before you set small text.</p>
-      <a class="more" href="brand.html">Open the brand page</a>
-    </article>
-    <article class="hub-card">
-      <p class="kicker">Illustration</p>
-      <h2>A limited box</h2>
-      <p>KOJO Art notes illustrators working from Wada plates as a closed set. The poster on the brand page shows the plate as equal bars, the way the book does, beside a layout that gives them jobs.</p>
-      <a class="more" href="brand.html">See the poster</a>
-    </article>
-    <article class="hub-card">
-      <p class="kicker">Charts and events</p>
-      <h2>Few series, one agreement</h2>
-      <p>A plate is a categorical palette when the series are few and the colors separate in lightness. For a wedding or a dinner, one combination on linen, paper, and flowers is enough. The hex is the agreement. Flowers will land near it.</p>
-      <a class="more" href="index.html">Browse the plates</a>
+      <a class="go" href="brand.html">Open the brand page <span class="arrow" aria-hidden="true">→</span></a>
     </article>
   </div>
+
+  <div class="section-label"><h2 class="kicker">Also from the plates</h2><span>No studio; the plates are enough</span></div>
+  <ul class="also">
+    <li>
+      <h3>A limited box</h3>
+      <p><span class="kicker">Illustration</span><br>KOJO Art notes illustrators working from Wada plates as a closed set. The poster on the brand page shows the plate as equal bars, the way the book does, beside a layout that gives them jobs.</p>
+      <a href="brand.html">See the poster →</a>
+    </li>
+    <li>
+      <h3>Few series, one agreement</h3>
+      <p><span class="kicker">Charts and events</span><br>A plate is a categorical palette when the series are few and the colors separate in lightness. For a wedding or a dinner, one combination on linen, paper, and flowers is enough. The hex is the agreement. Flowers will land near it.</p>
+      <a href="index.html">Browse the plates →</a>
+    </li>
+  </ul>
+
   <h2>Sources</h2>
   <ul class="sources">
     <li><a href="https://www.yesstyle.com/blog/2026-06-26/how-to-put-an-outfit-together-according-to-a-dictionary-of-color-combinations/">YesStyle, “How to put an outfit together according to A Dictionary of Color Combinations”</a></li>
@@ -99,8 +139,8 @@
     <li><a href="https://github.com/mattdesl/dictionary-of-colour-combinations">Matt DesLauriers’ public dataset</a>, an independent check of which color sits in which combination</li>
   </ul>
 </main>
-<footer class="site-foot"><p>Sanzo Wada, <em>A Dictionary of Color Combinations</em>. Compiled by <a href="https://github.com/Bjoseph23">Bill Mageni</a>.</p></footer>
-<div id="toast" role="status"></div>
+<footer class="site-foot"><p>Sanzo Wada, <em>A Dictionary of Color Combinations</em>. Compiled by <a href="https://github.com/Bjoseph23">Bill Mageni</a>. Code MIT, data and studio photographs CC BY 4.0.</p></footer>
+<div id="toast" role="status" aria-live="polite"></div>
 <script type="module">
 import { enhanceChrome } from "./js/chrome.js";
 enhanceChrome();
