@@ -8,7 +8,7 @@ app.innerHTML = `
   <p class="kicker">159 named colors</p>
   <h1>Colors</h1>
   <p class="lede muted">Reference order from the back of the book. Hex codes are the white-balanced screen colors. Open a name to see every plate that uses it.</p>
-  <div class="toolbar" style="margin: 18px 0">
+  <div class="toolbar">
     <input id="q" type="search" placeholder="Search a color" aria-label="Search colors">
   </div>
   <p class="muted" id="count"></p>
@@ -47,7 +47,7 @@ grid.addEventListener("click", (event) => {
   if (!dot) return;
   event.preventDefault();
   event.stopPropagation();
-  copyText(dot.dataset.hex);
+  copyText(dot.dataset.hex, dot);
 });
 search.addEventListener("input", render);
 render();

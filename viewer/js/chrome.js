@@ -78,6 +78,7 @@ export function enhanceChrome() {
     else closeSheet();
   });
   backdrop?.addEventListener("click", closeSheet);
+  document.getElementById("sheet-close")?.addEventListener("click", closeSheet);
 }
 
 let toastTimer = 0;
@@ -90,7 +91,19 @@ export function toast(message) {
   toastTimer = setTimeout(() => node.classList.remove("show"), 1100);
 }
 
-export async function copyText(text) {
+const CHECK = '<svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M3.5 8.4l3 3 6-6.6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
+
+/** Copy text, toast it, and briefly turn the pressed round button into a check. */
+export async function copyText(text, button) {
+  if (button) {
+    clearTimeout(button._done);
+    button.classList.add("done");
+    button.innerHTML = CHECK;
+    button._done = setTimeout(() => {
+      button.classList.remove("done");
+      button.innerHTML = copyIcon();
+    }, 1200);
+  }
   try {
     if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(text);
     else throw new Error("fallback");

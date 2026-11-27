@@ -16,7 +16,7 @@ app.innerHTML = `
   <p class="kicker">348 plates</p>
   <h1>Palettes</h1>
   <p class="lede muted">Every combination from Sanzo Wada’s dictionary. The chip button copies one hex. The caption copies the whole plate. Choose a color underneath to see only the plates that use it.</p>
-  <div class="toolbar" style="margin: 18px 0">
+  <div class="toolbar">
     <input id="q" type="search" placeholder="Search name, hex, or number" value="${esc(query)}" aria-label="Search combinations" size="28">
     <div class="filters" role="group" aria-label="Size">
       ${[0, 2, 3, 4].map((n) => `<button type="button" data-size="${n}" aria-pressed="${n === size}">${n ? n + " colors" : "All"}</button>`).join("")}
@@ -123,7 +123,7 @@ app.addEventListener("click", (event) => {
   const dot = event.target.closest(".dot");
   if (dot) {
     event.stopPropagation();
-    copyText(dot.dataset.hex);
+    copyText(dot.dataset.hex, dot);
     return;
   }
   const swatches = event.target.closest(".swatches");
