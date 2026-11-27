@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haishoku — Sanzo Wada color combinations</title>
+<meta name="description" content="Browse all 348 color combinations and 159 named colors from Sanzo Wada’s A Dictionary of Color Combinations. Click a swatch to copy its hex.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='8' height='16' fill='%23E45B1E'/%3E%3Crect x='8' width='8' height='16' fill='%231C93B2'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1b;--mut:#6b6b66;--card:#fff;--line:#e4e2da}
+@media(prefers-color-scheme:dark){:root{--bg:#161614;--fg:#eeeeea;--mut:#9a9a93;--card:#202020;--line:#333}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,sans-serif}
+header,footer{padding:20px 16px 8px;max-width:1100px;margin:auto}
+h1{font-size:22px;margin:0 0 4px;font-weight:650;letter-spacing:-.01em}
+p.s{margin:0;color:var(--mut);font-size:13px}
+p.s a{color:inherit}
+.bar{max-width:1100px;margin:12px auto;padding:0 16px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+button,input{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:8px;padding:6px 12px}
+button{cursor:pointer}
+button.on{background:var(--fg);color:var(--bg)}
+main{max-width:1100px;margin:auto;padding:0 16px 24px}
+h2{font-size:16px;margin:24px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;cursor:pointer;padding:0;text-align:left;width:100%;color:inherit}
+.sw{height:64px}.row{display:flex;height:86px}.row div{flex:1}
+.m{padding:8px 10px;font-size:12px;color:var(--mut)}.m b{color:var(--fg);font-weight:600}
+.sel{outline:3px solid var(--fg)}
+.tag{font-size:11px;border:1px solid var(--line);border-radius:99px;padding:0 7px;margin-left:6px}
+footer{padding-bottom:32px}
+:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+#t{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:8px 14px;border-radius:8px;opacity:0;transition:.2s;pointer-events:none}
+</style>
+</head>
+<body>
+<header>
+<h1>Haishoku</h1>
+<p class="s">From <i>A Dictionary of Color Combinations</i> (Sanzo Wada). All 348 combinations were read from the page images and checked against the printed labels. Click a swatch to copy its hex. Click a caption to copy every hex in that combination. Click a color’s name below to see every combination it appears in.</p>
+<p class="s" style="margin-top:6px"><a href="../data/colors.csv">colors.csv</a> · <a href="../data/combinations.csv">combinations.csv</a> · <a href="../data/wada_colors_and_combinations.json">JSON</a> · <a href="https://github.com/Bjoseph23/haishoku">About this data</a></p>
+</header>
+<div class="bar">
+<input id="q" placeholder="Search color name, hex, or combo #" size="28" aria-label="Search color name, hex, or combination number">
+<button type="button" class="f on" data-f="0">All combos</button>
+<button type="button" class="f" data-f="2">2-color</button>
+<button type="button" class="f" data-f="3">3-color</button>
+<button type="button" class="f" data-f="4">4-color</button>
+<span style="flex:1"></span>
+<button type="button" class="hm on" data-h="display_hex" title="Scanned book color, white-balanced. Use this on screen.">Book colors</button>
+<button type="button" class="hm" data-h="hex_cmyk" title="Plain CMYK to RGB conversion of the printed ink values">CMYK colors</button>
+</div>
+<main>
+<h2>Combinations <span id="cn" class="tag"></span></h2>
+<div id="cg" class="cg"></div>
+<h2>All 159 colors <span id="cc" class="tag"></span></h2>
+<div id="g" class="grid"></div>
+</main>
+<footer>
+<p class="s">Four-color combinations are printed as a cross and listed top, left, right, bottom. Screen colors are approximate. Compiled by <a href="https://github.com/Bjoseph23">Bill Mageni</a> · <a href="https://github.com/Bjoseph23/haishoku">haishoku</a></p>
+</footer>
+<div id="t" role="status">Copied</div>
+<script src="palette-data.js"></script>
+<script>
+const D = window.HAISHOKU;
+const missing = !D || !Array.isArray(D.colors) || !Array.isArray(D.combinations);
+if (missing) {
+  document.getElementById('cg').textContent = 'Palette data did not load. Keep palette-data.js in the same folder as this page.';
+}
+const C = {};
+if (!missing) for (const c of D.colors) C[c.id] = c;
+
+const toast = document.getElementById('t');
+function showToast(text) {
+  toast.textContent = text;
+  toast.style.opacity = 1;
+  clearTimeout(showToast._t);
+  showToast._t = setTimeout(() => { toast.style.opacity = 0; }, 900);
+}
+function fallbackCopy(text) {
+  const area = document.createElement('textarea');
+  area.value = text;
+  area.setAttribute('readonly', '');
+  area.style.position = 'fixed';
+  area.style.left = '-9999px';
+  document.body.appendChild(area);
+  area.select();
+  try { document.execCommand('copy'); } catch (err) {}
+  area.remove();
+}
+function cp(text) {
+  const done = () => showToast('Copied ' + text);
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(done).catch(() => { fallbackCopy(text); done(); });
+  } else {
+    fallbackCopy(text);
+    done();
+  }
+}
+function esc(value) {
+  return String(value).replace(/[&<>"']/g, (ch) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[ch]));
+}
+
+let filt = 0, q = '', hm = 'display_hex', pick = null;
+const pad = (n) => String(n).padStart(3, '0');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function syncButtons() {
+  document.querySelectorAll('.f').forEach((b) => b.classList.toggle('on', Number(b.dataset.f) === filt));
+  document.querySelectorAll('.hm').forEach((b) => b.classList.toggle('on', b.dataset.h === hm));
+}
+function readHash() {
+  const params = new URLSearchParams(location.hash.replace(/^#/, ''));
+  const size = Number(params.get('size') || 0);
+  if (size === 0 || size === 2 || size === 3 || size === 4) filt = size;
+  hm = params.get('mode') === 'cmyk' ? 'hex_cmyk' : 'display_hex';
+  q = (params.get('q') || '').toLowerCase();
+  document.getElementById('q').value = params.get('q') || '';
+  const color = Number(params.get('color') || 0);
+  pick = C[color] ? color : null;
+  syncButtons();
+}
+function writeHash() {
+  const params = new URLSearchParams();
+  if (filt) params.set('size', String(filt));
+  if (hm === 'hex_cmyk') params.set('mode', 'cmyk');
+  if (q) params.set('q', document.getElementById('q').value);
+  if (pick) params.set('color', String(pick));
+  const next = params.toString();
+  const base = location.pathname + location.search;
+  try {
+    history.replaceState(null, '', next ? base + '#' + next : base);
+  } catch (err) {
+    location.hash = next;
+  }
+}
+
+function render() {
+  if (missing) return;
+  const cg = document.getElementById('cg');
+  cg.replaceChildren();
+  let n = 0;
+  for (const r of D.combinations) {
+    if (filt && r.size !== filt) continue;
+    if (pick && !r.colors.some((slot) => slot.id === pick)) continue;
+    const haystack = [
+      pad(r.number), r.number,
+      ...r.colors.map((slot) => slot.name),
+      ...r.colors.map((slot) => slot[hm])
+    ].join(' ').toLowerCase();
+    if (q && !haystack.includes(q)) continue;
+    n++;
+    const card = document.createElement('button');
+    card.type = 'button';
+    card.className = 'card';
+    const order = r.positions.join(', ');
+    card.innerHTML = '<div class="row" title="' + esc(order) + '">' + r.colors.map((slot) =>
+      '<div style="background:' + slot[hm] + '" data-h="' + slot[hm] + '" title="' + esc(slot.name + ' ' + slot[hm]) + '"></div>'
+    ).join('') + '</div><div class="m"><b>#' + pad(r.number) + '</b><span class="tag">' + r.size + '-color</span><span class="tag">' + esc(r.confidence) + '</span><br>' +
+      r.colors.map((slot) => esc(slot.name)).join(' · ') + '</div>';
+    card.onclick = (event) => {
+      const hex = event.target.dataset && event.target.dataset.h;
+      cp(hex || r.colors.map((slot) => slot[hm]).join(', '));
+    };
+    cg.appendChild(card);
+  }
+  if (!n) {
+    const empty = document.createElement('p');
+    empty.className = 's';
+    empty.textContent = 'No combination matches.';
+    cg.appendChild(empty);
+  }
+  const count = document.getElementById('cn');
+  count.textContent = n + ' shown' + (pick ? ' with ' + C[pick].name + ' (click it again to clear)' : '');
+}
+
+function draw() {
+  if (missing) return;
+  const g = document.getElementById('g');
+  g.replaceChildren();
+  let shown = 0;
+  for (const c of D.colors) {
+    if (q && !((c.name + ' ' + c[hm]).toLowerCase().includes(q))) continue;
+    shown++;
+    const card = document.createElement('button');
+    card.type = 'button';
+    card.className = 'card' + (pick === c.id ? ' sel' : '');
+    card.innerHTML = '<div class="sw" style="background:' + c[hm] + '" data-h="' + c[hm] + '" title="' + esc(c.name + ' ' + c[hm]) + '"></div><div class="m"><b>' +
+      c.id + '. ' + esc(c.name) + '</b><br>' + c[hm] + ' · C' + c.c + ' M' + c.m + ' Y' + c.y + ' K' + c.k + '<br>in ' + c.appears_in.length + ' combos</div>';
+    card.onclick = (event) => {
+      if (event.target.dataset && event.target.dataset.h) { cp(c[hm]); return; }
+      pick = pick === c.id ? null : c.id;
+      writeHash();
+      render();
+      draw();
+      if (pick) window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    };
+    g.appendChild(card);
+  }
+  if (!shown) {
+    const empty = document.createElement('p');
+    empty.className = 's';
+    empty.textContent = 'No color name or hex matches. Combinations above may still match a number.';
+    g.appendChild(empty);
+  }
+  document.getElementById('cc').textContent = shown + ' shown';
+}
+
+document.querySelectorAll('.f').forEach((b) => b.onclick = () => {
+  filt = Number(b.dataset.f);
+  syncButtons();
+  writeHash();
+  render();
+});
+document.querySelectorAll('.hm').forEach((b) => b.onclick = () => {
+  hm = b.dataset.h;
+  syncButtons();
+  writeHash();
+  render();
+  draw();
+});
+document.getElementById('q').oninput = (event) => {
+  q = event.target.value.toLowerCase();
+  writeHash();
+  render();
+  draw();
+};
+
+if (!missing) {
+  readHash();
+  render();
+  draw();
+  window.addEventListener('hashchange', () => {
+    readHash();
+    render();
+    draw();
+  });
+}
+</script>
+</body>
+</html>

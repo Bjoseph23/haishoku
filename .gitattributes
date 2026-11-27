@@ -1,0 +1,15 @@
+* text=auto eol=lf
+
+# Keep the published data bytes stable, including the original CSV line endings.
+data/colors.csv -text
+data/combinations.csv -text
+data/wada_colors_and_combinations.json -text
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ase binary
+
+viewer/palette-data.js linguist-generated
+data/derived/** linguist-generated
+assets/preview.png linguist-generated

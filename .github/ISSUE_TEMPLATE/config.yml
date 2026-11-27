@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Data dictionary
+    url: https://github.com/Bjoseph23/haishoku/blob/main/docs/DATA_DICTIONARY.md
+    about: Every column and JSON field, before you file a correction.
+  - name: How the data was read
+    url: https://github.com/Bjoseph23/haishoku/blob/main/docs/METHODOLOGY.md
+    about: Sampling, the cross-checks, and the limits of the screen colors.

@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below. Please also credit Sanzo Wada, whose combinations these are."
+title: "Haishoku: a verified data compilation of Sanzo Wada's color combinations"
+abstract: >-
+  Open data for the 348 color combinations and 159 named colors in Sanzo Wada's
+  Haishoku Soukan (1933–34), as printed in the Seigensha edition A Dictionary of
+  Color Combinations (2010). Colors include the printed CMYK values, a naive
+  CMYK-to-RGB hex, the raw scan, and a white-balanced display hex recommended
+  for screens. Code in this repository is MIT; this compilation is CC BY 4.0.
+type: dataset
+authors:
+  - family-names: Mageni
+    given-names: Bill
+    alias: Bjoseph23
+version: 1.0.0
+date-released: "2026-11-27"
+license: CC-BY-4.0
+repository-code: "https://github.com/Bjoseph23/haishoku"
+url: "https://github.com/Bjoseph23/haishoku"
+keywords:
+  - color
+  - palette
+  - Sanzo Wada
+  - Haishoku Soukan
+  - design
+  - open data
+preferred-citation:
+  type: dataset
+  title: "Haishoku: a verified data compilation of Sanzo Wada's color combinations"
+  authors:
+    - family-names: Mageni
+      given-names: Bill
+  year: 2026
+  version: "1.0.0"
+  url: "https://github.com/Bjoseph23/haishoku"
+  license: CC-BY-4.0

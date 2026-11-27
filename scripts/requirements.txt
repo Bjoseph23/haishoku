@@ -1,0 +1,5 @@
+# Validation and the CSS / ASE / GPL / Tailwind generators use only the
+# Python standard library. Pillow is required for the preview image:
+#
+#   python scripts/generate_preview.py
+Pillow>=10.0.0

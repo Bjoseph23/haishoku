@@ -1,0 +1,51 @@
+# haishoku
+
+> Verified open data for the 348 color combinations and 159 named colors in Sanzo Wada’s Haishoku Soukan (配色総鑑, 1933–34), as printed in Seigensha’s bilingual A Dictionary of Color Combinations (2010, ISBN 978-4-86152-247-5). Compiled by Bill Mageni. For screens, use display_hex.
+
+The book itself is not in this repository. Screen colors are white-balanced scans and approximate the printed page. Three darks — Deep Indigo #21192D, Black #1E1D21, and Dull Violet Black #261B39 — are hard to separate on a display. Four-color combinations are ordered top, left, right, bottom. Two- and three-color combinations are ordered left to right. Keep printed spellings (Cerulian, Antwarp, Vandar Poel's, Vistoris, Kronbergs). Eugenia Red and Grayish Lavender each have an a and a b variant; they are different swatches.
+
+Code is MIT. The data compilation is CC BY 4.0. Attribute Bill Mageni (https://github.com/Bjoseph23/haishoku) and credit Sanzo Wada for the combinations.
+
+## Start here
+
+- [README](https://github.com/Bjoseph23/haishoku/blob/main/README.md): What the dataset is, which file to open, and which hex to use.
+- [Palette viewer](https://bjoseph23.github.io/haishoku/viewer/): Search, filter, and copy hex values. Also works by opening viewer/index.html locally.
+- [AI guide](https://github.com/Bjoseph23/haishoku/blob/main/docs/AI_GUIDE.md): System prompt for custom GPTs and Claude Projects, plus example prompts.
+- [Data dictionary](https://github.com/Bjoseph23/haishoku/blob/main/docs/DATA_DICTIONARY.md): Every column and JSON field.
+- [Methodology](https://github.com/Bjoseph23/haishoku/blob/main/docs/METHODOLOGY.md): How the pages were read, and the limits of the screen colors.
+- [Use cases](https://github.com/Bjoseph23/haishoku/blob/main/docs/USE_CASES.md): Applying a combination, including 60/30/10 and contrast.
+
+## Data files
+
+- [Canonical JSON](https://raw.githubusercontent.com/Bjoseph23/haishoku/main/data/wada_colors_and_combinations.json): 159 colors and 348 combinations, with per-swatch sample, OCR score, and delta E.
+- [colors.csv](https://raw.githubusercontent.com/Bjoseph23/haishoku/main/data/colors.csv): One row per named color. appears_in is a space-separated list of zero-padded combination numbers.
+- [combinations.csv](https://raw.githubusercontent.com/Bjoseph23/haishoku/main/data/combinations.csv): One row per combination. Slots 3 and 4 are empty when unused.
+- [display-hex.json](https://raw.githubusercontent.com/Bjoseph23/haishoku/main/data/derived/display-hex.json): Map of printed name to display_hex. Smallest file that still names every color.
+
+## Derived palettes
+
+Generated from the JSON. Screen files use display_hex. The CMYK ASE file stores the printed ink percentages.
+
+- [CSS variables](https://raw.githubusercontent.com/Bjoseph23/haishoku/main/data/derived/colors.css)
+- [Combination classes](https://raw.githubusercontent.com/Bjoseph23/haishoku/main/data/derived/combinations.css)
+- [Tailwind colors](https://raw.githubusercontent.com/Bjoseph23/haishoku/main/data/derived/tailwind.colors.json)
+- [GIMP/Inkscape GPL](https://raw.githubusercontent.com/Bjoseph23/haishoku/main/data/derived/haishoku.gpl)
+- [Adobe ASE, screen](https://raw.githubusercontent.com/Bjoseph23/haishoku/main/data/derived/haishoku-rgb.ase)
+- [Adobe ASE, printed CMYK](https://raw.githubusercontent.com/Bjoseph23/haishoku/main/data/derived/haishoku-cmyk.ase)
+
+## Counts
+
+- 159 colors, ids 1–159, reference pages 285–351 in the scan.
+- 348 combinations: 120 of size 2 (pages 28–87), 120 of size 3 (pages 90–149), 108 of size 4 (pages 152–259).
+- 1,032 color-to-combination slots. All 348 combinations are confidence verified-visual.
+- Etruscan Red (id 19) is C16 M80 Y74 K6.
+
+## Instructions for models
+
+- Choose colors and combinations that exist in the file. Quote the combination number, the printed names, and display_hex.
+- Recommend proportions separately from the book order. The book prints swatches at equal size. A useful starting split is 60/30/10.
+- For text on a background, check contrast. Large fields of similar lightness can be the point of a Wada pair and still be unreadable as type.
+- hex_cmyk is a naive conversion kept for compatibility. The printed specification is the c, m, y, k integers.
+- Do not invent Japanese names. They were not published in this release.
+- Do not "correct" historical spellings.
+- Do not claim the palette meets WCAG by default.

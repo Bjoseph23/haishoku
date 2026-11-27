@@ -1,0 +1,349 @@
+number,size,page,color_1,color_2,color_3,color_4,display_hex_1,display_hex_2,display_hex_3,display_hex_4,hex_cmyk_1,hex_cmyk_2,hex_cmyk_3,hex_cmyk_4,positions,confidence,notes
+001,2,28,English Red,Cerulian Blue,,,#E45B1E,#1C93B2,,,#DE4500,#29BDAD,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+002,2,28,Dark Tyrian Blue,Yellow Orange,,,#2C2C47,#FF9B17,,,#0D2B52,#FF8C00,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+003,2,29,Pale Lemon Yellow,Raw Sienna,,,#FFF2BF,#C86B1D,,,#FFF59E,#B85E00,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+004,2,29,Red Violet,Isabella Color,,,#541D58,#D9B06A,,,#3400A3,#C3A55C,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+005,2,30,Cossack Green,Vandar Poel's Blue,,,#2D632F,#1A3F6D,,,#328E13,#003E83,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+006,2,30,Deep Indigo,Grenadine Pink,,,#21192D,#FA784A,,,#000831,#FF616B,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+007,2,31,Glaucous Green,Orange,,,#C8D9D1,#FF6B1B,,,#B2E8C2,#FF5200,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+008,2,31,Cinnamon Rufous,Grayish Lavender (variant a),,,#C66837,#CBBFE7,,,#C2612C,#B8B8FF,,,left/right,verified-visual,variant picked by swatch color: Grayish Lavender (variant a); back-index (OCR) confirms 2/2
+009,2,32,Dull Blue Violet,Violet Red,,,#886AAA,#621F4B,,,#6E66D4,#3D0079,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+010,2,32,Dark Citrine,Cinnamon Rufous,,,#93854B,#C66837,,,#7E8743,#C2612C,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+011,2,33,Mineral Gray,Ivory Buff,,,#C1C2BE,#F4DBB1,,,#9FC2B2,#EBD999,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+012,2,33,Green Blue,Isabella Color,,,#319199,#D9B06A,,,#2DBC94,#C3A55C,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+013,2,34,Raw Sienna,Vernonia Purple,,,#C86B1D,#7E374B,,,#B85E00,#7E3075,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+014,2,34,Naples Yellow,Spinel Red,,,#FFECAC,#E67191,,,#FAED8F,#FF4DC9,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+015,2,35,Grayish Lavender (variant a),Benzol Green,,,#CBBFE7,#028884,,,#B8B8FF,#00D973,,,left/right,verified-visual,variant picked by swatch color: Grayish Lavender (variant a); back-index (OCR) confirms 2/2
+016,2,35,Pale King's Blue,Vandyke Red,,,#C7E8F0,#842021,,,#ABF5ED,#740909,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+017,2,36,Eugenia Red (variant b),Sea Green,,,#DE5556,#24AD94,,,#E62E73,#33FF7D,,,left/right,verified-visual,variant picked by swatch color: Eugenia Red (variant b); back-index (OCR) confirms 2/2
+018,2,36,Dusky Madder Violet,Fawn,,,#3E1938,#CEB3AD,,,#2D0060,#D1B0B2,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+019,2,37,Night Green,Mars Brown/Tobacco,,,#AAC01A,#65301B,,,#7AFF00,#522000,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+020,2,37,Laelia Pink,Calamine Blue,,,#D19CB6,#86D6DE,,,#CC85D1,#80FFCC,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+021,2,38,Grenadine Pink,Sea Green,,,#FA784A,#24AD94,,,#FF616B,#33FF7D,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+022,2,38,Deep Lyons Blue,Yellow,,,#1C2E82,#FFEB01,,,#0024CC,#FFFF00,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+023,2,39,Light Mauve,Cinnamon Buff,,,#A36FB9,#FFD282,,,#9161F2,#FFBF6E,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+024,2,39,Vernonia Purple,Sepia,,,#7E374B,#613F1B,,,#7E3075,#503D00,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+025,2,40,Etruscan Red,Nile Blue,,,#C74A38,#D7F0F0,,,#C9303E,#BFFFE6,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+026,2,40,Pale Raw Umber,Golden Yellow,,,#714328,#FFA83F,,,#5E4017,#FA9442,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+027,2,41,Corinthian Pink,Slate Color,,,#F8C1C9,#3C393B,,,#FFA6D9,#1B3644,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+028,2,41,Deep Indigo,Madder Brown,,,#21192D,#722519,,,#000831,#651300,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+029,2,42,Salvia Blue,Kronbergs Green,,,#B2BCDC,#8E8A4A,,,#96BFE6,#759243,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+030,2,42,Mineral Gray,Pompeian Red,,,#C1C2BE,#A81928,,,#9FC2B2,#A90636,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+031,2,43,Pale Lemon Yellow,Red Orange,,,#FFF2BF,#E43919,,,#FFF59E,#E81900,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+032,2,43,Night Green,Ochraceous Salmon,,,#AAC01A,#EDAE77,,,#7AFF00,#D99E73,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+033,2,44,Raw Sienna,Slate Color,,,#C86B1D,#3C393B,,,#B85E00,#1B3644,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+034,2,44,Eosine Pink,Neutral Gray,,,#E6748C,#C1CBD2,,,#FF5EC4,#B5D1CC,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+035,2,45,Carmine Red,Light Brown Drab,,,#99202B,#B9949A,,,#A10B2B,#B08699,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+036,2,45,Sulphine Yellow,Turquoise Green,,,#CC9D0A,#CAE7D8,,,#BAA600,#B5FFC2,,,left/right,verified-visual,back-index (OCR) confirms 1/2
+037,2,46,Red Violet,Brick Red,,,#541D58,#A6331F,,,#3400A3,#A32100,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+038,2,46,Diamine Green,Deep Lyons Blue,,,#277629,#1C2E82,,,#1EB800,#0024CC,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+039,2,47,Carmine,Helvetia Blue,,,#CA1A2A,#1B4F9E,,,#D60036,#0057BA,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+040,2,47,Vinaceous Tawny,Citron Yellow,,,#D35219,#BFB317,,,#C74300,#A6D40D,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+041,2,48,Dark Citrine,Calamine Blue,,,#93854B,#86D6DE,,,#7E8743,#80FFCC,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+042,2,48,Violet,Yellow Ocher,,,#4A2B7B,#F4B527,,,#2619D1,#E0B81F,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+043,2,49,Aconite Violet,Corinthian Pink,,,#AB69B5,#F8C1C9,,,#9C52F2,#FFA6D9,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+044,2,49,Olympic Blue,Light Porcelain Green,,,#6484C5,#1E8E89,,,#4F8FE6,#23C17C,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+045,2,50,Seashell Pink,Lemon Yellow,,,#FEDFCF,#FFEA2A,,,#FFCFC4,#F2FF26,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+046,2,50,Orange,Black,,,#FF6B1B,#1E1D21,,,#FF5200,#000000,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+047,2,51,Grayish Lavender (variant b),Etruscan Red,,,#CBB6C2,#C74A38,,,#BFABCC,#C9303E,,,left/right,verified-visual,variant picked by swatch color: Grayish Lavender (variant b); back-index (OCR) confirms 2/2
+048,2,51,Rosolane Purple,Helvetia Blue,,,#AC2960,#1B4F9E,,,#B219AB,#0057BA,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+049,2,52,Pale King's Blue,Blue,,,#C7E8F0,#1C66CE,,,#ABF5ED,#0D75FF,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+050,2,52,Dusky Madder Violet,Ivory Buff,,,#3E1938,#F4DBB1,,,#2D0060,#EBD999,,,left/right,verified-visual,one label hard to OCR; resolved from swatch color + back index and checked by eye on the page image; back-index (OCR) confirms 2/2
+051,2,53,Blue,Carmine Red,,,#1C66CE,#99202B,,,#0D75FF,#A10B2B,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+052,2,53,Black,Sulphur Yellow,,,#1E1D21,#FEF2D2,,,#000000,#F5F5B8,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+053,2,54,Yellow Orange,Dusky Madder Violet,,,#FF9B17,#3E1938,,,#FF8C00,#2D0060,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+054,2,54,Benzol Green,Light Glaucous Blue,,,#028884,#C4DAE5,,,#00D973,#A6E6DB,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+055,2,55,Old Rose,White,,,#CD6979,#FDFDFD,,,#D94D99,#FFFFFF,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+056,2,55,Grayish Lavender (variant b),Violet,,,#CBB6C2,#4A2B7B,,,#BFABCC,#2619D1,,,left/right,verified-visual,variant picked by swatch color: Grayish Lavender (variant b); back-index (OCR) confirms 2/2
+057,2,56,Taupe Brown,Slate Color,,,#70394B,#3C393B,,,#6B2E63,#1B3644,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+058,2,56,Sea Green,Hay's Russet,,,#24AD94,#792B25,,,#33FF7D,#681916,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+059,2,57,Citrine,Eosine Pink,,,#A98D11,#E6748C,,,#98A100,#FF5EC4,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+060,2,57,Dark Tyrian Blue,Pale Lemon Yellow,,,#2C2C47,#FFF2BF,,,#0D2B52,#FFF59E,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+061,2,58,Cotinga Purple,Light Green Yellow,,,#491A36,#D9D12F,,,#340059,#BDF226,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+062,2,58,Black,Yellow,,,#1E1D21,#FFEB01,,,#000000,#FFFF00,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+063,2,59,Vistoris Lake,Cerulian Blue,,,#713F45,#1C93B2,,,#5C2C45,#29BDAD,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+064,2,59,Aconite Violet,Dark Soft Violet,,,#AB69B5,#6651A0,,,#9C52F2,#4D52DE,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+065,2,60,Sulphine Yellow,Calamine Blue,,,#CC9D0A,#86D6DE,,,#BAA600,#80FFCC,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+066,2,60,Olive Green,Olive Ocher,,,#656329,#E8B321,,,#58771E,#D1BD19,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+067,2,61,Dark Tyrian Blue,Olympic Blue,,,#2C2C47,#6484C5,,,#0D2B52,#4F8FE6,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+068,2,61,Yellow,Light Brown Drab,,,#FFEB01,#B9949A,,,#FFFF00,#B08699,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+069,2,62,Black,Warm Gray,,,#1E1D21,#B9B2A6,,,#000000,#9CB29E,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+070,2,62,Lincoln Green,Raw Sienna,,,#46492A,#C86B1D,,,#405416,#B85E00,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+071,2,63,Ochraceous Salmon,Pompeian Red,,,#EDAE77,#A81928,,,#D99E73,#A90636,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+072,2,63,Pale King's Blue,Sulphur Yellow,,,#C7E8F0,#FEF2D2,,,#ABF5ED,#F5F5B8,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+073,2,64,Rainette Green,Pale Raw Umber,,,#848A55,#714328,,,#6A9346,#5E4017,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+074,2,64,Green Blue,Turquoise Green,,,#319199,#CAE7D8,,,#2DBC94,#B5FFC2,,,left/right,verified-visual,back-index (OCR) confirms 1/2
+075,2,65,Pale King's Blue,Violet Blue,,,#C7E8F0,#3E3660,,,#ABF5ED,#202D85,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+076,2,65,Pale Lemon Yellow,Warm Gray,,,#FFF2BF,#B9B2A6,,,#FFF59E,#9CB29E,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+077,2,66,Eugenia Red (variant b),Vandar Poel's Blue,,,#DE5556,#1A3F6D,,,#E62E73,#003E83,,,left/right,verified-visual,variant picked by swatch color: Eugenia Red (variant b); back-index (OCR) confirms 2/2
+078,2,66,Venice Green,Pinkish Cinnamon,,,#65CBCA,#FBBF8A,,,#6BFFB2,#F2AD78,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+079,2,67,Green Blue,Madder Brown,,,#319199,#722519,,,#2DBC94,#651300,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+080,2,67,Sulphur Yellow,Light Mauve,,,#FEF2D2,#A36FB9,,,#F5F5B8,#9161F2,,,left/right,verified-visual,back-index (OCR) confirms 1/2
+081,2,68,Golden Yellow,Warm Gray,,,#FFA83F,#B9B2A6,,,#FA9442,#9CB29E,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+082,2,68,Hay's Russet,Dusky Madder Violet,,,#792B25,#3E1938,,,#681916,#2D0060,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+083,2,69,Violet Blue,Olive Buff,,,#3E3660,#D2CEA0,,,#202D85,#BCD382,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+084,2,69,Seashell Pink,Deep Slate Green,,,#FEDFCF,#2E3131,,,#FFCFC4,#0F261F,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+085,2,70,Antwarp Blue,Vinaceous Tawny,,,#0C6B9F,#D35219,,,#008AA1,#C74300,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+086,2,70,Raw Sienna,Sea Green,,,#C86B1D,#24AD94,,,#B85E00,#33FF7D,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+087,2,71,Citron Yellow,Corinthian Pink,,,#BFB317,#F8C1C9,,,#A6D40D,#FFA6D9,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+088,2,71,Blue,Seashell Pink,,,#1C66CE,#FEDFCF,,,#0D75FF,#FFCFC4,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+089,2,72,Yellow Orange,Violet Blue,,,#FF9B17,#3E3660,,,#FF8C00,#202D85,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+090,2,72,Aconite Violet,Eosine Pink,,,#AB69B5,#E6748C,,,#9C52F2,#FF5EC4,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+091,2,73,Vistoris Lake,Orange Rufous,,,#713F45,#CD5B19,,,#5C2C45,#C05200,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+092,2,73,Coral Red,Benzol Green,,,#F28778,#028884,,,#FF7399,#00D973,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+093,2,74,Light Glaucous Blue,Citrine,,,#C4DAE5,#A98D11,,,#A6E6DB,#98A100,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+094,2,74,Dusky Green,Ivory Buff,,,#08403B,#F4DBB1,,,#00592E,#EBD999,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+095,2,75,Hay's Russet,Dull Violet Black,,,#792B25,#261B39,,,#681916,#000D4F,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+096,2,75,Olive,Yellow Ocher,,,#847816,#F4B527,,,#718600,#E0B81F,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+097,2,76,Corinthian Pink,Etruscan Red,,,#F8C1C9,#C74A38,,,#FFA6D9,#C9303E,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+098,2,76,Madder Brown,Violet Blue,,,#722519,#3E3660,,,#651300,#202D85,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+099,2,77,Pale Lemon Yellow,Cerulian Blue,,,#FFF2BF,#1C93B2,,,#FFF59E,#29BDAD,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+100,2,77,Buffy Citrine,Dull Blue Violet,,,#9E852F,#886AAA,,,#888D2A,#6E66D4,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+101,2,78,Deep Lyons Blue,Cameo Pink,,,#1C2E82,#E4BDC7,,,#0024CC,#E6ADCF,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+102,2,78,Ivory Buff,Orange Rufous,,,#F4DBB1,#CD5B19,,,#EBD999,#C05200,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+103,2,79,Dusky Madder Violet,Cinnamon Rufous,,,#3E1938,#C66837,,,#2D0060,#C2612C,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+104,2,79,Sulphur Yellow,Carmine Red,,,#FEF2D2,#99202B,,,#F5F5B8,#A10B2B,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+105,2,80,Cameo Pink,Chromium Green,,,#E4BDC7,#819061,,,#E6ADCF,#66AB56,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+106,2,80,Dull Violet Black,Antwarp Blue,,,#261B39,#0C6B9F,,,#000D4F,#008AA1,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+107,2,81,Light Grayish Olive,Apricot Yellow,,,#878159,#FFDA03,,,#76844E,#FFE600,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+108,2,81,Eosine Pink,Brick Red,,,#E6748C,#A6331F,,,#FF5EC4,#A32100,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+109,2,82,Pale Lemon Yellow,Blackish Olive,,,#FFF2BF,#35463D,,,#FFF59E,#324E2A,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+110,2,82,Brown,Vandyke Brown,,,#7E3723,#4B3222,,,#6C2B11,#362304,,,left/right,verified-visual,back-index (OCR) confirms 1/2
+111,2,83,Pale Lemon Yellow,Yellow Green,,,#FFF2BF,#C7CF5A,,,#FFF59E,#A6FF47,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+112,2,83,Black,Grenadine Pink,,,#1E1D21,#FA784A,,,#000000,#FF616B,,,left/right,verified-visual,one label hard to OCR; resolved from swatch color + back index and checked by eye on the page image; back-index (OCR) confirms 1/2
+113,2,84,Seashell Pink,Vandyke Brown,,,#FEDFCF,#4B3222,,,#FFCFC4,#362304,,,left/right,verified-visual,back-index (OCR) confirms 1/2
+114,2,84,Antwarp Blue,Orange Yellow,,,#0C6B9F,#FFB60B,,,#008AA1,#FFAB00,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+115,2,85,Naples Yellow,Peach Red,,,#FFECAC,#F9501F,,,#FAED8F,#FF3319,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+116,2,85,Blue Violet,Cameo Pink,,,#5B319E,#E4BDC7,,,#4733FF,#E6ADCF,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+117,2,86,Carmine,Black,,,#CA1A2A,#1E1D21,,,#D60036,#000000,,,left/right,verified-visual,back-index (OCR) confirms 1/2
+118,2,86,Vandyke Brown,Yellow Ocher,,,#4B3222,#F4B527,,,#362304,#E0B81F,,,left/right,verified-visual,back-index (OCR) confirms 1/2
+119,2,87,Dark Tyrian Blue,Light Glaucous Blue,,,#2C2C47,#C4DAE5,,,#0D2B52,#A6E6DB,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+120,2,87,Cameo Pink,Pompeian Red,,,#E4BDC7,#A81928,,,#E6ADCF,#A90636,,,left/right,verified-visual,back-index (OCR) confirms 2/2
+121,3,90,Lincoln Green,Ochraceous Salmon,Brown,,#46492A,#EDAE77,#7E3723,,#405416,#D99E73,#6C2B11,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+122,3,90,Benzol Green,Cream Yellow,Carmine,,#028884,#FFC86A,#CA1A2A,,#00D973,#FFB852,#D60036,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+123,3,91,Coral Red,Taupe Brown,Lemon Yellow,,#F28778,#70394B,#FFEA2A,,#FF7399,#6B2E63,#F2FF26,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+124,3,91,Olive Yellow,Yellow Ocher,Pale Burnt Lake,,#B4A039,#F4B527,#832525,,#99B233,#E0B81F,#730F1F,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+125,3,92,Cerulian Blue,Fawn,Violet Blue,,#1C93B2,#CEB3AD,#3E3660,,#29BDAD,#D1B0B2,#202D85,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+126,3,92,Yellow Ocher,Deep Lyons Blue,Ivory Buff,,#F4B527,#1C2E82,#F4DBB1,,#E0B81F,#0024CC,#EBD999,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+127,3,93,Cinnamon Buff,Pistachio Green,Dark Soft Violet,,#FFD282,#62886B,#6651A0,,#FFBF6E,#56AA69,#4D52DE,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+128,3,93,Venice Green,Light Mauve,Corinthian Pink,,#65CBCA,#A36FB9,#F8C1C9,,#6BFFB2,#9161F2,#FFA6D9,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+129,3,94,Khaki,Salvia Blue,Apricot Yellow,,#C78311,#B2BCDC,#FFDA03,,#B68400,#96BFE6,#FFE600,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+130,3,94,Carmine Red,Violet,Raw Sienna,,#99202B,#4A2B7B,#C86B1D,,#A10B2B,#2619D1,#B85E00,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+131,3,95,English Red,Peacock Blue,Raw Sienna,,#E45B1E,#048AA1,#C86B1D,,#DE4500,#00CF91,#B85E00,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+132,3,95,Citrine,Golden Yellow,Sulphur Yellow,,#A98D11,#FFA83F,#FEF2D2,,#98A100,#FA9442,#F5F5B8,,left/middle/right,verified-visual,one label hard to OCR; resolved from swatch color + back index and checked by eye on the page image; back-index (OCR) confirms 3/3
+133,3,96,Sea Green,Vandyke Red,Citrine,,#24AD94,#842021,#A98D11,,#33FF7D,#740909,#98A100,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+134,3,96,Eosine Pink,Light Mauve,Red Violet,,#E6748C,#A36FB9,#541D58,,#FF5EC4,#9161F2,#3400A3,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+135,3,97,Salvia Blue,Sulphur Yellow,Cossack Green,,#B2BCDC,#FEF2D2,#2D632F,,#96BFE6,#F5F5B8,#328E13,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+136,3,97,Red Violet,Scarlet,Dull Viridian Green,,#541D58,#C8232A,#13854B,,#3400A3,#D50C42,#19CC33,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+137,3,98,Etruscan Red,Pistachio Green,Cinnamon Buff,,#C74A38,#62886B,#FFD282,,#C9303E,#56AA69,#FFBF6E,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+138,3,98,Golden Yellow,Venice Green,Lemon Yellow,,#FFA83F,#65CBCA,#FFEA2A,,#FA9442,#6BFFB2,#F2FF26,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+139,3,99,Neutral Gray,Deep Indigo,Salvia Blue,,#C1CBD2,#21192D,#B2BCDC,,#B5D1CC,#000831,#96BFE6,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+140,3,99,Golden Yellow,Slate Color,Antwarp Blue,,#FFA83F,#3C393B,#0C6B9F,,#FA9442,#1B3644,#008AA1,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+141,3,100,Orange,Dark Tyrian Blue,Yellow Green,,#FF6B1B,#2C2C47,#C7CF5A,,#FF5200,#0D2B52,#A6FF47,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+142,3,100,Hydrangea Red,Salvia Blue,Sulphine Yellow,,#A02C3B,#B2BCDC,#CC9D0A,,#9E194D,#96BFE6,#BAA600,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+143,3,101,Warm Gray,Blue,Lilac,,#B9B2A6,#1C66CE,#C18BBD,,#9CB29E,#0D75FF,#B875EB,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+144,3,101,Orange,Black,Rosolane Purple,,#FF6B1B,#1E1D21,#AC2960,,#FF5200,#000000,#B219AB,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+145,3,102,Dull Violet Black,Brown,Citron Yellow,,#261B39,#7E3723,#BFB317,,#000D4F,#6C2B11,#A6D40D,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+146,3,102,Khaki,Diamine Green,Deep Grayish Olive,,#C78311,#277629,#5C5030,,#B68400,#1EB800,#505423,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+147,3,103,Turquoise Green,Vandyke Red,Spinel Red,,#CAE7D8,#842021,#E67191,,#B5FFC2,#740909,#FF4DC9,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+148,3,103,Orange Yellow,Cerulian Blue,Olive Ocher,,#FFB60B,#1C93B2,#E8B321,,#FFAB00,#29BDAD,#D1BD19,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+149,3,104,Deep Slate Green,Orange,Olive Ocher,,#2E3131,#FF6B1B,#E8B321,,#0F261F,#FF5200,#D1BD19,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+150,3,104,Seashell Pink,Citron Yellow,Glaucous Green,,#FEDFCF,#BFB317,#C8D9D1,,#FFCFC4,#A6D40D,#B2E8C2,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+151,3,105,Yellow Orange,Vandar Poel's Blue,Sulphur Yellow,,#FF9B17,#1A3F6D,#FEF2D2,,#FF8C00,#003E83,#F5F5B8,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+152,3,105,Etruscan Red,Light Glaucous Blue,Hay's Russet,,#C74A38,#C4DAE5,#792B25,,#C9303E,#A6E6DB,#681916,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+153,3,106,Eosine Pink,Orange Yellow,Citron Yellow,,#E6748C,#FFB60B,#BFB317,,#FF5EC4,#FFAB00,#A6D40D,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+154,3,106,Carmine,Yellow,Blue,,#CA1A2A,#FFEB01,#1C66CE,,#D60036,#FFFF00,#0D75FF,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+155,3,107,Benzol Green,Jasper Red,Deep Indigo,,#028884,#F54B15,#21192D,,#00D973,#FA2B00,#000831,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+156,3,107,Violet,Olive Ocher,Cobalt Green,,#4A2B7B,#E8B321,#9ED3B8,,#2619D1,#D1BD19,#94FF94,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+157,3,108,Pansy Purple,Olive Ocher,Olympic Blue,,#7C132D,#E8B321,#6484C5,,#6F0043,#D1BD19,#4F8FE6,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+158,3,108,Cinnamon Rufous,Night Green,Lemon Yellow,,#C66837,#AAC01A,#FFEA2A,,#C2612C,#7AFF00,#F2FF26,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+159,3,109,Calamine Blue,Khaki,Grayish Lavender (variant a),,#86D6DE,#C78311,#CBBFE7,,#80FFCC,#B68400,#B8B8FF,,left/middle/right,verified-visual,variant picked by swatch color: Grayish Lavender (variant a); back-index (OCR) confirms 3/3
+160,3,109,Dark Medici Blue,Pale Raw Umber,Sulphine Yellow,,#4E6672,#714328,#CC9D0A,,#417777,#5E4017,#BAA600,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+161,3,110,Pinkish Cinnamon,Helvetia Blue,Brown,,#FBBF8A,#1B4F9E,#7E3723,,#F2AD78,#0057BA,#6C2B11,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+162,3,110,Rainette Green,Old Rose,Lilac,,#848A55,#CD6979,#C18BBD,,#6A9346,#D94D99,#B875EB,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+163,3,111,Turquoise Green,Antwarp Blue,Apricot Yellow,,#CAE7D8,#0C6B9F,#FFDA03,,#B5FFC2,#008AA1,#FFE600,,left/middle/right,verified-visual,back-index (OCR) confirms 1/3
+164,3,111,Orange Yellow,Violet,Red Orange,,#FFB60B,#4A2B7B,#E43919,,#FFAB00,#2619D1,#E81900,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+165,3,112,Vistoris Lake,Spinel Red,Cameo Pink,,#713F45,#E67191,#E4BDC7,,#5C2C45,#FF4DC9,#E6ADCF,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+166,3,112,Grenadine Pink,Naples Yellow,Deep Slate Green,,#FA784A,#FFECAC,#2E3131,,#FF616B,#FAED8F,#0F261F,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+167,3,113,Pale King's Blue,Ecru,Vandar Poel's Blue,,#C7E8F0,#D1BBA1,#1A3F6D,,#ABF5ED,#C0B490,#003E83,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+168,3,113,Vandar Poel's Blue,Lemon Yellow,Vernonia Purple,,#1A3F6D,#FFEA2A,#7E374B,,#003E83,#F2FF26,#7E3075,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+169,3,114,Corinthian Pink,Warm Gray,Pale Lemon Yellow,,#F8C1C9,#B9B2A6,#FFF2BF,,#FFA6D9,#9CB29E,#FFF59E,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+170,3,114,Rosolane Purple,Orange Yellow,Red Violet,,#AC2960,#FFB60B,#541D58,,#B219AB,#FFAB00,#3400A3,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+171,3,115,Yellow Orange,Glaucous Green,Pale Burnt Lake,,#FF9B17,#C8D9D1,#832525,,#FF8C00,#B2E8C2,#730F1F,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+172,3,115,Antwarp Blue,Red Violet,Cinnamon Rufous,,#0C6B9F,#541D58,#C66837,,#008AA1,#3400A3,#C2612C,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+173,3,116,Lemon Yellow,Madder Brown,Turquoise Green,,#FFEA2A,#722519,#CAE7D8,,#F2FF26,#651300,#B5FFC2,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+174,3,116,Taupe Brown,Grayish Lavender (variant b),Corinthian Pink,,#70394B,#CBB6C2,#F8C1C9,,#6B2E63,#BFABCC,#FFA6D9,,left/middle/right,verified-visual,variant picked by swatch color: Grayish Lavender (variant b); back-index (OCR) confirms 3/3
+175,3,117,Olive Buff,Pinkish Cinnamon,Blue Violet,,#D2CEA0,#FBBF8A,#5B319E,,#BCD382,#F2AD78,#4733FF,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+176,3,117,Calamine Blue,Hermosa Pink,Seashell Pink,,#86D6DE,#FACDDE,#FEDFCF,,#80FFCC,#FFB2F0,#FFCFC4,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+177,3,118,Buffy Citrine,Pale Burnt Lake,Grayish Lavender (variant a),,#9E852F,#832525,#CBBFE7,,#888D2A,#730F1F,#B8B8FF,,left/middle/right,verified-visual,variant picked by swatch color: Grayish Lavender (variant a); back-index (OCR) confirms 3/3
+178,3,118,Light Glaucous Blue,Ivory Buff,Green Blue,,#C4DAE5,#F4DBB1,#319199,,#A6E6DB,#EBD999,#2DBC94,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+179,3,119,Red Orange,Deep Lyons Blue,Golden Yellow,,#E43919,#1C2E82,#FFA83F,,#E81900,#0024CC,#FA9442,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+180,3,119,Light Mauve,Neutral Gray,Cinnamon Buff,,#A36FB9,#C1CBD2,#FFD282,,#9161F2,#B5D1CC,#FFBF6E,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+181,3,120,Cotinga Purple,Violet,Carmine Red,,#491A36,#4A2B7B,#99202B,,#340059,#2619D1,#A10B2B,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+182,3,120,Vandyke Brown,Raw Sienna,Deep Indigo,,#4B3222,#C86B1D,#21192D,,#362304,#B85E00,#000831,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+183,3,121,Vernonia Purple,Red Violet,Deep Violet/Plumbeous,,#7E374B,#541D58,#656170,,#7E3075,#3400A3,#5C7287,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+184,3,121,Light Grayish Olive,Ivory Buff,Spinel Red,,#878159,#F4DBB1,#E67191,,#76844E,#EBD999,#FF4DC9,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+185,3,122,Pale Lemon Yellow,Light Brown Drab,Etruscan Red,,#FFF2BF,#B9949A,#C74A38,,#FFF59E,#B08699,#C9303E,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+186,3,122,Hay's Russet,Blue,Ochraceous Salmon,,#792B25,#1C66CE,#EDAE77,,#681916,#0D75FF,#D99E73,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+187,3,123,Grayish Lavender (variant b),Helvetia Blue,Aconite Violet,,#CBB6C2,#1B4F9E,#AB69B5,,#BFABCC,#0057BA,#9C52F2,,left/middle/right,verified-visual,variant picked by swatch color: Grayish Lavender (variant b); back-index (OCR) confirms 2/3
+188,3,123,Cobalt Green,Rainette Green,Salvia Blue,,#9ED3B8,#848A55,#B2BCDC,,#94FF94,#6A9346,#96BFE6,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+189,3,124,Venice Green,Lemon Yellow,Deep Slate Olive,,#65CBCA,#FFEA2A,#272D29,,#6BFFB2,#F2FF26,#172713,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+190,3,124,Black,English Red,Ivory Buff,,#1E1D21,#E45B1E,#F4DBB1,,#000000,#DE4500,#EBD999,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+191,3,125,Blue,Light Brown Drab,Yellow Ocher,,#1C66CE,#B9949A,#F4B527,,#0D75FF,#B08699,#E0B81F,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+192,3,125,Cream Yellow,Deep Violet/Plumbeous,Vandyke Brown,,#FFC86A,#656170,#4B3222,,#FFB852,#5C7287,#362304,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+193,3,126,Light Porcelain Green,Naples Yellow,Grenadine Pink,,#1E8E89,#FFECAC,#FA784A,,#23C17C,#FAED8F,#FF616B,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+194,3,126,Jasper Red,Olympic Blue,Seashell Pink,,#F54B15,#6484C5,#FEDFCF,,#FA2B00,#4F8FE6,#FFCFC4,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+195,3,127,Spinel Red,Pale Lemon Yellow,Neutral Gray,,#E67191,#FFF2BF,#C1CBD2,,#FF4DC9,#FFF59E,#B5D1CC,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+196,3,127,Citron Yellow,Blue Violet,Pale King's Blue,,#BFB317,#5B319E,#C7E8F0,,#A6D40D,#4733FF,#ABF5ED,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+197,3,128,Dark Soft Violet,Eosine Pink,Neutral Gray,,#6651A0,#E6748C,#C1CBD2,,#4D52DE,#FF5EC4,#B5D1CC,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+198,3,128,Green,Apricot Yellow,Burnt Sienna,,#4E915D,#FFDA03,#B74219,,#40C945,#FFE600,#A93400,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+199,3,129,Deep Lyons Blue,Ocher Red,Light Brownish Olive,,#1C2E82,#AC4641,#83653D,,#0024CC,#A7374B,#706934,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+200,3,129,Olive Buff,Carmine Red,Chromium Green,,#D2CEA0,#99202B,#819061,,#BCD382,#A10B2B,#66AB56,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+201,3,130,Olive,Grenadine Pink,Cobalt Green,,#847816,#FA784A,#9ED3B8,,#718600,#FF616B,#94FF94,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+202,3,130,Cobalt Green,Slate Color,Turquoise Green,,#9ED3B8,#3C393B,#CAE7D8,,#94FF94,#1B3644,#B5FFC2,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+203,3,131,Vinaceous Cinnamon,Lincoln Green,Pale Lemon Yellow,,#F5B292,#46492A,#FFF2BF,,#F59994,#405416,#FFF59E,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+204,3,131,Rosolane Purple,Light Glaucous Blue,Cinnamon Rufous,,#AC2960,#C4DAE5,#C66837,,#B219AB,#A6E6DB,#C2612C,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+205,3,132,Vinaceous Cinnamon,Pale Burnt Lake,Violet,,#F5B292,#832525,#4A2B7B,,#F59994,#730F1F,#2619D1,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+206,3,132,Corinthian Pink,Cinnamon Rufous,Golden Yellow,,#F8C1C9,#C66837,#FFA83F,,#FFA6D9,#C2612C,#FA9442,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+207,3,133,Black,Glaucous Green,Sudan Brown,,#1E1D21,#C8D9D1,#A55B45,,#000000,#B2E8C2,#9B5348,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+208,3,133,Green Blue,Sulphur Yellow,Antwarp Blue,,#319199,#FEF2D2,#0C6B9F,,#2DBC94,#F5F5B8,#008AA1,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+209,3,134,Yellow Orange,Salvia Blue,Ivory Buff,,#FF9B17,#B2BCDC,#F4DBB1,,#FF8C00,#96BFE6,#EBD999,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+210,3,134,Lemon Yellow,Lincoln Green,Cinnamon Buff,,#FFEA2A,#46492A,#FFD282,,#F2FF26,#405416,#FFBF6E,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+211,3,135,Deep Indigo,Apricot Orange,Olive Yellow,,#21192D,#FF8742,#B4A039,,#000831,#FF7340,#99B233,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+212,3,135,Orange Citrine,Salvia Blue,Pompeian Red,,#A26620,#B2BCDC,#A81928,,#8C6510,#96BFE6,#A90636,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+213,3,136,Apricot Yellow,Pale King's Blue,Vinaceous Cinnamon,,#FFDA03,#C7E8F0,#F5B292,,#FFE600,#ABF5ED,#F59994,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+214,3,136,Sudan Brown,Ivory Buff,Violet,,#A55B45,#F4DBB1,#4A2B7B,,#9B5348,#EBD999,#2619D1,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+215,3,137,Eupatorium Purple,Cream Yellow,Blue,,#BC4F94,#FFC86A,#1C66CE,,#BF36E0,#FFB852,#0D75FF,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+216,3,137,Jasper Red,Black,Green,,#F54B15,#1E1D21,#4E915D,,#FA2B00,#000000,#40C945,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+217,3,138,Pale Burnt Lake,Ochraceous Salmon,Diamine Green,,#832525,#EDAE77,#277629,,#730F1F,#D99E73,#1EB800,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+218,3,138,Deep Violet/Plumbeous,Grayish Lavender (variant a),Helvetia Blue,,#656170,#CBBFE7,#1B4F9E,,#5C7287,#B8B8FF,#0057BA,,left/middle/right,verified-visual,variant picked by swatch color: Grayish Lavender (variant a); back-index (OCR) confirms 2/3
+219,3,139,Jasper Red,Dusky Green,Chromium Green,,#F54B15,#08403B,#819061,,#FA2B00,#00592E,#66AB56,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+220,3,139,Aconite Violet,Pomegranate Purple,Ochraceous Salmon,,#AB69B5,#A91139,#EDAE77,,#9C52F2,#B90078,#D99E73,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+221,3,140,Black,Carmine Red,Neutral Gray,,#1E1D21,#99202B,#C1CBD2,,#000000,#A10B2B,#B5D1CC,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+222,3,140,Yellow Orange,Yellow Ocher,Orange Rufous,,#FF9B17,#F4B527,#CD5B19,,#FF8C00,#E0B81F,#C05200,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+223,3,141,Light Brown Drab,Ochraceous Salmon,Turquoise Green,,#B9949A,#EDAE77,#CAE7D8,,#B08699,#D99E73,#B5FFC2,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+224,3,141,Dark Medici Blue,Spinel Red,Taupe Brown,,#4E6672,#E67191,#70394B,,#417777,#FF4DC9,#6B2E63,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+225,3,142,Dark Slate Purple,Dusky Green,Carmine,,#5C2E3F,#08403B,#CA1A2A,,#53225C,#00592E,#D60036,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+226,3,142,Violet,Cream Yellow,Vistoris Lake,,#4A2B7B,#FFC86A,#713F45,,#2619D1,#FFB852,#5C2C45,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+227,3,143,Cerulian Blue,Light Glaucous Blue,Hermosa Pink,,#1C93B2,#C4DAE5,#FACDDE,,#29BDAD,#A6E6DB,#FFB2F0,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+228,3,143,Carmine Red,Neutral Gray,Pale Lemon Yellow,,#99202B,#C1CBD2,#FFF2BF,,#A10B2B,#B5D1CC,#FFF59E,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+229,3,144,Neutral Gray,Deep Slate Olive,Golden Yellow,,#C1CBD2,#272D29,#FFA83F,,#B5D1CC,#172713,#FA9442,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+230,3,144,Grenadine Pink,Turquoise Green,Cobalt Green,,#FA784A,#CAE7D8,#9ED3B8,,#FF616B,#B5FFC2,#94FF94,,left/middle/right,verified-visual,back-index (OCR) confirms 2/3
+231,3,145,Hay's Russet,Cameo Pink,Olympic Blue,,#792B25,#E4BDC7,#6484C5,,#681916,#E6ADCF,#4F8FE6,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+232,3,145,Deep Indigo,Carmine,Pinkish Cinnamon,,#21192D,#CA1A2A,#FBBF8A,,#000831,#D60036,#F2AD78,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+233,3,146,Violet Blue,Carmine Red,Buffy Citrine,,#3E3660,#99202B,#9E852F,,#202D85,#A10B2B,#888D2A,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+234,3,146,Pale King's Blue,Pale Raw Umber,Cinnamon Buff,,#C7E8F0,#714328,#FFD282,,#ABF5ED,#5E4017,#FFBF6E,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+235,3,147,Yellow Orange,Ivory Buff,Grayish Lavender (variant b),,#FF9B17,#F4DBB1,#CBB6C2,,#FF8C00,#EBD999,#BFABCC,,left/middle/right,verified-visual,variant picked by swatch color: Grayish Lavender (variant b); back-index (OCR) confirms 3/3
+236,3,147,Purple Drab,Deep Lyons Blue,Khaki,,#73404B,#1C2E82,#C78311,,#754260,#0024CC,#B68400,,left/middle/right,verified-visual,back-index (OCR) confirms 1/3
+237,3,148,Carmine Red,Salvia Blue,Madder Brown,,#99202B,#B2BCDC,#722519,,#A10B2B,#96BFE6,#651300,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+238,3,148,Warm Gray,Cotinga Purple,Ochraceous Salmon,,#B9B2A6,#491A36,#EDAE77,,#9CB29E,#340059,#D99E73,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+239,3,149,Light Brown Drab,Glaucous Green,Pyrite Yellow,,#B9949A,#C8D9D1,#D8B039,,#B08699,#B2E8C2,#C4BF33,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+240,3,149,Fresh Color,Cerulian Blue,Yellow,,#F88E71,#1C93B2,#FFEB01,,#FF788C,#29BDAD,#FFFF00,,left/middle/right,verified-visual,back-index (OCR) confirms 3/3
+241,4,152,Red Orange,Dark Medici Blue,Pale Lemon Yellow,Isabella Color,#E43919,#4E6672,#FFF2BF,#D9B06A,#E81900,#417777,#FFF59E,#C3A55C,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+242,4,153,Eosine Pink,Diamine Green,Burnt Sienna,Black,#E6748C,#277629,#B74219,#1E1D21,#FF5EC4,#1EB800,#A93400,#000000,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+243,4,154,Raw Sienna,Olive Green,Ivory Buff,Slate Color,#C86B1D,#656329,#F4DBB1,#3C393B,#B85E00,#58771E,#EBD999,#1B3644,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+244,4,155,Light Brown Drab,Antwarp Blue,Vinaceous Tawny,Andover Green,#B9949A,#0C6B9F,#D35219,#82877F,#B08699,#008AA1,#C74300,#5C8A73,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+245,4,156,Oil Green,Slate Color,Dark Tyrian Blue,Carmine Red,#8C8B18,#3C393B,#2C2C47,#99202B,#6EA900,#1B3644,#0D2B52,#A10B2B,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+246,4,157,Brick Red,Corinthian Pink,Sulphur Yellow,Cinnamon Buff,#A6331F,#F8C1C9,#FEF2D2,#FFD282,#A32100,#FFA6D9,#F5F5B8,#FFBF6E,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+247,4,158,Raw Sienna,Benzol Green,Deep Lyons Blue,Apricot Yellow,#C86B1D,#028884,#1C2E82,#FFDA03,#B85E00,#00D973,#0024CC,#FFE600,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+248,4,159,Grayish Lavender (variant a),Khaki,Eosine Pink,Dark Slate Purple,#CBBFE7,#C78311,#E6748C,#5C2E3F,#B8B8FF,#B68400,#FF5EC4,#53225C,top/left/right/bottom,verified-visual,variant picked by swatch color: Grayish Lavender (variant a); back-index (OCR) confirms 4/4
+249,4,160,Olive Ocher,Dark Medici Blue,Hay's Russet,Ecru,#E8B321,#4E6672,#792B25,#D1BBA1,#D1BD19,#417777,#681916,#C0B490,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+250,4,161,Pyrite Yellow,Peach Red,Sea Green,Nile Blue,#D8B039,#F9501F,#24AD94,#D7F0F0,#C4BF33,#FF3319,#33FF7D,#BFFFE6,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+251,4,162,Red,Diamine Green,Slate Color,Yellow,#9E132B,#277629,#3C393B,#FFEB01,#A10045,#1EB800,#1B3644,#FFFF00,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+252,4,163,Eugenia Red (variant b),Sulphine Yellow,Green Blue,Raw Sienna,#DE5556,#CC9D0A,#319199,#C86B1D,#E62E73,#BAA600,#2DBC94,#B85E00,top/left/right/bottom,verified-visual,variant picked by swatch color: Eugenia Red (variant b); back-index (OCR) confirms 4/4
+253,4,164,Apricot Orange,Lemon Yellow,Cotinga Purple,Slate Color,#FF8742,#FFEA2A,#491A36,#3C393B,#FF7340,#F2FF26,#340059,#1B3644,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+254,4,165,Laelia Pink,Olive,Sulphur Yellow,Corinthian Pink,#D19CB6,#847816,#FEF2D2,#F8C1C9,#CC85D1,#718600,#F5F5B8,#FFA6D9,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+255,4,166,Calamine Blue,Black,Pyrite Yellow,Raw Sienna,#86D6DE,#1E1D21,#D8B039,#C86B1D,#80FFCC,#000000,#C4BF33,#B85E00,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+256,4,167,Black,Orange,Vinaceous Cinnamon,Dull Viridian Green,#1E1D21,#FF6B1B,#F5B292,#13854B,#000000,#FF5200,#F59994,#19CC33,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+257,4,168,Blue,Spectrum Red,Aconite Violet,Orange Yellow,#1C66CE,#E21D15,#AB69B5,#FFB60B,#0D75FF,#F20000,#9C52F2,#FFAB00,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+258,4,169,Pinkish Cinnamon,Olive,Pale Burnt Lake,Antwarp Blue,#FBBF8A,#847816,#832525,#0C6B9F,#F2AD78,#718600,#730F1F,#008AA1,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+259,4,170,Green Blue,Warm Gray,Lemon Yellow,Helvetia Blue,#319199,#B9B2A6,#FFEA2A,#1B4F9E,#2DBC94,#9CB29E,#F2FF26,#0057BA,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+260,4,171,Old Rose,Sea Green,Glaucous Green,Vinaceous Cinnamon,#CD6979,#24AD94,#C8D9D1,#F5B292,#D94D99,#33FF7D,#B2E8C2,#F59994,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+261,4,172,Warm Gray,Red,Pale Lemon Yellow,Calamine Blue,#B9B2A6,#9E132B,#FFF2BF,#86D6DE,#9CB29E,#A10045,#FFF59E,#80FFCC,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+262,4,173,Ivory Buff,Eugenia Red (variant b),Cossack Green,Citrine,#F4DBB1,#DE5556,#2D632F,#A98D11,#EBD999,#E62E73,#328E13,#98A100,top/left/right/bottom,verified-visual,variant picked by swatch color: Eugenia Red (variant b); back-index (OCR) confirms 4/4
+263,4,174,Pinkish Cinnamon,Slate Color,Burnt Sienna,Turquoise Green,#FBBF8A,#3C393B,#B74219,#CAE7D8,#F2AD78,#1B3644,#A93400,#B5FFC2,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+264,4,175,Corinthian Pink,Cerulian Blue,Red Orange,Dark Greenish Glaucous,#F8C1C9,#1C93B2,#E43919,#CACCB6,#FFA6D9,#29BDAD,#E81900,#B2D9A3,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+265,4,176,Olive Yellow,Old Rose,Dull Violet Black,Apricot Yellow,#B4A039,#CD6979,#261B39,#FFDA03,#99B233,#D94D99,#000D4F,#FFE600,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+266,4,177,Spectrum Red,Ivory Buff,Rainette Green,Benzol Green,#E21D15,#F4DBB1,#848A55,#028884,#F20000,#EBD999,#6A9346,#00D973,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+267,4,178,Blue,Yellow Orange,Benzol Green,Cream Yellow,#1C66CE,#FF9B17,#028884,#FFC86A,#0D75FF,#FF8C00,#00D973,#FFB852,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+268,4,179,Deep Slate Olive,Light Brown Drab,Nile Blue,Raw Sienna,#272D29,#B9949A,#D7F0F0,#C86B1D,#172713,#B08699,#BFFFE6,#B85E00,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+269,4,180,Aconite Violet,Pale Burnt Lake,Raw Sienna,Black,#AB69B5,#832525,#C86B1D,#1E1D21,#9C52F2,#730F1F,#B85E00,#000000,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+270,4,181,Sulphur Yellow,Eugenia Red (variant b),Olive Green,Cossack Green,#FEF2D2,#DE5556,#656329,#2D632F,#F5F5B8,#E62E73,#58771E,#328E13,top/left/right/bottom,verified-visual,variant picked by swatch color: Eugenia Red (variant b); back-index (OCR) confirms 4/4
+271,4,182,Cobalt Green,Deep Slate Green,Pomegranate Purple,Green Blue,#9ED3B8,#2E3131,#A91139,#319199,#94FF94,#0F261F,#B90078,#2DBC94,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+272,4,183,Salvia Blue,Turquoise Green,Orange,Pale Lemon Yellow,#B2BCDC,#CAE7D8,#FF6B1B,#FFF2BF,#96BFE6,#B5FFC2,#FF5200,#FFF59E,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+273,4,184,Pansy Purple,Neutral Gray,Hermosa Pink,Sudan Brown,#7C132D,#C1CBD2,#FACDDE,#A55B45,#6F0043,#B5D1CC,#FFB2F0,#9B5348,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+274,4,185,Dark Citrine,Light Mauve,Peach Red,Olympic Blue,#93854B,#A36FB9,#F9501F,#6484C5,#7E8743,#9161F2,#FF3319,#4F8FE6,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+275,4,186,Etruscan Red,Ecru,Madder Brown,Taupe Brown,#C74A38,#D1BBA1,#722519,#70394B,#C9303E,#C0B490,#651300,#6B2E63,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+276,4,187,Seashell Pink,Black,Eosine Pink,Yellow Green,#FEDFCF,#1E1D21,#E6748C,#C7CF5A,#FFCFC4,#000000,#FF5EC4,#A6FF47,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+277,4,188,Spinel Red,Dull Violet Black,Olive,Rosolane Purple,#E67191,#261B39,#847816,#AC2960,#FF4DC9,#000D4F,#718600,#B219AB,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+278,4,189,Olive Ocher,Dusky Green,Cossack Green,Cream Yellow,#E8B321,#08403B,#2D632F,#FFC86A,#D1BD19,#00592E,#328E13,#FFB852,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+279,4,190,Raw Sienna,Dark Tyrian Blue,Vinaceous Cinnamon,Ecru,#C86B1D,#2C2C47,#F5B292,#D1BBA1,#B85E00,#0D2B52,#F59994,#C0B490,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+280,4,191,Lincoln Green,Taupe Brown,Eugenia Red (variant b),Laelia Pink,#46492A,#70394B,#DE5556,#D19CB6,#405416,#6B2E63,#E62E73,#CC85D1,top/left/right/bottom,verified-visual,variant picked by swatch color: Eugenia Red (variant b); back-index (OCR) confirms 4/4
+281,4,192,Antwarp Blue,Benzol Green,Pale Lemon Yellow,Cobalt Green,#0C6B9F,#028884,#FFF2BF,#9ED3B8,#008AA1,#00D973,#FFF59E,#94FF94,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+282,4,193,Lilac,Maple,Cobalt Green,Eugenia Red (variant b),#C18BBD,#DBAD72,#9ED3B8,#DE5556,#B875EB,#C2975A,#94FF94,#E62E73,top/left/right/bottom,verified-visual,variant picked by swatch color: Eugenia Red (variant b); back-index (OCR) confirms 4/4
+283,4,194,Pale Burnt Lake,Chromium Green,Venice Green,Ocher Red,#832525,#819061,#65CBCA,#AC4641,#730F1F,#66AB56,#6BFFB2,#A7374B,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+284,4,195,Eugenia Red (variant a),Sea Green,Apricot Yellow,Dusky Green,#E6634F,#24AD94,#FFDA03,#08403B,#ED3D66,#33FF7D,#FFE600,#00592E,top/left/right/bottom,verified-visual,variant picked by swatch color: Eugenia Red (variant a); back-index (OCR) confirms 4/4
+285,4,196,Light Brown Drab,Peach Red,Burnt Sienna,Turquoise Green,#B9949A,#F9501F,#B74219,#CAE7D8,#B08699,#FF3319,#A93400,#B5FFC2,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+286,4,197,Orange Yellow,Peacock Blue,Burnt Sienna,Violet Blue,#FFB60B,#048AA1,#B74219,#3E3660,#FFAB00,#00CF91,#A93400,#202D85,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+287,4,198,Pale King's Blue,Eosine Pink,Pyrite Yellow,Calamine Blue,#C7E8F0,#E6748C,#D8B039,#86D6DE,#ABF5ED,#FF5EC4,#C4BF33,#80FFCC,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+288,4,199,Yellow Orange,Taupe Brown,Sepia,Black,#FF9B17,#70394B,#613F1B,#1E1D21,#FF8C00,#6B2E63,#503D00,#000000,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+289,4,200,Dull Violet Black,Lemon Yellow,Violet Blue,Light Green Yellow,#261B39,#FFEA2A,#3E3660,#D9D12F,#000D4F,#F2FF26,#202D85,#BDF226,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+290,4,201,Lincoln Green,Vistoris Lake,Pale Lemon Yellow,Cobalt Green,#46492A,#713F45,#FFF2BF,#9ED3B8,#405416,#5C2C45,#FFF59E,#94FF94,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+291,4,202,Calamine Blue,Cobalt Green,Sea Green,Light Green Yellow,#86D6DE,#9ED3B8,#24AD94,#D9D12F,#80FFCC,#94FF94,#33FF7D,#BDF226,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+292,4,203,Pale Lemon Yellow,Ecru,Pinkish Cinnamon,Isabella Color,#FFF2BF,#D1BBA1,#FBBF8A,#D9B06A,#FFF59E,#C0B490,#F2AD78,#C3A55C,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+293,4,204,Raw Sienna,Turquoise Green,Artemisia Green,Green,#C86B1D,#CAE7D8,#899E9C,#4E915D,#B85E00,#B5FFC2,#65A98F,#40C945,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+294,4,205,Cossack Green,Cream Yellow,Salvia Blue,Sulphur Yellow,#2D632F,#FFC86A,#B2BCDC,#FEF2D2,#328E13,#FFB852,#96BFE6,#F5F5B8,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+295,4,206,Cream Yellow,Yellow,Dull Violet Black,Blue,#FFC86A,#FFEB01,#261B39,#1C66CE,#FFB852,#FFFF00,#000D4F,#0D75FF,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+296,4,207,Pale Raw Umber,Ochraceous Salmon,Sulphur Yellow,Slate Color,#714328,#EDAE77,#FEF2D2,#3C393B,#5E4017,#D99E73,#F5F5B8,#1B3644,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+297,4,208,Burnt Sienna,Yellow Orange,Violet Blue,Olive Green,#B74219,#FF9B17,#3E3660,#656329,#A93400,#FF8C00,#202D85,#58771E,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+298,4,209,Lemon Yellow,Peach Red,Raw Sienna,Black,#FFEA2A,#F9501F,#C86B1D,#1E1D21,#F2FF26,#FF3319,#B85E00,#000000,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+299,4,210,Oil Green,Vinaceous Cinnamon,Antwarp Blue,Indian Lake,#8C8B18,#F5B292,#0C6B9F,#BB315D,#6EA900,#F59994,#008AA1,#CC1A97,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+300,4,211,Calamine Blue,Cream Yellow,Grenadine Pink,Turquoise Green,#86D6DE,#FFC86A,#FA784A,#CAE7D8,#80FFCC,#FFB852,#FF616B,#B5FFC2,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+301,4,212,Spectrum Red,Ivory Buff,Aconite Violet,Rainette Green,#E21D15,#F4DBB1,#AB69B5,#848A55,#F20000,#EBD999,#9C52F2,#6A9346,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+302,4,213,Cream Yellow,Ecru,Antwarp Blue,Nile Blue,#FFC86A,#D1BBA1,#0C6B9F,#D7F0F0,#FFB852,#C0B490,#008AA1,#BFFFE6,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+303,4,214,Naples Yellow,Peach Red,Neutral Gray,Deep Slate Olive,#FFECAC,#F9501F,#C1CBD2,#272D29,#FAED8F,#FF3319,#B5D1CC,#172713,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+304,4,215,Benzol Green,Cream Yellow,Dark Citrine,Hay's Russet,#028884,#FFC86A,#93854B,#792B25,#00D973,#FFB852,#7E8743,#681916,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+305,4,216,Pinkish Cinnamon,Apricot Yellow,Turquoise Green,Citron Yellow,#FBBF8A,#FFDA03,#CAE7D8,#BFB317,#F2AD78,#FFE600,#B5FFC2,#A6D40D,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+306,4,217,Dull Viridian Green,Nile Blue,Benzol Green,Lemon Yellow,#13854B,#D7F0F0,#028884,#FFEA2A,#19CC33,#BFFFE6,#00D973,#F2FF26,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+307,4,218,Cotinga Purple,Grayish Lavender (variant a),Carmine,Aconite Violet,#491A36,#CBBFE7,#CA1A2A,#AB69B5,#340059,#B8B8FF,#D60036,#9C52F2,top/left/right/bottom,verified-visual,variant picked by swatch color: Grayish Lavender (variant a); back-index (OCR) confirms 4/4
+308,4,219,English Red,Fawn,Cobalt Green,Scarlet,#E45B1E,#CEB3AD,#9ED3B8,#C8232A,#DE4500,#D1B0B2,#94FF94,#D50C42,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+309,4,220,Golden Yellow,Apricot Orange,Vandar Poel's Blue,Violet Blue,#FFA83F,#FF8742,#1A3F6D,#3E3660,#FA9442,#FF7340,#003E83,#202D85,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+310,4,221,Olive,Pinkish Cinnamon,Deep Slate Olive,Sulphur Yellow,#847816,#FBBF8A,#272D29,#FEF2D2,#718600,#F2AD78,#172713,#F5F5B8,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+311,4,222,Pompeian Red,Dark Greenish Glaucous,Cream Yellow,Light Green Yellow,#A81928,#CACCB6,#FFC86A,#D9D12F,#A90636,#B2D9A3,#FFB852,#BDF226,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+312,4,223,Burnt Sienna,Artemisia Green,Helvetia Blue,Yellow Orange,#B74219,#899E9C,#1B4F9E,#FF9B17,#A93400,#65A98F,#0057BA,#FF8C00,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+313,4,224,Carmine,Black,Diamine Green,Yellow,#CA1A2A,#1E1D21,#277629,#FFEB01,#D60036,#000000,#1EB800,#FFFF00,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+314,4,225,Dusky Madder Violet,Deep Lyons Blue,Eosine Pink,Hay's Russet,#3E1938,#1C2E82,#E6748C,#792B25,#2D0060,#0024CC,#FF5EC4,#681916,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+315,4,226,Golden Yellow,Eupatorium Purple,Sulphur Yellow,Grenadine Pink,#FFA83F,#BC4F94,#FEF2D2,#FA784A,#FA9442,#BF36E0,#F5F5B8,#FF616B,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+316,4,227,Red Violet,Vandyke Red,Dull Viridian Green,Violet,#541D58,#842021,#13854B,#4A2B7B,#3400A3,#740909,#19CC33,#2619D1,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+317,4,228,Turquoise Green,Light Pinkish Cinnamon,Lemon Yellow,Ecru,#CAE7D8,#FFCFA7,#FFEA2A,#D1BBA1,#B5FFC2,#FFBF99,#F2FF26,#C0B490,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+318,4,229,Light Brownish Olive,Deep Slate Green,Dusky Green,Blackish Olive,#83653D,#2E3131,#08403B,#35463D,#706934,#0F261F,#00592E,#324E2A,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+319,4,230,Apricot Yellow,Yellow Orange,Raw Sienna,Cossack Green,#FFDA03,#FF9B17,#C86B1D,#2D632F,#FFE600,#FF8C00,#B85E00,#328E13,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+320,4,231,Oil Green,Coral Red,Light Glaucous Blue,Sulphur Yellow,#8C8B18,#F28778,#C4DAE5,#FEF2D2,#6EA900,#FF7399,#A6E6DB,#F5F5B8,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+321,4,232,Sulphur Yellow,Salvia Blue,Light Brown Drab,Deep Slate Olive,#FEF2D2,#B2BCDC,#B9949A,#272D29,#F5F5B8,#96BFE6,#B08699,#172713,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+322,4,233,Blue Violet,Eupatorium Purple,Brick Red,Spectrum Red,#5B319E,#BC4F94,#A6331F,#E21D15,#4733FF,#BF36E0,#A32100,#F20000,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+323,4,234,Cinnamon Buff,Citron Yellow,Black,Madder Brown,#FFD282,#BFB317,#1E1D21,#722519,#FFBF6E,#A6D40D,#000000,#651300,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+324,4,235,Pompeian Red,Aconite Violet,Olympic Blue,Neutral Gray,#A81928,#AB69B5,#6484C5,#C1CBD2,#A90636,#9C52F2,#4F8FE6,#B5D1CC,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+325,4,236,Deep Slate Green,Naples Yellow,Eugenia Red (variant b),Yellow Ocher,#2E3131,#FFECAC,#DE5556,#F4B527,#0F261F,#FAED8F,#E62E73,#E0B81F,top/left/right/bottom,verified-visual,variant picked by swatch color: Eugenia Red (variant b); back-index (OCR) confirms 4/4
+326,4,237,Night Green,Sulphur Yellow,Peach Red,Yellow Green,#AAC01A,#FEF2D2,#F9501F,#C7CF5A,#7AFF00,#F5F5B8,#FF3319,#A6FF47,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+327,4,238,Ecru,Eosine Pink,Grayish Lavender (variant b),Raw Sienna,#D1BBA1,#E6748C,#CBB6C2,#C86B1D,#C0B490,#FF5EC4,#BFABCC,#B85E00,top/left/right/bottom,verified-visual,variant picked by swatch color: Grayish Lavender (variant b); back-index (OCR) confirms 4/4
+328,4,239,Brick Red,Light Porcelain Green,Apricot Orange,Vandyke Brown,#A6331F,#1E8E89,#FF8742,#4B3222,#A32100,#23C17C,#FF7340,#362304,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+329,4,240,Slate Color,Cream Yellow,Grayish Lavender (variant b),Cotinga Purple,#3C393B,#FFC86A,#CBB6C2,#491A36,#1B3644,#FFB852,#BFABCC,#340059,top/left/right/bottom,verified-visual,variant picked by swatch color: Grayish Lavender (variant b); back-index (OCR) confirms 3/4
+330,4,241,Nile Blue,Salvia Blue,Olive Buff,Green Blue,#D7F0F0,#B2BCDC,#D2CEA0,#319199,#BFFFE6,#96BFE6,#BCD382,#2DBC94,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+331,4,242,Light Mauve,Violet,Indian Lake,Dull Violet Black,#A36FB9,#4A2B7B,#BB315D,#261B39,#9161F2,#2619D1,#CC1A97,#000D4F,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+332,4,243,Deep Slate Olive,Dusky Green,Coral Red,Scarlet,#272D29,#08403B,#F28778,#C8232A,#172713,#00592E,#FF7399,#D50C42,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+333,4,244,Cobalt Green,Lemon Yellow,Burnt Sienna,Blue,#9ED3B8,#FFEA2A,#B74219,#1C66CE,#94FF94,#F2FF26,#A93400,#0D75FF,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+334,4,245,Olive,Antwarp Blue,Yellow Green,Seashell Pink,#847816,#0C6B9F,#C7CF5A,#FEDFCF,#718600,#008AA1,#A6FF47,#FFCFC4,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+335,4,246,Vandyke Red,Slate Color,Yellow Orange,Violet,#842021,#3C393B,#FF9B17,#4A2B7B,#740909,#1B3644,#FF8C00,#2619D1,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+336,4,247,Hay's Russet,Eosine Pink,Pale Lemon Yellow,Blackish Olive,#792B25,#E6748C,#FFF2BF,#35463D,#681916,#FF5EC4,#FFF59E,#324E2A,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+337,4,248,Vistoris Lake,Violet Carmine,Black,Laelia Pink,#713F45,#642730,#1E1D21,#D19CB6,#5C2C45,#531745,#000000,#CC85D1,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+338,4,249,Orange Yellow,Grayish Lavender (variant b),Dusky Green,Carmine Red,#FFB60B,#CBB6C2,#08403B,#99202B,#FFAB00,#BFABCC,#00592E,#A10B2B,top/left/right/bottom,verified-visual,variant picked by swatch color: Grayish Lavender (variant b); back-index (OCR) confirms 4/4
+339,4,250,English Red,Ochraceous Salmon,Violet Blue,Light Glaucous Blue,#E45B1E,#EDAE77,#3E3660,#C4DAE5,#DE4500,#D99E73,#202D85,#A6E6DB,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+340,4,251,Peach Red,Sea Green,Black,Neutral Gray,#F9501F,#24AD94,#1E1D21,#C1CBD2,#FF3319,#33FF7D,#000000,#B5D1CC,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+341,4,252,Cossack Green,Light Glaucous Blue,Deep Slate Olive,Grenadine Pink,#2D632F,#C4DAE5,#272D29,#FA784A,#328E13,#A6E6DB,#172713,#FF616B,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+342,4,253,Deep Slate Olive,Cream Yellow,Corinthian Pink,Orange Citrine,#272D29,#FFC86A,#F8C1C9,#A26620,#172713,#FFB852,#FFA6D9,#8C6510,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+343,4,254,Ivory Buff,Deep Grayish Olive,Vandar Poel's Blue,Burnt Sienna,#F4DBB1,#5C5030,#1A3F6D,#B74219,#EBD999,#505423,#003E83,#A93400,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+344,4,255,Aconite Violet,Cinnamon Buff,Black,Deep Lyons Blue,#AB69B5,#FFD282,#1E1D21,#1C2E82,#9C52F2,#FFBF6E,#000000,#0024CC,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+345,4,256,Blue Violet,Hay's Russet,Nile Blue,Venice Green,#5B319E,#792B25,#D7F0F0,#65CBCA,#4733FF,#681916,#BFFFE6,#6BFFB2,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+346,4,257,Light Green Yellow,Rosolane Purple,Andover Green,Turquoise Green,#D9D12F,#AC2960,#82877F,#CAE7D8,#BDF226,#B219AB,#5C8A73,#B5FFC2,top/left/right/bottom,verified-visual,back-index (OCR) confirms 3/4
+347,4,258,Sea Green,Helvetia Blue,Lilac,Olive Yellow,#24AD94,#1B4F9E,#C18BBD,#B4A039,#33FF7D,#0057BA,#B875EB,#99B233,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4
+348,4,259,Cotinga Purple,Cossack Green,Deep Slate Olive,Olive Buff,#491A36,#2D632F,#272D29,#D2CEA0,#340059,#328E13,#172713,#BCD382,top/left/right/bottom,verified-visual,back-index (OCR) confirms 4/4

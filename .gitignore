@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.python-version
+.idea/
+.vscode/
+*.pdf
+*.tif
+*.tiff
+scans/
+.cache/
+node_modules/
+package-lock.json
