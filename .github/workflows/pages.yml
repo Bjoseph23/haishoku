@@ -1,5 +1,9 @@
 name: GitHub Pages
 
+# Pages has to be switched on once by a repository admin:
+# Settings → Pages → Build and deployment → Source: GitHub Actions.
+# The default GITHUB_TOKEN cannot create the Pages site itself.
+
 on:
   push:
     branches:
@@ -27,9 +31,6 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          # Creates the Pages site on the first run when it does not exist yet.
-          enablement: true
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
