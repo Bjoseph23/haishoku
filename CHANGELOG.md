@@ -11,6 +11,7 @@ The photographic studios keep more of the cloth and the room.
 - The living-room rug follows the pile instead of a trapezoid, and the other room and facade masks are pulled back onto their objects. Curtains stay partly see-through. A lamp shade keeps its shading.
 - Twenty-two looks (eleven women, eleven men) cover tee, polo, shirt, and knit, with and without a jacket or blazer, and jeans, chinos, or trousers. The controls still snap when a combination was not photographed.
 - A cold outfit view transfers about 50 KB of images plus the shared 262 KB dataset. The studio asset folder is under a megabyte.
+- The hem of each look follows the drop into the trousers, so a shadowed sleeve or cuff stays with the jacket. Silhouettes are anti-aliased with about a pixel of feather and no gray halo from the backdrop. The living-room rug continues under the sofa, and the kitchen counter stops at the cabinet.
 
 ## 1.2.0 — 2026-11-27
 

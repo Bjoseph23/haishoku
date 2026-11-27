@@ -97,6 +97,7 @@ export async function loadFrame(photoUrl, maskUrl) {
   const md = ctx.getImageData(0, 0, w, h).data;
   const region = new Uint8Array(w * h);
   const cover = new Uint8Array(w * h);
+  const second = new Uint8Array(w * h);
   const light = new Float32Array(w * h);
   const sums = new Map();
   const sumsq = new Map();
@@ -106,6 +107,7 @@ export async function loadFrame(photoUrl, maskUrl) {
     const alpha = md[p + 1];
     region[i] = alpha > 8 ? id : 0;
     cover[i] = region[i] ? alpha : 0;
+    second[i] = region[i] ? md[p + 2] : 0;
     const lab = rgbToOklab(src[p], src[p + 1], src[p + 2]);
     light[i] = lab[0];
     if (region[i]) {
@@ -121,11 +123,11 @@ export async function loadFrame(photoUrl, maskUrl) {
     mean[id] = sum / n;
     spread[id] = Math.sqrt(Math.max(0, sumsq.get(id) / n - mean[id] * mean[id]));
   }
-  return { w, h, src, region, cover, light, smooth: boxBlur(light, w, h), mean, spread };
+  return { w, h, src, region, cover, second, light, smooth: boxBlur(light, w, h), mean, spread };
 }
 
 export function paintFrame(frame, colorByRegion, canvas, options = {}) {
-  const { w, h, src, region, cover, light, smooth, mean, spread } = frame;
+  const { w, h, src, region, cover, second, light, smooth, mean, spread } = frame;
   const translucent = options.translucent || new Set();
   const texture = !!options.texture;
   const image = new ImageData(w, h);
@@ -138,26 +140,16 @@ export function paintFrame(frame, colorByRegion, canvas, options = {}) {
     plain[id] = rgb;
     lab[id] = rgbToOklab(...rgb);
   }
-  for (let i = 0, p = 0; i < region.length; i += 1, p += 4) {
-    const id = region[i];
+  function shade(i, p, id) {
     const target = lab[id];
     const targetRgb = plain[id];
-    const cov = cover[i] / 255;
-    if (!target || cov < 0.02) {
-      out[p] = src[p];
-      out[p + 1] = src[p + 1];
-      out[p + 2] = src[p + 2];
-      out[p + 3] = 255;
-      continue;
-    }
+    if (!target || !targetRgb) return null;
     const tL = target[0];
-    // Lift near-black and cap near-white so a flat plate still shows the cloth.
     const tLread = Math.min(0.86, Math.max(0.38, tL));
     const lift = tLread / Math.max(0.08, tL);
     const srcL = texture ? light[i] : smooth[i];
     const detail = (light[i] - smooth[i]) * (texture ? 0.55 : 0.4);
     const deviation = spread?.[id] ?? 0.08;
-    // A small object such as a lamp shade has a gentle gradient. Stretch it so the shade still reads.
     const gain = texture ? (deviation < 0.04 ? 1.7 : 1.2) : 0.82;
     let L = tLread + (srcL - (mean[id] ?? tLread)) * gain + detail;
     L = Math.min(0.95, Math.max(texture ? 0.1 : 0.22, L));
@@ -166,7 +158,28 @@ export function paintFrame(frame, colorByRegion, canvas, options = {}) {
     rgb[0] = rgb[0] * (1 - mix) + src[p] * (targetRgb[0] / 255) * mix;
     rgb[1] = rgb[1] * (1 - mix) + src[p + 1] * (targetRgb[1] / 255) * mix;
     rgb[2] = rgb[2] * (1 - mix) + src[p + 2] * (targetRgb[2] / 255) * mix;
+    return rgb;
+  }
+  for (let i = 0, p = 0; i < region.length; i += 1, p += 4) {
+    const id = region[i];
+    const main = shade(i, p, id);
+    const cov = cover[i] / 255;
+    if (!main || cov < 0.02) {
+      out[p] = src[p];
+      out[p + 1] = src[p + 1];
+      out[p + 2] = src[p + 2];
+      out[p + 3] = 255;
+      continue;
+    }
+    const id2 = second[i];
+    const other = id2 ? shade(i, p, id2) : null;
+    let rgb = main;
     let blend = cov;
+    if (other) {
+      const w = cov;
+      rgb = [main[0] * w + other[0] * (1 - w), main[1] * w + other[1] * (1 - w), main[2] * w + other[2] * (1 - w)];
+      blend = 1;
+    }
     if (translucent.has(Number(id))) blend *= 0.42;
     out[p] = src[p] * (1 - blend) + rgb[0] * blend;
     out[p + 1] = src[p + 1] * (1 - blend) + rgb[1] * blend;

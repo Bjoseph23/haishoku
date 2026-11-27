@@ -52,10 +52,96 @@ OUTFITS = [
 ]
 
 
+def garment_hem(lum: np.ndarray, cloth: np.ndarray, rel: np.ndarray) -> np.ndarray:
+    """Row where the cloth drops into the trousers, one value per column.
+
+    A shadowed sleeve is darker than the chest but still far lighter than the
+    trousers, so the split follows that drop instead of a global threshold.
+    Columns with no clear hem (a sleeve that ends at the hand) borrow the hem
+    of the columns that have one.
+    """
+    h, w = lum.shape
+    rel_col = rel[:, 0] if rel.ndim == 2 else rel
+    hem = np.full(w, np.nan, np.float32)
+    for x in range(w):
+        if int(cloth[:, x].sum()) < 25:
+            continue
+        best = None
+        for i in range(12, h - 46):
+            if not (0.36 <= rel_col[i] <= 0.66):
+                continue
+            if not cloth[i - 8 : i, x].any() or not cloth[i : i + 12, x].any():
+                continue
+            before = float(np.median(lum[i - 12 : i, x]))
+            after = float(np.median(lum[i : i + 14, x]))
+            # The trousers stay dark. A ribbed cuff is dark for a few pixels and then the hand.
+            tail = float(np.median(lum[i + 10 : i + 46, x]))
+            drop = before - after
+            # Trousers are near luminance 40. A darker jacket is still well above that,
+            # so the drop has to land in the trousers and stay there.
+            if drop > 32 and after < 58 and tail < 52 and before > after + 32:
+                if best is None or drop > best[0]:
+                    best = (drop, rel_col[i], i)
+        if best is not None:
+            y = best[2]
+            above_lum = float(np.median(lum[max(0, y - 16) : y, x]))
+            # The tie and the shirt opening are dark, so they invent a hem too high.
+            if above_lum > 96:
+                hem[x] = best[1]
+    known = np.isfinite(hem)
+    xs = np.arange(w)
+    if int(known.sum()) >= 8:
+        hem[~known] = np.interp(xs[~known], xs[known], hem[known])
+        padded = np.pad(hem, 8, mode="edge")
+        hem = np.median(np.lib.stride_tricks.sliding_window_view(padded, 17), axis=1).astype(np.float32)
+    else:
+        hem[:] = 0.50
+    return hem[None, :]
+
+
+def reclaim_floating(role: np.ndarray, rel: np.ndarray, lum: np.ndarray, outer: bool) -> np.ndarray:
+    """A cuff or a sleeve shadow sitting below the hem is not the trousers.
+
+    Keep the trousers that connect to the legs. Give the rest back to the jacket,
+    or to the shirt when the cloth is light.
+    """
+    h, w = role.shape
+    trousers = role == 3
+    if not trousers.any():
+        return role
+    rel_b = np.broadcast_to(rel, (h, w))
+    seed = trousers & (rel_b > 0.62)
+    sel = seed.copy()
+    for _ in range(h):
+        grown = sel.copy()
+        grown[1:] |= sel[:-1]
+        grown[:-1] |= sel[1:]
+        grown[:, 1:] |= sel[:, :-1]
+        grown[:, :-1] |= sel[:, 1:]
+        grown &= trousers
+        if int(grown.sum()) == int(sel.sum()):
+            break
+        sel = grown
+    stray = trousers & ~sel
+    if outer:
+        # The sleeve hangs past the hem and can touch the hip, so it stays connected
+        # to the trousers. It is still much lighter than the trouser cloth.
+        rel_b = np.broadcast_to(rel, role.shape)
+        if sel.any():
+            tmed = float(np.median(lum[sel]))
+            stray |= (role == 3) & (rel_b < 0.66) & (lum > tmed + 26)
+        role[stray & (lum >= 150)] = 1
+        role[stray & (role == 3)] = 2
+    else:
+        role[stray] = 1
+    return role
+
+
 def segment_outfit(im: np.ndarray, outer: bool, tie: bool, top: str = "shirt") -> np.ndarray:
     h, w = im.shape[:2]
     r, g, b = im[:, :, 0].astype(np.int16), im[:, :, 1].astype(np.int16), im[:, :, 2].astype(np.int16)
-    green = (g > 70) & (g > r + 28) & (g > b + 28)
+    # Only the backdrop. A little green spill on a gray sleeve is still cloth.
+    green = (g > 90) & (g > r + 48) & (g > b + 48)
     fg = ~green
     ys = np.where(fg)[0]
     y0, y1 = int(ys.min()), int(ys.max())
@@ -70,25 +156,26 @@ def segment_outfit(im: np.ndarray, outer: bool, tie: bool, top: str = "shirt") -
     warm = (r > b + 4) & (r + 18 > g) & (r > 70) & (sat > 8) & (sat < 120) & (lum < 205)
     skin = fg & warm & ((rel < 0.24) | (lateral & (rel < 0.66)))
     skin = np.asarray(Image.fromarray((skin.astype(np.uint8) * 255)).filter(ImageFilter.MaxFilter(9))) > 0
+    skin &= sat > 10
     head = fg & (rel < 0.15)
     shoes = fg & (rel > 0.935) & ~skin & ((lum > 155) | (lum < 48))
     tie_m = fg & tie & (sat > 26) & (r > g + 8) & (r >= b) & (rel > 0.18) & (rel < 0.56) & (lum < 150)
     cloth = fg & ~skin & ~head & ~shoes & ~tie_m
     role = np.zeros((h, w), np.uint8)
+    hem = garment_hem(lum_s, cloth, rel)
+    above = cloth & (rel < hem)
+    below = cloth & ~above
     if outer:
-        hi = 142 if top == "knit" else 168
-        role[cloth & (lum_s >= hi)] = 1
-        role[cloth & (lum_s >= 80) & (lum_s < hi) & (rel < 0.64)] = 2
-        role[cloth & (lum_s < 85)] = 3
-        role[cloth & (role == 0) & (rel >= 0.5)] = 3
-        role[cloth & (role == 0)] = 2
+        hi = 142 if top == "knit" else 165
+        centerish = np.abs(np.arange(w)[None, :] - (w / 2.0)) < (w * 0.16)
+        role[above] = 2
+        role[above & (lum_s >= hi) & centerish] = 1
     else:
-        role[cloth & (lum_s >= 72)] = 1
-        role[cloth & (lum_s < 72)] = 3
+        role[above] = 1
+    role[below] = 3
+    role = reclaim_floating(role, rel, lum_s, outer)
     role[shoes] = 4
     role[tie_m] = 5
-    # Shirt pixels that spilled onto the legs belong to the trousers.
-    role[(role == 1) & (rel > 0.56)] = 3
     # Close small gaps in the top, such as a gray collar between skin and cloth.
     # Clear skin, but leave dark cloth alone so a hand does not bite a hole in the jeans.
     role[skin & (lum > 75)] = 0
@@ -102,6 +189,14 @@ def segment_outfit(im: np.ndarray, outer: bool, tie: bool, top: str = "shirt") -
     outer_img = Image.fromarray(((role == 2).astype(np.uint8) * 255)).filter(ImageFilter.MaxFilter(3))
     sleeve = (np.asarray(outer_img) > 0) & fg & ~green & (role == 0) & (lum > 60) & (lum < 190) & (rel < 0.62)
     role[sleeve] = 2
+    # Cover a cuff or a shoulder pixel that the threshold left blank, without touching skin or hair.
+    unmarked = (role == 0) & ~skin & ~green & (lum > 48) & ~((rel < 0.2) & (lum < 95))
+    for _step in range(2):
+        for rid in (2, 1, 3, 4, 5):
+            near = np.asarray(Image.fromarray(((role == rid).astype(np.uint8) * 255)).filter(ImageFilter.MaxFilter(3))) > 0
+            take = unmarked & near
+            role[take] = rid
+            unmarked[take] = False
     role = smooth_regions(role)
     # A light shirt edge that fell into the blazer reads as an orange halo between the lapels.
     if outer:
@@ -112,7 +207,17 @@ def segment_outfit(im: np.ndarray, outer: bool, tie: bool, top: str = "shirt") -
             center = np.abs(np.arange(w)[None, :] - (w / 2)) < (w * 0.11)
             # Only the much lighter shirt, not a highlight on the blazer.
             role[blazer & near & center & (lum > med + 45) & (rel > 0.16) & (rel < 0.5)] = 1
-    return close_gaps(role), green
+    role = close_gaps(role)
+    # A few trouser pixels stranded on a shirt or a sleeve read as colored specks.
+    area = 7 * 7
+    c3 = box_mean((role == 3).astype(np.float32), 3) * area
+    c1 = box_mean((role == 1).astype(np.float32), 3) * area
+    c2 = box_mean((role == 2).astype(np.float32), 3) * area
+    speck = (role == 3) & (c3 < 10) & ((c1 > c3) | (c2 > c3))
+    role[speck & (c2 >= c1)] = 2
+    role[speck & (role == 3) & (c1 > c2)] = 1
+    role[skin] = 0
+    return role, green, skin
 
 
 def despill(im: np.ndarray, green: np.ndarray) -> np.ndarray:
@@ -161,14 +266,154 @@ def erode(mask: np.ndarray) -> np.ndarray:
     return np.asarray(img.filter(ImageFilter.MinFilter(3))) > 0
 
 
-def feather_alpha(role: np.ndarray, radius: float) -> np.ndarray:
-    """Soften only the outer silhouette. Interior pixels stay fully covered."""
-    binary = Image.fromarray(np.where(role > 0, 255, 0).astype(np.uint8))
-    blur = np.array(binary.filter(ImageFilter.GaussianBlur(radius=radius)))
-    alpha = np.where(role > 0, 255, 0).astype(np.uint8)
-    edge = (role > 0) & (blur < 235)
-    alpha[edge] = np.clip(blur[edge], 90, 255).astype(np.uint8)
-    return alpha
+def box_mean(src: np.ndarray, radius: int) -> np.ndarray:
+    """Separable box filter. Radius is in pixels."""
+    if radius <= 0:
+        return src.astype(np.float32)
+    k = radius * 2 + 1
+    padded = np.pad(src.astype(np.float32), ((radius, radius), (radius, radius)), mode="edge")
+    integral = np.cumsum(np.cumsum(padded, axis=0), axis=1)
+    integral = np.pad(integral, ((1, 0), (1, 0)))
+    h, w = src.shape
+    y = np.arange(h)
+    x = np.arange(w)
+    total = (
+        integral[y[:, None] + k, x[None, :] + k]
+        - integral[y[:, None], x[None, :] + k]
+        - integral[y[:, None] + k, x[None, :]]
+        + integral[y[:, None], x[None, :]]
+    )
+    return total / (k * k)
+
+
+def guided_filter(guide: np.ndarray, src: np.ndarray, radius: int = 2, eps: float = 0.003) -> np.ndarray:
+    """Edge-aware smooth. The mask follows the photo's edges instead of stair-stepping."""
+    mean_i = box_mean(guide, radius)
+    mean_p = box_mean(src, radius)
+    mean_ip = box_mean(guide * src, radius)
+    mean_ii = box_mean(guide * guide, radius)
+    var_i = np.maximum(mean_ii - mean_i * mean_i, 0)
+    cov = mean_ip - mean_i * mean_p
+    a = cov / (var_i + eps)
+    b = mean_p - a * mean_i
+    return box_mean(a, radius) * guide + box_mean(b, radius)
+
+
+def foreground_alpha(im: np.ndarray) -> np.ndarray:
+    """Soft matte where a green screen fades into the figure. Other photos stay opaque."""
+    r = im[:, :, 0].astype(np.float32)
+    g = im[:, :, 1].astype(np.float32)
+    b = im[:, :, 2].astype(np.float32)
+    delta = g - np.maximum(r, b)
+    return 1.0 - np.clip((delta - 30.0) / 16.0, 0.0, 1.0)
+
+
+def spread_labels(role: np.ndarray, fg: np.ndarray, skin: np.ndarray | None) -> np.ndarray:
+    """Give the green-screen fringe a region so the matte is not a hole of the original cloth."""
+    out = role.copy()
+    unknown = (out == 0) & (fg > 0.4)
+    if skin is not None:
+        unknown &= ~skin
+    for _step in range(3):
+        for rid in (2, 1, 3, 4, 5, 6):
+            near = np.asarray(Image.fromarray(((out == rid).astype(np.uint8) * 255)).filter(ImageFilter.MaxFilter(3))) > 0
+            take = unknown & near
+            out[take] = rid
+            unknown[take] = False
+    return out
+
+
+def encode_mask(role: np.ndarray, im: np.ndarray, skin: np.ndarray | None = None, fg: np.ndarray | None = None) -> np.ndarray:
+    """R is the main region, G its weight, B the neighboring region (0 means the photo)."""
+    h, w = role.shape
+    if fg is None:
+        fg = np.ones((h, w), np.float32)
+    if float((fg < 0.5).mean()) > 0.15:
+        role = spread_labels(role, fg, skin)
+    guide = (0.2126 * im[:, :, 0] + 0.7152 * im[:, :, 1] + 0.0722 * im[:, :, 2]) / 255.0
+    guide = guide.astype(np.float32)
+    cover = np.zeros((7, h, w), np.float32)
+    for rid in range(1, 7):
+        binary = (role == rid).astype(np.float32)
+        if binary.sum() < 8:
+            continue
+        soft = np.clip(guided_filter(guide, binary, radius=1, eps=0.0015), 0, 1)
+        core = np.asarray(Image.fromarray((binary * 255).astype(np.uint8)).filter(ImageFilter.MinFilter(3))) > 0
+        soft[core] = 1.0
+        outside = np.asarray(Image.fromarray((binary * 255).astype(np.uint8)).filter(ImageFilter.MaxFilter(5))) == 0
+        soft[outside] = 0.0
+        cover[rid] = soft
+    if skin is not None:
+        sat = (
+            np.maximum(np.maximum(im[:, :, 0], im[:, :, 1]), im[:, :, 2]).astype(np.int16)
+            - np.minimum(np.minimum(im[:, :, 0], im[:, :, 1]), im[:, :, 2]).astype(np.int16)
+        )
+        bare = np.asarray(Image.fromarray((skin.astype(np.uint8) * 255)).filter(ImageFilter.MaxFilter(3))) > 0
+        bare &= sat > 12
+        for rid in range(1, 7):
+            cover[rid][bare] = 0
+    primary = np.argmax(cover, axis=0).astype(np.uint8)
+    # Second place, for a lapel or a cuff where two cloths meet.
+    masked = cover.copy()
+    masked[primary, np.arange(h)[:, None], np.arange(w)[None, :]] = -1
+    secondary = np.argmax(masked, axis=0).astype(np.uint8)
+    p_w = cover[primary, np.arange(h)[:, None], np.arange(w)[None, :]]
+    s_w = cover[secondary, np.arange(h)[:, None], np.arange(w)[None, :]]
+    secondary[s_w < 0.08] = 0
+    s_w[secondary == 0] = 0
+    total = p_w + s_w
+    # Weight of the main region inside the cloth. The rest is the neighbor, or the photo when there is none.
+    weight = np.ones((h, w), np.float32)
+    both = secondary > 0
+    weight[both] = p_w[both] / np.maximum(total[both], 1e-4)
+    # Feather only where the pixel is the paper backdrop. A gray sleeve stays fully recolored.
+    paper = (
+        (np.abs(im[:, :, 0].astype(np.int16) - 236) < 22)
+        & (np.abs(im[:, :, 1].astype(np.int16) - 232) < 22)
+        & (np.abs(im[:, :, 2].astype(np.int16) - 224) < 22)
+    )
+    fade = (fg < 0.97) & paper
+    secondary[fade] = 0
+    weight[fade] = fg[fade]
+    # The outer silhouette is fully the garment. It does not blend with a neighboring garment or the gray plate.
+    empty = (primary == 0) | paper
+    near_empty = np.asarray(Image.fromarray((empty.astype(np.uint8) * 255)).filter(ImageFilter.MaxFilter(3))) > 0
+    cloth = (primary > 0) & ~paper
+    secondary[near_empty & cloth] = 0
+    weight[near_empty & cloth] = 1.0
+    # Gray plate pixels the green threshold skipped are still cloth. Pull them into the neighboring garment.
+    uncovered = ~paper & (primary == 0)
+    if skin is not None:
+        sat = (
+            np.maximum(np.maximum(im[:, :, 0], im[:, :, 1]), im[:, :, 2]).astype(np.int16)
+            - np.minimum(np.minimum(im[:, :, 0], im[:, :, 1]), im[:, :, 2]).astype(np.int16)
+        )
+        uncovered &= ~(skin & (sat > 12))
+    for _step in range(4):
+        for rid in (2, 1, 3, 5, 4, 6):
+            near = np.asarray(Image.fromarray(((primary == rid).astype(np.uint8) * 255)).filter(ImageFilter.MaxFilter(3))) > 0
+            take = uncovered & near
+            primary[take] = rid
+            weight[take] = 1.0
+            secondary[take] = 0
+            uncovered[take] = False
+    # One pixel of backdrop takes a partial coat of the neighboring garment, which anti-aliases the silhouette.
+    fringe = paper & (primary == 0)
+    near_cloth = np.asarray(Image.fromarray((cloth.astype(np.uint8) * 255)).filter(ImageFilter.MaxFilter(3))) > 0
+    fringe &= near_cloth
+    # nearest labeled pixel is approximated by a dilation of each id, first match wins
+    for rid in (2, 1, 3, 5, 4, 6):
+        near = np.asarray(Image.fromarray(((primary == rid).astype(np.uint8) * 255)).filter(ImageFilter.MaxFilter(3))) > 0
+        take = fringe & near & (primary == 0)
+        primary[take] = rid
+        weight[take] = 0.45
+        fringe[take] = False
+    rgb = np.zeros((h, w, 3), np.uint8)
+    rgb[:, :, 0] = primary
+    rgb[:, :, 1] = np.clip(weight * 255, 0, 255).astype(np.uint8)
+    rgb[:, :, 2] = secondary
+    rgb[primary == 0] = 0
+    return rgb
 
 
 def smooth_regions(role: np.ndarray) -> np.ndarray:
@@ -199,16 +444,13 @@ def close_gaps(role: np.ndarray) -> np.ndarray:
     return out
 
 
-def save_mask(role: np.ndarray, path: Path, width: int, radius: float = 1.15) -> None:
-    alpha = feather_alpha(role, radius)
-    rgb = np.zeros((role.shape[0], role.shape[1], 3), np.uint8)
-    rgb[:, :, 0] = role
-    rgb[:, :, 1] = alpha
-    im = Image.fromarray(rgb, "RGB")
-    if im.width > width:
-        height = round(im.height * width / im.width)
-        im = im.resize((width, height), Image.Resampling.NEAREST)
-    im.save(path, optimize=True)
+def save_mask(role: np.ndarray, path: Path, width: int, im: np.ndarray, skin: np.ndarray | None = None, fg: np.ndarray | None = None) -> None:
+    rgb = encode_mask(role, im, skin, fg)
+    out = Image.fromarray(rgb, "RGB")
+    if out.width > width:
+        height = round(out.height * width / out.width)
+        out = out.resize((width, height), Image.Resampling.NEAREST)
+    out.save(path, optimize=True)
 
 
 def build_outfits() -> list[dict]:
@@ -225,10 +467,10 @@ def build_outfits() -> list[dict]:
         if plate.width > width:
             plate = plate.resize((width, round(plate.height * width / plate.width)), Image.Resampling.LANCZOS)
         raw = np.asarray(plate)
-        role, green = segment_outfit(raw, expect_outer, expect_tie, top)
+        role, green, skin = segment_outfit(raw, expect_outer, expect_tie, top)
         photo = Image.fromarray(despill(raw, green))
         save_photo(photo, LOOKS / f"{oid}.webp", width, 74)
-        save_mask(role, LOOKS / f"{oid}-mask.png", width, radius=1.25)
+        save_mask(role, LOOKS / f"{oid}-mask.png", width, np.asarray(photo), skin, foreground_alpha(raw))
         thumb = photo.copy()
         thumb.thumbnail((200, 360), Image.Resampling.LANCZOS)
         thumb.save(LOOKS / f"{oid}-thumb.webp", "WEBP", quality=58, method=6)
@@ -388,12 +630,12 @@ ROOM_POLYGONS = [
             {"id": "stool", "role": "accent", "label": "Stool", "index": 5},
         ],
         "polygons": [
-            ([(0, 0), (1, 0), (1, 0.48), (0, 0.50)], 1),
+            ([(0, 0), (1, 0), (1, 0.78), (0.84, 0.76), (0.84, 0.50), (0, 0.52)], 1),
             ([(0, 0.78), (1, 0.75), (1, 1), (0, 1)], 2),
             ([(0.155, 0.055), (0.76, 0.05), (0.775, 0.30), (0.155, 0.31)], 3),
             ([(0.0, 0.58), (0.20, 0.55), (0.20, 0.82), (0.0, 0.84)], 3),
-            ([(0.22, 0.56), (0.80, 0.54), (0.80, 0.78), (0.22, 0.80)], 3),
-            ([(0.0, 0.535), (0.93, 0.515), (0.95, 0.55), (0.0, 0.57)], 4),
+            ([(0.22, 0.56), (0.835, 0.54), (0.835, 0.78), (0.22, 0.80)], 3),
+            ([(0.0, 0.535), (0.835, 0.518), (0.835, 0.555), (0.0, 0.57)], 4),
             ([(0.30, 0.55), (0.385, 0.545), (0.39, 0.65), (0.40, 0.67), (0.25, 0.71), (0.255, 0.65), (0.29, 0.63)], 5),
         ],
     },
@@ -532,15 +774,24 @@ def living_rug(im: np.ndarray) -> np.ndarray:
         body[: h - k] |= opened[k:]
         body[:, k:] |= opened[:, :-k]
         body[:, : w - k] |= opened[:, k:]
-    filled = _hull(body) & (warm < 26) & (yy > 0.745)
-    filled &= ~((g < 80) & (yy < 0.79))
-    # The shadow line under the sofa is not the rug.
-    filled &= ~((yy < 0.768) & (xx > 0.42))
-    filled &= ~((yy < 0.81) & (xx > 0.82))
-    grown = np.asarray(Image.fromarray((filled.astype(np.uint8) * 255)).filter(ImageFilter.MaxFilter(3))) > 0
-    grown &= (warm < 24) & (yy > 0.75) & (xx < 0.93)
-    grown &= ~((yy < 0.768) & (xx > 0.42))
-    return grown
+    filled = _hull(body) & (warm < 26) & (yy > 0.75)
+    filled &= ~((yy < 0.755) & (xx > 0.84))
+    # The rug continues under the sofa. Follow each column up through the shadow,
+    # and stop when the pixel turns into the honey-colored wood floor.
+    limit = int(0.655 * h)
+    for x in range(w):
+        col = np.where(filled[:, x])[0]
+        if len(col) == 0:
+            continue
+        y_top = int(col.min())
+        # A column that only catches the near edge of the rug should not climb the floor.
+        # Stay under the sofa: the bright floor by the window is not the rug.
+        if y_top > int(0.86 * h) or x < int(0.20 * w) or x > int(0.82 * w):
+            continue
+        span = slice(limit, y_top)
+        take = (warm[span, x] < 26) & (g[span, x] < 175)
+        filled[span, x] |= take
+    return filled
 
 
 def drop_warm_floor(im: np.ndarray, mask: np.ndarray) -> np.ndarray:
@@ -558,6 +809,10 @@ def refine_room(room_id: str, im: np.ndarray, role: np.ndarray) -> np.ndarray:
         rug = living_rug(im)
         # The sofa is painted on top of the rug where they overlap.
         role[rug & (role != 5)] = 4
+        yy = np.arange(h)[:, None] / h
+        xx = np.arange(w)[None, :] / w
+        # The bright floor by the window is not the rug.
+        role[(role == 4) & (xx < 0.17) & (yy < 0.78)] = 2
         y0, y1, x0, x1 = int(0.17 * h), int(0.46 * h), int(0.67 * w), int(0.80 * w)
         art = role[y0:y1, x0:x1]
         art[art == 1] = 0
@@ -589,7 +844,7 @@ def build_rooms() -> list[dict]:
         role = paint_polygons(photo.size, spec["polygons"])
         role = refine_room(spec["id"], np.asarray(photo), role)
         save_photo(photo, out_dir / f"{spec['id']}.webp", width, 72)
-        save_mask(role, out_dir / f"{spec['id']}-mask.png", width, radius=1.4)
+        save_mask(role, out_dir / f"{spec['id']}-mask.png", width, np.asarray(photo))
         print(spec["id"], {i: int((role == i).sum()) for i in range(1, 8)})
         catalog.append({
             "id": spec["id"],
