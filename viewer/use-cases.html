@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Use cases — Haishoku</title>
+<meta name="description" content="How people use Sanzo Wada’s color combinations: clothes, rooms, buildings, brands, and print.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='8' height='16' fill='%23E45B1E'/%3E%3Crect x='8' width='8' height='16' fill='%231C93B2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/site.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("haishoku-theme");
+    if (t !== "light" && t !== "dark") t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.dataset.theme = t;
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="topbar">
+  <a class="mark" href="index.html">haishoku</a>
+  <nav class="desk" aria-label="Primary">
+    <a href="index.html">Palettes</a>
+    <a href="colors.html">Colors</a>
+    <a href="use-cases.html" aria-current="page">Use cases</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="tools">
+    <button type="button" class="text-btn" id="theme">Dark</button>
+    <button type="button" class="icon-btn" id="menu" aria-expanded="false" aria-controls="sheet" aria-label="Open menu"><span class="burger"></span></button>
+  </div>
+</header>
+<div class="backdrop" id="backdrop" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+  <p id="sheet-title" class="sheet-label">Pages</p>
+  <nav class="sheet-nav" aria-label="Pages">
+    <a href="index.html">Palettes</a>
+    <a href="colors.html">Colors</a>
+    <a href="use-cases.html" aria-current="page">Use cases</a>
+    <a href="about.html">About</a>
+    <a href="outfit.html">Outfit studio</a>
+    <a href="room.html">Room studio</a>
+    <a href="facade.html">Facade</a>
+    <a href="brand.html">Brand and poster</a>
+  </nav>
+</div>
+<main id="app">
+  <p class="kicker">From the plates outward</p>
+  <h1>Use cases</h1>
+  <div class="prose">
+    <p>The book prints each color at the same size. A coat, a room, or a poster gives them unequal area. A practical start is 60 / 30 / 10: the quietest field, the support, the accent. Longer notes, with contrast ratios, are in the <a href="https://github.com/Bjoseph23/haishoku/blob/main/docs/USE_CASES.md">use-cases guide</a>.</p>
+    <p>Seigensha describes the series as a reference for designers, fashion and interior specialists, illustrators, photographers, and writers. The studios below use only combinations from this dataset, which is Volume 1: 348 plates of two, three, and four colors.</p>
+  </div>
+  <div class="cards">
+    <article class="hub-card">
+      <p class="kicker">Fashion</p>
+      <h2>Outfit</h2>
+      <p>YesStyle’s stylist column walks through everyday clothes from plates such as 273, 167, and 276, and treats one or two colors as the main area. The studio maps a plate onto a shirt, a layer, trousers, and shoes.</p>
+      <a class="more" href="outfit.html">Open the outfit studio</a>
+    </article>
+    <article class="hub-card">
+      <p class="kicker">Interiors</p>
+      <h2>Rooms</h2>
+      <p>KOJO Art describes stylists using the book to hold a room together, from paint to cloth to the art on the wall. Five elevations start with the lightest color on the large surfaces.</p>
+      <a class="more" href="room.html">Open the room studio</a>
+    </article>
+    <article class="hub-card">
+      <p class="kicker">Architecture</p>
+      <h2>Facade</h2>
+      <p>An exterior is mostly one field plus a door and a frame. The elevation is a target for a paint fan, not the paint itself.</p>
+      <a class="more" href="facade.html">Open the facade</a>
+    </article>
+    <article class="hub-card">
+      <p class="kicker">Brand and print</p>
+      <h2>Page and poster</h2>
+      <p>The same plate can color a wordmark, a short page, and a poster. Type stays in a neutral ink. Check contrast before you set small text.</p>
+      <a class="more" href="brand.html">Open the brand page</a>
+    </article>
+    <article class="hub-card">
+      <p class="kicker">Illustration</p>
+      <h2>A limited box</h2>
+      <p>KOJO Art notes illustrators working from Wada plates as a closed set. The poster on the brand page shows the plate as equal bars, the way the book does, beside a layout that gives them jobs.</p>
+      <a class="more" href="brand.html">See the poster</a>
+    </article>
+    <article class="hub-card">
+      <p class="kicker">Charts and events</p>
+      <h2>Few series, one agreement</h2>
+      <p>A plate is a categorical palette when the series are few and the colors separate in lightness. For a wedding or a dinner, one combination on linen, paper, and flowers is enough. The hex is the agreement. Flowers will land near it.</p>
+      <a class="more" href="index.html">Browse the plates</a>
+    </article>
+  </div>
+  <h2>Sources</h2>
+  <ul class="sources">
+    <li><a href="https://www.yesstyle.com/blog/2026-06-26/how-to-put-an-outfit-together-according-to-a-dictionary-of-color-combinations/">YesStyle, “How to put an outfit together according to A Dictionary of Color Combinations”</a></li>
+    <li><a href="https://www.kojoart.com/en/blogs/art-techniques/sanzo-wada-dictionary-of-color-combinations">KOJO Art, on the book in design, illustration, and interiors</a></li>
+    <li><a href="https://en.seigensha.com/books/978-4-86152-247-5/">Seigensha, Volume 1</a> and <a href="https://en.seigensha.com/books/978-4-86152-772-2/">Volume 2</a>, where the publisher names the readers of the series and quotes <em>Die Zeit</em> on the 2010 book</li>
+    <li><a href="https://github.com/mattdesl/dictionary-of-colour-combinations">Matt DesLauriers’ public dataset</a>, an independent check of which color sits in which combination</li>
+  </ul>
+</main>
+<footer class="site-foot"><p>Sanzo Wada, <em>A Dictionary of Color Combinations</em>. Compiled by <a href="https://github.com/Bjoseph23">Bill Mageni</a>.</p></footer>
+<div id="toast" role="status"></div>
+<script type="module">
+import { enhanceChrome } from "./js/chrome.js";
+enhanceChrome();
+</script>
+</body>
+</html>

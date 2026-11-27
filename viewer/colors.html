@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haishoku colors</title>
+<meta name="description" content="The 159 named colors from A Dictionary of Color Combinations.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='8' height='16' fill='%23E45B1E'/%3E%3Crect x='8' width='8' height='16' fill='%231C93B2'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/site.css">
+<script>
+(function () {
+  try {
+    var t = localStorage.getItem("haishoku-theme");
+    if (t !== "light" && t !== "dark") {
+      t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    document.documentElement.dataset.theme = t;
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+<a class="skip" href="#app">Skip to content</a>
+<header class="topbar">
+  <a class="mark" href="index.html">haishoku</a>
+  <nav class="desk" aria-label="Primary">
+    <a href="index.html">Palettes</a>
+<a href="colors.html" aria-current="page">Colors</a>
+<a href="use-cases.html">Use cases</a>
+<a href="about.html">About</a>
+  </nav>
+  <div class="tools">
+    <button type="button" class="text-btn" id="theme">Dark</button>
+    <button type="button" class="icon-btn" id="menu" aria-expanded="false" aria-controls="sheet" aria-label="Open menu"><span class="burger"></span></button>
+  </div>
+</header>
+<div class="backdrop" id="backdrop" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title" hidden>
+  <p id="sheet-title" class="sheet-label">Pages</p>
+  <nav class="sheet-nav" aria-label="Pages"><a href="index.html">Palettes</a>
+<a href="colors.html" aria-current="page">Colors</a>
+<a href="use-cases.html">Use cases</a>
+<a href="about.html">About</a>
+<a href="outfit.html">Outfit studio</a>
+<a href="room.html">Room studio</a>
+<a href="facade.html">Facade</a>
+<a href="brand.html">Brand and poster</a></nav>
+</div>
+<main id="app"></main>
+<footer class="site-foot"><p>Sanzo Wada, <em>A Dictionary of Color Combinations</em>. Compiled by <a href="https://github.com/Bjoseph23">Bill Mageni</a>.</p></footer>
+<div id="toast" role="status"></div>
+<script src="palette-data.js"></script>
+<script type="module" src="js/pages/colors.js"></script>
+</body>
+</html>

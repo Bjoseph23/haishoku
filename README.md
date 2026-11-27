@@ -61,7 +61,8 @@ For anything on a screen, use **`display_hex`**. It is the scanned reference swa
 
 | You want to… | Open |
 | --- | --- |
-| Look, search, and copy a hex | [Live viewer](https://bjoseph23.github.io/haishoku/viewer/), or [`viewer/index.html`](viewer/index.html) on your computer |
+| Look, search, and copy a hex | [Palettes](https://bjoseph23.github.io/haishoku/viewer/) |
+| Try a plate on clothes or in a room | [Outfit studio](https://bjoseph23.github.io/haishoku/viewer/outfit.html), [Room studio](https://bjoseph23.github.io/haishoku/viewer/room.html) |
 | Sort and filter in Excel or Google Sheets | [`data/colors.csv`](data/colors.csv), [`data/combinations.csv`](data/combinations.csv) |
 | Drop a color into Canva or Figma | The viewer. Click a swatch, paste the hex into the color field |
 | Load swatches in Illustrator or Photoshop | [`data/derived/haishoku-rgb.ase`](data/derived/haishoku-rgb.ase) (screen) or [`haishoku-cmyk.ase`](data/derived/haishoku-cmyk.ase) (printed inks) |
@@ -71,9 +72,19 @@ For anything on a screen, use **`display_hex`**. It is the scanned reference swa
 
 ## Quick start for everyone else
 
-**Viewer.** Download the repository (Code → Download ZIP) and double-click `viewer/index.html`, or clone and open that file. It loads `viewer/palette-data.js` from the same folder, so it works from your desktop with no server. Search by name, hex, or combination number. Filter to 2, 3, or 4 colors. “Book colors” shows `display_hex`. “CMYK colors” shows the plain ink conversion. Click a swatch to copy one hex. Click the caption to copy every hex in the combination. Click a color’s name in the grid below to list every combination that uses it.
+**Viewer.** Open the [live palettes](https://bjoseph23.github.io/haishoku/viewer/). Search by name, hex, or number. Filter to 2, 3, or 4 colors. “Book colors” is `display_hex`. “CMYK colors” is the plain ink conversion. Each chip shows its hex and a round button that copies that hex only. The caption copies every hex on the plate. Choose a color in the grid below to list the plates that use it.
 
-The hosted viewer is [bjoseph23.github.io/haishoku/viewer/](https://bjoseph23.github.io/haishoku/viewer/). GitHub’s own file view shows the HTML source and does not run the page.
+The same site has an [outfit studio](https://bjoseph23.github.io/haishoku/viewer/outfit.html), a [room studio](https://bjoseph23.github.io/haishoku/viewer/room.html), a [facade](https://bjoseph23.github.io/haishoku/viewer/facade.html), and a [brand and poster](https://bjoseph23.github.io/haishoku/viewer/brand.html) page. [Use cases](https://bjoseph23.github.io/haishoku/viewer/use-cases.html) and [about](https://bjoseph23.github.io/haishoku/viewer/about.html) explain where the plates go. The pages are static. To run them on your machine, serve the repository (`python -m http.server`) and open `viewer/`. A `file://` double-click will not load the page modules.
+
+<p align="center">
+  <img src="assets/screenshots/palettes.jpg" alt="Palettes page: search, size filters, and plates with a hex and copy button on each color.">
+</p>
+<p align="center">
+  <img src="assets/screenshots/outfit.jpg" alt="Outfit studio: a flat figure in a blazer, shirt, tie, and trousers colored from combination 001.">
+</p>
+<p align="center">
+  <img src="assets/screenshots/room.jpg" alt="Room studio: a living room elevation colored from combination 176, with a list of surfaces.">
+</p>
 
 **Spreadsheets.** Download the two CSVs. In Excel, open them directly. In Google Sheets, use File → Import → Upload. The column to copy into a design tool is `display_hex`. In `combinations.csv`, filter `size` to `2`, `3`, or `4`. Empty `color_3` / `color_4` cells mean the combination is shorter than four. Four-color rows are ordered top, left, right, bottom — the way the book prints them, as a cross.
 
@@ -223,13 +234,17 @@ Wada printed the swatches at equal size. In a room, a poster, or an interface yo
 │       ├── haishoku-rgb.ase         Adobe, screen colors
 │       └── haishoku-cmyk.ase        Adobe, printed ink values
 ├── viewer/
-│   ├── index.html                   the palette viewer
+│   ├── index.html                   palettes
+│   ├── colors.html, use-cases.html, about.html
+│   ├── outfit.html, room.html, facade.html, brand.html
+│   ├── css/site.css, js/            page modules, loaded one page at a time
 │   └── palette-data.js              generated copy of the JSON
 ├── docs/
 │   ├── AI_GUIDE.md
 │   ├── DATA_DICTIONARY.md
 │   ├── METHODOLOGY.md
-│   └── USE_CASES.md
+│   ├── USE_CASES.md
+│   └── VIEWER_PLAN.md
 └── scripts/
     ├── validate_data.py
     ├── generate_derived.py
