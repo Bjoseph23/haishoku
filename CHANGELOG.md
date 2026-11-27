@@ -2,6 +2,15 @@
 
 All notable changes to this project are documented here.
 
+## 1.2.0 — 2026-11-27
+
+Outfit studio, room studio, and the facade now recolor photographs instead of flat drawings.
+
+- Twelve full-length studio looks (six women, six men) and six interior or facade photographs, generated for this project and released under CC BY 4.0. See CREDITS.md.
+- A mask keeps skin, hair, and the backdrop, and tints cloth or a wall while keeping the shading.
+- Garment controls snap to the nearest photographed look. Shuffle, per-region reassignment, presets, the combination picker, and hex copy buttons stay.
+- A cold outfit load is a few hundred kilobytes. The asset folder is about half a megabyte.
+
 ## 1.1.0 — 2026-11-27
 
 The viewer is a set of static pages on the warm-paper design.

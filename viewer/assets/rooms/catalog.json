@@ -1,0 +1,236 @@
+[
+  {
+    "id": "living",
+    "label": "Living room",
+    "blurb": "Walls and curtains take the lightest color. The sofa takes the middle. The rug and the lamp shade take the darkest.",
+    "photo": "living.webp",
+    "mask": "living-mask.png",
+    "surfaces": [
+      {
+        "id": "wall",
+        "role": "dominant",
+        "label": "Walls",
+        "index": 1
+      },
+      {
+        "id": "floor",
+        "role": "dominant",
+        "label": "Floor",
+        "index": 2
+      },
+      {
+        "id": "curtains",
+        "role": "dominant",
+        "label": "Curtains",
+        "index": 3
+      },
+      {
+        "id": "rug",
+        "role": "accent",
+        "label": "Rug",
+        "index": 4
+      },
+      {
+        "id": "sofa",
+        "role": "secondary",
+        "label": "Sofa",
+        "index": 5
+      },
+      {
+        "id": "lamp",
+        "role": "accent",
+        "label": "Lamp shade",
+        "index": 6
+      }
+    ]
+  },
+  {
+    "id": "bedroom",
+    "label": "Bedroom",
+    "blurb": "The walls are the large field. The bed takes the middle color. The rug takes the accent.",
+    "photo": "bedroom.webp",
+    "mask": "bedroom-mask.png",
+    "surfaces": [
+      {
+        "id": "wall",
+        "role": "dominant",
+        "label": "Walls",
+        "index": 1
+      },
+      {
+        "id": "floor",
+        "role": "dominant",
+        "label": "Floor",
+        "index": 2
+      },
+      {
+        "id": "curtains",
+        "role": "dominant",
+        "label": "Curtains",
+        "index": 3
+      },
+      {
+        "id": "bed",
+        "role": "secondary",
+        "label": "Bed",
+        "index": 4
+      },
+      {
+        "id": "head",
+        "role": "secondary",
+        "label": "Headboard",
+        "index": 5
+      },
+      {
+        "id": "rug",
+        "role": "accent",
+        "label": "Rug",
+        "index": 6
+      }
+    ]
+  },
+  {
+    "id": "kitchen",
+    "label": "Kitchen",
+    "blurb": "Walls and floor are the large field. Cabinets take the middle color. The stool takes the accent.",
+    "photo": "kitchen.webp",
+    "mask": "kitchen-mask.png",
+    "surfaces": [
+      {
+        "id": "wall",
+        "role": "dominant",
+        "label": "Walls",
+        "index": 1
+      },
+      {
+        "id": "floor",
+        "role": "dominant",
+        "label": "Floor",
+        "index": 2
+      },
+      {
+        "id": "cabinet",
+        "role": "secondary",
+        "label": "Cabinets",
+        "index": 3
+      },
+      {
+        "id": "counter",
+        "role": "secondary",
+        "label": "Counter",
+        "index": 4
+      },
+      {
+        "id": "stool",
+        "role": "accent",
+        "label": "Stool",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "id": "patio",
+    "label": "Patio",
+    "blurb": "The wall and the deck are the large field. The awning takes the middle color. The chair cushion takes the accent.",
+    "photo": "patio.webp",
+    "mask": "patio-mask.png",
+    "surfaces": [
+      {
+        "id": "wall",
+        "role": "dominant",
+        "label": "Wall",
+        "index": 1
+      },
+      {
+        "id": "deck",
+        "role": "dominant",
+        "label": "Deck",
+        "index": 2
+      },
+      {
+        "id": "awning",
+        "role": "secondary",
+        "label": "Awning",
+        "index": 3
+      },
+      {
+        "id": "chair",
+        "role": "accent",
+        "label": "Chair",
+        "index": 4
+      },
+      {
+        "id": "pot",
+        "role": "secondary",
+        "label": "Plant pot",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "id": "bar",
+    "label": "Bar",
+    "blurb": "The wall and floor are the large field. The bar front takes the middle color. The stools take the accent.",
+    "photo": "bar.webp",
+    "mask": "bar-mask.png",
+    "surfaces": [
+      {
+        "id": "wall",
+        "role": "dominant",
+        "label": "Wall",
+        "index": 1
+      },
+      {
+        "id": "floor",
+        "role": "dominant",
+        "label": "Floor",
+        "index": 2
+      },
+      {
+        "id": "bar",
+        "role": "secondary",
+        "label": "Bar front",
+        "index": 3
+      },
+      {
+        "id": "top",
+        "role": "dominant",
+        "label": "Counter",
+        "index": 4
+      },
+      {
+        "id": "stool",
+        "role": "accent",
+        "label": "Stools",
+        "index": 5
+      }
+    ]
+  },
+  {
+    "id": "facade",
+    "label": "Facade",
+    "blurb": "The rendered wall is the large field. The roof takes the middle color. The door takes the accent.",
+    "photo": "facade.webp",
+    "mask": "facade-mask.png",
+    "surfaces": [
+      {
+        "id": "wall",
+        "role": "dominant",
+        "label": "Wall",
+        "index": 1
+      },
+      {
+        "id": "roof",
+        "role": "secondary",
+        "label": "Roof",
+        "index": 2
+      },
+      {
+        "id": "door",
+        "role": "accent",
+        "label": "Door",
+        "index": 3
+      }
+    ]
+  }
+]

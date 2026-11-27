@@ -1,47 +1,40 @@
 # Viewer plan
 
-A static, multi-page viewer. No framework, no 3D, no web fonts. Shared CSS plus a tiny chrome module; each page loads only its own script. The dataset file `viewer/palette-data.js` stays generated and unchanged. The repository root still redirects to `viewer/`.
+## Research: how outfit and room previews are actually made
 
-## Why these pages
+Retail color tools fall into two families.
 
-Wada’s plates are specimens. People already use the 2010 Seigensha book as a working palette, not as a costume manual:
+**3D configurators.** A glTF model is shown in the browser and a material color changes at runtime. Google’s [`<model-viewer>`](https://modelviewer.dev/) ([Apache-2.0](https://github.com/google/model-viewer)) is the component Shopify-style sites embed. The Khronos [Materials Variants shoe](https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/MaterialsVariantsShoe/README.md) (Shopify, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)) is the usual sample: one mesh, several base-color textures. [three.js](https://threejs.org/) and React Three Fiber do the same with more code ([an example product viewer](https://react-immersive.liveroom.dev/docs/introduction)). [Babylon.js](https://www.babylonjs.com/) is the other full engine. [MeshMarkup](https://www.meshmarkup.com/3d-configurator) and templates such as [FORMA](https://www.dev3.tech/item/dev3-forma-3d-website-template) recolor glTF parts or keep the shading and swap the hue in a shader. This looks modern when the model is a real garment scan. Open libraries do not offer that scan: [Poly Haven](https://polyhaven.com/license) is CC0 but not fashion, [Quaternius](https://quaternius.com/license.html) forbids redistributing the asset files, [Kenney](https://kenney.nl/assets) is game-low-poly, and MakeHuman’s meshes are CC0 while its code is AGPL. A plastic mannequin would look worse than a photograph.
 
-- YesStyle’s stylist column walks through real outfits from combinations 273, 167, and 276, and says the colors should not be used in equal amounts.
-- KOJO Art describes the reissue as a tool for graphic designers, illustrators, and interior stylists.
-- Seigensha, on the Vol. 2 page, calls the series a reference for designers, fashion and interior specialists, illustrators, photographers, and writers, and says *Die Zeit* praised the 2010 book. This repository is Vol. 1 only (348 combinations).
+**Photographic recoloring.** A real photo keeps its folds. A mask marks the cloth or the wall. The browser replaces hue and keeps luminance, which is how paint visualizers work (Sherwin-Williams ColorSnap and the same class of fabric tools) and how [Polotno’s room visualizer](https://polotno.com/demo/room-visualizer) describes a catalogue photo: one picture, a color mask, many hues, no new render. Virtual try-on repositories (VITON and the rest) need a server and a person’s photo. They do not fit a static host.
 
-The studios apply a chosen combination. They do not invent colors.
+## Decision
 
-## Information architecture
+Photographic recoloring, with photographs generated for this project and released under CC BY 4.0. See [CREDITS.md](../CREDITS.md).
 
-Separate HTML pages, which lazy-load by nature and keep a mid-range phone from parsing every studio up front.
+- **Outfits.** Twelve full-length studio photographs on a green screen (six women’s looks, six men’s): tee and jeans, polo and chinos, shirt and trousers, knit and trousers, shirt with blazer and tie, tee with jacket and jeans. A mask separates top, outer layer, trousers, shoes, and tie. The page tints those regions and leaves skin, hair, and the backdrop alone. The lookbook grid is those twelve frames. Choosing a garment snaps to the nearest photograph, because a tee and a blazer are different pictures, not layers that can be stacked from one shoot.
+- **Rooms and facade.** One photograph each for living room, bedroom, kitchen, patio, bar, and a house front. Polygons mark the large surfaces. Edges are approximate. Shading inside the polygon stays photographic.
+- **Why not 3D.** `<model-viewer>` is the right widget once a licensed, good-looking clothed body exists. It does not, at a size and quality that would beat these photographs on a phone. Draco and KTX2 would matter for that future model. They do not help a JPEG.
 
-| Page | File | Loads the 262 KB dataset? |
-| --- | --- | --- |
-| Palettes | `viewer/index.html` | Yes |
-| Colors | `viewer/colors.html` | Yes |
-| Use cases | `viewer/use-cases.html` | No |
-| About | `viewer/about.html` | No |
-| Outfit studio | `viewer/outfit.html` | Yes |
-| Room studio | `viewer/room.html` | Yes |
-| Facade | `viewer/facade.html` | Yes |
-| Brand and poster | `viewer/brand.html` | Yes |
+Each studio page loads one photograph and one mask, then the shared dataset. A cold outfit load on a desktop test was about 340 KB including the visible thumbnails. Room and facade loads were about 40–50 KB plus the dataset if it was not already cached. The asset folder is about 530 KB on disk.
 
-Primary nav: Palettes, Colors, Use cases, About. The menu also lists the studios. On a narrow screen the menu is a bottom sheet (dialog, focus trap, Escape to close).
+## Pages
 
-## Interaction
+Separate HTML files. Palettes, colors, use cases, and about are unchanged in structure. Outfit, room, and facade now use `viewer/js/recolor.js`.
 
-- **Palettes.** Keep search, 2/3/4 filters, book versus CMYK, hash links, and “click the plate to copy every hex.” Each chip shows `#RRGGBB` and a circular button that copies only that hex, with a toast. `content-visibility: auto` skips layout for off-screen plates.
-- **Outfit.** One parametric SVG croquis, male or female. Layers: top (shirt, polo, tee, knit), outerwear (none, blazer, jacket), bottoms (trousers, chinos, jeans), shoes, tie or pocket square. A combination maps onto the layers; Shuffle rotates the mapping; each garment can cycle through that combination’s colors only. Presets: formal, casual, uni, date, event, concert.
-- **Rooms.** Flat print-like elevations for living room, bedroom, kitchen, patio, and bar. Lightest color in the combination starts as the dominant field, the middle value as secondary, the darkest as accent, so the split is roughly 60/30/10 by count of surfaces. Shuffle rotates roles. Each surface can be reassigned. A text list mirrors the picture for keyboard users.
-- **Facade and brand.** A house elevation, a small website card, and a poster, recolored the same way. Lighter than the two studios.
+| Page | File |
+| --- | --- |
+| Palettes | `viewer/index.html` |
+| Colors | `viewer/colors.html` |
+| Use cases | `viewer/use-cases.html` |
+| About | `viewer/about.html` |
+| Outfit studio | `viewer/outfit.html` |
+| Room studio | `viewer/room.html` |
+| Facade | `viewer/facade.html` |
+| Brand and poster | `viewer/brand.html` |
 
-## Look and speed
+Palettes still search, filter, and copy a whole plate or one hex. Studios still take a combination from the picker, shuffle the assignment, reassign a region, and copy hex codes. Presets jump to a photographed look.
 
-Warm paper, hairline rules, serif titles, system sans and mono (no font download). A CSS grain, not a filter that repaints the whole screen. Dark mode is a `data-theme` toggle, stored locally, with the first paint set from a tiny inline script so it does not flash. Motion is short and disabled under `prefers-reduced-motion`. Tap targets are at least 32px, copy buttons have accessible names, and focus is visible.
+## Limits
 
-ES modules run on GitHub Pages and on a local static server. A `file://` double-click will not load them; that limit is stated in the README. The data file itself stays a classic script so the generated bytes do not change.
-
-## Out of scope
-
-No new colors, no edits to the CSVs or JSON, no 3D, no account system, no Japanese names (they are not in the data).
+Masks do not follow every collar, cuff, or sofa curve. Hands can pick up a little color. Sheer curtains and small objects are coarse. There is no photo for every mix of shirt, jacket, and trouser, so the controls snap to the nearest look. `file://` still cannot load the modules.

@@ -8,6 +8,7 @@ data/wada_colors_and_combinations.json -text
 *.png binary
 *.jpg binary
 *.jpeg binary
+*.webp binary
 *.ase binary
 
 viewer/palette-data.js linguist-generated

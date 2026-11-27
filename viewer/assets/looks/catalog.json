@@ -1,0 +1,200 @@
+[
+  {
+    "id": "f-tee-jeans",
+    "gender": "f",
+    "top": "tee",
+    "outer": "none",
+    "bottoms": "jeans",
+    "accent": "none",
+    "parts": [
+      "top",
+      "bottoms",
+      "shoes"
+    ],
+    "photo": "f-tee-jeans.webp",
+    "mask": "f-tee-jeans-mask.png",
+    "thumb": "f-tee-jeans-thumb.webp"
+  },
+  {
+    "id": "f-polo-chinos",
+    "gender": "f",
+    "top": "polo",
+    "outer": "none",
+    "bottoms": "chinos",
+    "accent": "none",
+    "parts": [
+      "top",
+      "bottoms",
+      "shoes"
+    ],
+    "photo": "f-polo-chinos.webp",
+    "mask": "f-polo-chinos-mask.png",
+    "thumb": "f-polo-chinos-thumb.webp"
+  },
+  {
+    "id": "f-shirt-trousers",
+    "gender": "f",
+    "top": "shirt",
+    "outer": "none",
+    "bottoms": "trousers",
+    "accent": "none",
+    "parts": [
+      "top",
+      "bottoms",
+      "shoes"
+    ],
+    "photo": "f-shirt-trousers.webp",
+    "mask": "f-shirt-trousers-mask.png",
+    "thumb": "f-shirt-trousers-thumb.webp"
+  },
+  {
+    "id": "f-knit-trousers",
+    "gender": "f",
+    "top": "knit",
+    "outer": "none",
+    "bottoms": "trousers",
+    "accent": "none",
+    "parts": [
+      "top",
+      "bottoms",
+      "shoes"
+    ],
+    "photo": "f-knit-trousers.webp",
+    "mask": "f-knit-trousers-mask.png",
+    "thumb": "f-knit-trousers-thumb.webp"
+  },
+  {
+    "id": "f-blazer",
+    "gender": "f",
+    "top": "shirt",
+    "outer": "blazer",
+    "bottoms": "trousers",
+    "accent": "tie",
+    "parts": [
+      "top",
+      "outer",
+      "bottoms",
+      "shoes",
+      "accent"
+    ],
+    "photo": "f-blazer.webp",
+    "mask": "f-blazer-mask.png",
+    "thumb": "f-blazer-thumb.webp"
+  },
+  {
+    "id": "f-jacket-jeans",
+    "gender": "f",
+    "top": "tee",
+    "outer": "jacket",
+    "bottoms": "jeans",
+    "accent": "none",
+    "parts": [
+      "top",
+      "outer",
+      "bottoms",
+      "shoes"
+    ],
+    "photo": "f-jacket-jeans.webp",
+    "mask": "f-jacket-jeans-mask.png",
+    "thumb": "f-jacket-jeans-thumb.webp"
+  },
+  {
+    "id": "m-tee-jeans",
+    "gender": "m",
+    "top": "tee",
+    "outer": "none",
+    "bottoms": "jeans",
+    "accent": "none",
+    "parts": [
+      "top",
+      "bottoms",
+      "shoes"
+    ],
+    "photo": "m-tee-jeans.webp",
+    "mask": "m-tee-jeans-mask.png",
+    "thumb": "m-tee-jeans-thumb.webp"
+  },
+  {
+    "id": "m-polo-chinos",
+    "gender": "m",
+    "top": "polo",
+    "outer": "none",
+    "bottoms": "chinos",
+    "accent": "none",
+    "parts": [
+      "top",
+      "bottoms",
+      "shoes"
+    ],
+    "photo": "m-polo-chinos.webp",
+    "mask": "m-polo-chinos-mask.png",
+    "thumb": "m-polo-chinos-thumb.webp"
+  },
+  {
+    "id": "m-shirt-trousers",
+    "gender": "m",
+    "top": "shirt",
+    "outer": "none",
+    "bottoms": "trousers",
+    "accent": "none",
+    "parts": [
+      "top",
+      "bottoms",
+      "shoes"
+    ],
+    "photo": "m-shirt-trousers.webp",
+    "mask": "m-shirt-trousers-mask.png",
+    "thumb": "m-shirt-trousers-thumb.webp"
+  },
+  {
+    "id": "m-knit-trousers",
+    "gender": "m",
+    "top": "knit",
+    "outer": "none",
+    "bottoms": "trousers",
+    "accent": "none",
+    "parts": [
+      "top",
+      "bottoms",
+      "shoes"
+    ],
+    "photo": "m-knit-trousers.webp",
+    "mask": "m-knit-trousers-mask.png",
+    "thumb": "m-knit-trousers-thumb.webp"
+  },
+  {
+    "id": "m-blazer",
+    "gender": "m",
+    "top": "shirt",
+    "outer": "blazer",
+    "bottoms": "trousers",
+    "accent": "tie",
+    "parts": [
+      "top",
+      "outer",
+      "bottoms",
+      "shoes",
+      "accent"
+    ],
+    "photo": "m-blazer.webp",
+    "mask": "m-blazer-mask.png",
+    "thumb": "m-blazer-thumb.webp"
+  },
+  {
+    "id": "m-jacket-jeans",
+    "gender": "m",
+    "top": "tee",
+    "outer": "jacket",
+    "bottoms": "jeans",
+    "accent": "none",
+    "parts": [
+      "top",
+      "outer",
+      "bottoms",
+      "shoes"
+    ],
+    "photo": "m-jacket-jeans.webp",
+    "mask": "m-jacket-jeans-mask.png",
+    "thumb": "m-jacket-jeans-thumb.webp"
+  }
+]
