@@ -82,7 +82,18 @@ for r in resources:
                                    "type": {"integer": "integer", "number": "number", "boolean": "boolean"}.get(f["type"], "string")}
                                   for f in r["schema"]["fields"]]}
     kres.append(e)
-desc = readme.split("\n", 2)[2]
+def kaggle_description(text: str) -> str:
+    """Card body for Kaggle. Keep the source line, and drop the H1 title."""
+    source = ""
+    rest = text
+    if rest.startswith("**Source code & viewer:**"):
+        source, _, rest = rest.partition("\n\n")
+        source += "\n\n"
+    if rest.startswith("# "):
+        rest = rest.split("\n", 2)[2]
+    return source + rest
+
+desc = kaggle_description(readme)
 meta = {"title": "Haishoku: Sanzo Wada Color Combinations",
         "subtitle": "348 verified color palettes & 159 named colors (CMYK, RGB, LAB) from Wada",
         "description": desc, "id": "billmageni/haishoku-sanzo-wada-color-combinations",

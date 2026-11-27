@@ -38,9 +38,9 @@
   <a href="docs/AI_GUIDE.md">Use with AI</a>
 </p>
 
-Sanzo Wada (和田三造, 1883–1967) was a Japanese painter, art teacher, and designer of costume, kimono, and fashion. In 1927 he founded the Japan Standard Color Association, now the Japan Color Research Institute. He later received the 1954 Academy Award for Best Costume Design for *Gate of Hell*, and in 1958 was named a Person of Cultural Merit.
+[Sanzo Wada (和田三造, 1883–1967)](https://en.wikipedia.org/wiki/Sanzo_Wada) was a Japanese painter, art teacher, and designer of costume, kimono, and fashion. In 1927 he founded the [Japan Standard Color Association](https://www.jcri.jp/overview#history), now the [Japan Color Research Institute](https://www.jcri.jp/overview). He later received the [1954 Academy Award for Best Costume Design](https://en.wikipedia.org/wiki/27th_Academy_Awards) for *[Gate of Hell](https://en.wikipedia.org/wiki/Gate_of_Hell_(film))*, and in 1958 was named a [Person of Cultural Merit](https://en.wikipedia.org/wiki/Person_of_Cultural_Merit).
 
-His color study *Haishoku Soukan* (配色総鑑, 1933–34) set out 159 named colors in 348 combinations of two, three, and four. Seigensha republished that work in July 2010 as the bilingual pocket book *A Dictionary of Color Combinations* (配色事典, ISBN 978-4-86152-247-5, 352 pages). This repository is an independently checked transcription of that edition: every swatch was sampled from the page, matched to the 159 reference colors, and checked against the printed English name.
+His color study *[Haishoku Soukan](https://en.wikipedia.org/wiki/Sanzo_Wada)* (配色総鑑, 1933–34) set out 159 named colors in 348 combinations of two, three, and four. [Seigensha](https://en.seigensha.com/) republished that work in July 2010 as the bilingual pocket book *[A Dictionary of Color Combinations](https://en.seigensha.com/books/978-4-86152-247-5/)* (配色事典, ISBN 978-4-86152-247-5, 352 pages). This repository is an independently checked transcription of that edition: every swatch was sampled from the page, matched to the 159 reference colors, and checked against the printed English name.
 
 The combinations were made for seeing, and they travel. The same balances of temperature, value, and proportion are used in clothing, rooms, buildings, identities, interfaces, illustration, products, charts, and events.
 
@@ -54,11 +54,11 @@ The combinations were made for seeing, and they travel. The same balances of tem
 
 ## Get the data
 
-The dataset is published for analysis under CC BY 4.0. Anyone can use it, including commercially, as long as they credit it.
+The dataset is published for analysis under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Anyone can use it, including commercially, as long as they credit it.
 
 | Where | What you get |
 | --- | --- |
-| **[Kaggle: Haishoku: Sanzo Wada Color Combinations](https://www.kaggle.com/datasets/billmageni/haishoku-sanzo-wada-color-combinations)** | Tidy tables (`colors.csv` with CMYK, RGB, CIELAB/LCh, and HSL; `combinations.csv`; the long join table `combination_colors.csv`), the canonical JSON, a Frictionless `datapackage.json`, and an executed starter notebook. Open a notebook on it in one click. |
+| **[Kaggle: Haishoku: Sanzo Wada Color Combinations](https://www.kaggle.com/datasets/billmageni/haishoku-sanzo-wada-color-combinations)** | Tidy tables (`colors.csv` with [CMYK](https://en.wikipedia.org/wiki/CMYK_color_model), [RGB](https://en.wikipedia.org/wiki/RGB_color_model), [CIELAB](https://en.wikipedia.org/wiki/CIELAB_color_space)/LCh, and [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV); `combinations.csv`; the long join table `combination_colors.csv`), the canonical JSON, a [Frictionless](https://specs.frictionlessdata.io/data-package/) `datapackage.json`, and an executed starter notebook. Open a notebook on it in one click. |
 | [`kaggle/`](kaggle/) in this repository | The same package, built from the JSON by `python scripts/build_kaggle_package.py`, with the data card in [`kaggle/README.md`](kaggle/README.md). The build validates the data on every run. |
 | [`data/`](data/) in this repository | The original CSV and JSON files, plus the swatch files for CSS, Tailwind, GIMP, and Adobe. |
 
@@ -292,7 +292,7 @@ Wada printed the swatches at equal size. In a room, a poster, or an interface yo
     └── requirements.txt             Pillow, only for the preview
 ```
 
-`index.html` at the repository root redirects to the viewer so a GitHub Pages site opens on the palettes.
+`index.html` at the repository root redirects to the viewer so a [GitHub Pages](https://pages.github.com/) site opens on the palettes.
 
 ## Data dictionary
 
@@ -347,7 +347,7 @@ Each **combination** object has `number`, `size`, `page`, `positions` (an array)
 | `display_hex`, `scan_hex`, `hex_cmyk` | Copies of the color record, so a combination is readable on its own. |
 | `page_sample_hex` | The color sampled from *this* swatch on the combination page, before it was matched to the reference. |
 | `label_ocr_match` | String similarity (0–1) between the OCR of the printed label and the color name. Below 1.0 is usually a clipped word or a missing apostrophe, and it is a separate fact from whether the label and the swatch agreed. |
-| `delta_e` | CIEDE2000 distance between the page swatch and that color’s reference swatch. |
+| `delta_e` | [CIEDE2000](https://en.wikipedia.org/wiki/Color_difference#CIEDE2000) distance between the page swatch and that color’s reference swatch. |
 
 ## Accuracy and limits
 

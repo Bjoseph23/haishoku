@@ -1,8 +1,10 @@
+**Source code & viewer:** [GitHub repo: Bjoseph23/haishoku](https://github.com/Bjoseph23/haishoku) · [Live palette viewer](https://bjoseph23.github.io/haishoku/viewer/)
+
 # Haishoku: Sanzo Wada Color Combinations
 
-**348 color combinations and 159 named colors from Sanzo Wada's *Haishoku Sōkan* (配色総鑑, 1933–34), as reprinted in Seigensha's *A Dictionary of Color Combinations* (2010). Every swatch was checked by eye. The data has tidy tables with CMYK, RGB, CIELAB and HSL values.**
+**348 color combinations and 159 named colors from Sanzo Wada's *[Haishoku Sōkan](https://en.wikipedia.org/wiki/Sanzo_Wada)* (配色総鑑, 1933–34), as reprinted in [Seigensha](https://en.seigensha.com/)'s *[A Dictionary of Color Combinations](https://en.seigensha.com/books/978-4-86152-247-5/)* (2010). Every swatch was checked by eye. The data has tidy tables with [CMYK](https://en.wikipedia.org/wiki/CMYK_color_model), [RGB](https://en.wikipedia.org/wiki/RGB_color_model), [CIELAB](https://en.wikipedia.org/wiki/CIELAB_color_space) and [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) values.**
 
-Sanzo Wada (和田三造, 1883–1967) was a Japanese painter, costume designer and color researcher. He founded the Japan Standard Color Association (now the Japan Color Research Institute), won the 1955 Academy Award for color costume design for *Gate of Hell*, and was named a Person of Cultural Merit in 1958. His six-volume study *Haishoku Sōkan* laid out color harmonies as a working reference. Seigensha's 2010 pocket edition, which has 348 of those combinations, made the work famous again with designers around the world.
+[Sanzo Wada (和田三造, 1883–1967)](https://en.wikipedia.org/wiki/Sanzo_Wada) was a Japanese painter, costume designer and color researcher. He founded the [Japan Standard Color Association](https://www.jcri.jp/overview#history) (now the [Japan Color Research Institute](https://www.jcri.jp/overview)), won the [1955 Academy Award for color costume design](https://en.wikipedia.org/wiki/27th_Academy_Awards) for *[Gate of Hell](https://en.wikipedia.org/wiki/Gate_of_Hell_(film))*, and was named a [Person of Cultural Merit](https://en.wikipedia.org/wiki/Person_of_Cultural_Merit) in 1958. His six-volume study *Haishoku Sōkan* laid out color harmonies as a working reference. Seigensha's 2010 pocket edition, which has 348 of those combinations, made the work famous again with designers around the world.
 
 This dataset is an independent, verified transcription of that edition, made for analysis, design tools and machine learning. It is useful for fashion, interiors, architecture, branding, data visualisation, generative art and color-harmony research.
 
@@ -15,7 +17,7 @@ This dataset is an independent, verified transcription of that edition, made for
 | `combination_colors.csv` | 1,032 | One row per color slot in a combination | The **join table** (`combination_number` → `combinations.number`, `color_id` → `colors.id`), with measurement fields |
 | `combinations_wide.csv` | 348 | One row per combination, with up to 4 slot columns | The same layout as the GitHub repo, good for spreadsheets |
 | `wada_colors_and_combinations.json` | — | Nested canonical file | Code and AI assistants. It has the per-slot sample, OCR score and ΔE |
-| `datapackage.json` | — | Frictionless Data descriptor | Schemas, types, primary and foreign keys |
+| `datapackage.json` | — | [Frictionless Data](https://specs.frictionlessdata.io/data-package/) descriptor | Schemas, types, primary and foreign keys |
 | `haishoku_starter.ipynb` | — | Starter notebook | Loading, joins and charts |
 
 ### Entity relationship
@@ -76,7 +78,7 @@ colors (id PK) 1 ──< combination_colors (combination_number, slot PK) >─�
 | `display_hex` | hex | Copy of `colors.display_hex`. |
 | `page_sample_hex` | hex | Color sampled from this swatch on the combination page, before matching. |
 | `label_ocr_match` | float | 0–1 string similarity between the OCR of the printed label and `color_name`. |
-| `delta_e` | float | CIEDE2000 distance between the page sample and the matched reference swatch (0.3–10.1). |
+| `delta_e` | float | [CIEDE2000](https://en.wikipedia.org/wiki/Color_difference#CIEDE2000) distance between the page sample and the matched reference swatch (0.3–10.1). |
 
 ## Quick start
 
@@ -105,7 +107,7 @@ Example analyses:
 
 - **Source work:** Sanzo Wada, *Haishoku Sōkan* (配色総鑑), Japan Standard Color Association, 1933–34.
 - **Edition transcribed:** *A Dictionary of Color Combinations* (配色事典), Seigensha Art Publishing, July 2010, ISBN 978-4-86152-247-5.
-- **Collection:** each swatch on the combination pages was sampled from page images. The English label under it was read by OCR (Tesseract, 300 dpi), and the sample was matched to the 159 reference swatches by CIEDE2000. For 1,028 of the 1,032 slots, the label and the swatch agreed. The other four were settled from the swatch color and the back index, then checked by eye.
+- **Collection:** each swatch on the combination pages was sampled from page images. The English label under it was read by OCR ([Tesseract](https://tesseract-ocr.github.io/), 300 dpi), and the sample was matched to the 159 reference swatches by CIEDE2000. For 1,028 of the 1,032 slots, the label and the swatch agreed. The other four were settled from the swatch color and the back index, then checked by eye.
 - **Cross-checks:** the book's back index (OCR) confirms 968 of the 1,032 slots, and the slots it misses are OCR misses, not disagreements. The independent public dataset [mattdesl/dictionary-of-colour-combinations](https://github.com/mattdesl/dictionary-of-colour-combinations) agrees on 1,032 of 1,032 color memberships.
 - **Corrections:** Etruscan Red is K6, as its swatch page shows, not K0 as the index table shows. An earlier text-layer extraction had 35 wrong rows and 3 rows in the wrong order. All of them are fixed here.
 - **Derived values:** RGB, CIELAB (D65, sRGB), LCh, HSL and `hue_family` are computed from `display_hex` by `scripts/build_kaggle_package.py` in the GitHub repo.

@@ -410,7 +410,7 @@
           {
             "name": "delta_e",
             "type": "number",
-            "description": "CIEDE2000 distance between the page sample and the matched reference swatch (0.3–10.1)."
+            "description": "[CIEDE2000](https://en.wikipedia.org/wiki/Color_difference#CIEDE2000) distance between the page sample and the matched reference swatch (0.3–10.1)."
           }
         ],
         "primaryKey": [
