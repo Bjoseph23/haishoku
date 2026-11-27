@@ -60,3 +60,15 @@ export function rotateRoles(colors, turn) {
   const n = ((turn % next.length) + next.length) % next.length;
   return next.slice(n).concat(next.slice(0, n));
 }
+
+/** Roles by lightness, then moved round by Shuffle. turn 0 is the default 60 / 30 / 10 reading. */
+export function shuffledRoles(colors, turn) {
+  const ranked = rotateRoles(roleColors(colors).ranked, turn);
+  return {
+    dominant: ranked[0],
+    secondary: ranked[Math.min(1, ranked.length - 1)],
+    support: ranked[Math.min(2, ranked.length - 1)],
+    accent: ranked[ranked.length - 1],
+    ranked,
+  };
+}
