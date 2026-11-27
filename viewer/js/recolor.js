@@ -7,14 +7,82 @@ function loadImage(url) {
   });
 }
 
-function percentiles(values) {
-  if (!values.length) return [0, 1];
-  const copy = values.slice().sort((a, b) => a - b);
-  const at = (p) => copy[Math.min(copy.length - 1, Math.floor(p * (copy.length - 1)))];
-  return [at(0.08), at(0.92)];
+function srgbToLinear(c) {
+  const x = c / 255;
+  return x <= 0.04045 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4;
 }
 
-/** Photo plus a mask. Region 0 is left as photographed (skin, hair, background). */
+function linearToSrgb(c) {
+  const v = c <= 0.0031308 ? 12.92 * c : 1.055 * (c ** (1 / 2.4)) - 0.055;
+  return Math.min(255, Math.max(0, v * 255));
+}
+
+function rgbToOklab(r, g, b) {
+  const R = srgbToLinear(r);
+  const G = srgbToLinear(g);
+  const B = srgbToLinear(b);
+  const l = Math.cbrt(0.4122214708 * R + 0.5363325363 * G + 0.0514459929 * B);
+  const m = Math.cbrt(0.2119034982 * R + 0.6806995451 * G + 0.1073969566 * B);
+  const s = Math.cbrt(0.0883024619 * R + 0.2817188376 * G + 0.6299787005 * B);
+  return [
+    0.2104542553 * l + 0.793617785 * m - 0.0040720468 * s,
+    1.9779984951 * l - 2.428592205 * m + 0.4505937099 * s,
+    0.0259040371 * l + 0.7827717662 * m - 0.808675766 * s,
+  ];
+}
+
+function oklabToRgb(L, a, b) {
+  const l = L + 0.3963377774 * a + 0.2158037573 * b;
+  const m = L - 0.1055613458 * a - 0.0638541728 * b;
+  const s = L - 0.0894841775 * a - 1.291485548 * b;
+  const lp = l * l * l;
+  const mp = m * m * m;
+  const sp = s * s * s;
+  return [
+    linearToSrgb(4.0767416621 * lp - 3.3077115913 * mp + 0.2309699292 * sp),
+    linearToSrgb(-1.2684380046 * lp + 2.6097574011 * mp - 0.3413193965 * sp),
+    linearToSrgb(-0.0041960362 * lp - 0.7034186147 * mp + 1.707614701 * sp),
+  ];
+}
+
+function boxBlur(src, w, h) {
+  const tmp = new Float32Array(src.length);
+  const out = new Float32Array(src.length);
+  for (let y = 0; y < h; y += 1) {
+    const row = y * w;
+    for (let x = 0; x < w; x += 1) {
+      let sum = 0;
+      let n = 0;
+      for (let k = -2; k <= 2; k += 1) {
+        const xx = x + k;
+        if (xx < 0 || xx >= w) continue;
+        sum += src[row + xx];
+        n += 1;
+      }
+      tmp[row + x] = sum / n;
+    }
+  }
+  for (let x = 0; x < w; x += 1) {
+    for (let y = 0; y < h; y += 1) {
+      let sum = 0;
+      let n = 0;
+      for (let k = -2; k <= 2; k += 1) {
+        const yy = y + k;
+        if (yy < 0 || yy >= h) continue;
+        sum += tmp[yy * w + x];
+        n += 1;
+      }
+      out[y * w + x] = sum / n;
+    }
+  }
+  return out;
+}
+
+function hexRgb(hex) {
+  return [parseInt(hex.slice(1, 3), 16), parseInt(hex.slice(3, 5), 16), parseInt(hex.slice(5, 7), 16)];
+}
+
+/** Photo plus a feathered mask. R is the region id, G is coverage. */
 export async function loadFrame(photoUrl, maskUrl) {
   const [photo, maskImage] = await Promise.all([loadImage(photoUrl), loadImage(maskUrl)]);
   const w = photo.naturalWidth;
@@ -25,55 +93,72 @@ export async function loadFrame(photoUrl, maskUrl) {
   const ctx = canvas.getContext("2d", { willReadFrequently: true });
   ctx.drawImage(photo, 0, 0, w, h);
   const src = ctx.getImageData(0, 0, w, h).data;
-  ctx.clearRect(0, 0, w, h);
   ctx.drawImage(maskImage, 0, 0, w, h);
   const md = ctx.getImageData(0, 0, w, h).data;
   const region = new Uint8Array(w * h);
-  const lum = new Float32Array(w * h);
-  const buckets = new Map();
+  const cover = new Uint8Array(w * h);
+  const light = new Float32Array(w * h);
+  const sums = new Map();
+  const counts = new Map();
   for (let i = 0, p = 0; i < region.length; i += 1, p += 4) {
     const id = md[p];
-    region[i] = id;
-    const L = (0.2126 * src[p] + 0.7152 * src[p + 1] + 0.0722 * src[p + 2]) / 255;
-    lum[i] = L;
-    if (id) {
-      if (!buckets.has(id)) buckets.set(id, []);
-      buckets.get(id).push(L);
+    const alpha = md[p + 1];
+    region[i] = alpha > 8 ? id : 0;
+    cover[i] = region[i] ? alpha : 0;
+    const lab = rgbToOklab(src[p], src[p + 1], src[p + 2]);
+    light[i] = lab[0];
+    if (region[i]) {
+      sums.set(region[i], (sums.get(region[i]) || 0) + lab[0]);
+      counts.set(region[i], (counts.get(region[i]) || 0) + 1);
     }
   }
-  const range = {};
-  for (const [id, values] of buckets) range[id] = percentiles(values);
-  return { w, h, src, region, lum, range };
+  const mean = {};
+  for (const [id, sum] of sums) mean[id] = sum / counts.get(id);
+  return { w, h, src, region, cover, light, smooth: boxBlur(light, w, h), mean };
 }
 
-function hexRgb(hex) {
-  return [parseInt(hex.slice(1, 3), 16), parseInt(hex.slice(3, 5), 16), parseInt(hex.slice(5, 7), 16)];
-}
-
-export function paintFrame(frame, colorByRegion, canvas) {
-  const { w, h, src, region, lum, range } = frame;
+export function paintFrame(frame, colorByRegion, canvas, options = {}) {
+  const { w, h, src, region, cover, light, smooth, mean } = frame;
+  const translucent = options.translucent || new Set();
   const image = new ImageData(w, h);
   const out = image.data;
-  const rgb = {};
+  const lab = {};
+  const plain = {};
   for (const [id, hex] of Object.entries(colorByRegion)) {
-    if (hex) rgb[id] = hexRgb(hex);
+    if (!hex) continue;
+    const rgb = hexRgb(hex);
+    plain[id] = rgb;
+    lab[id] = rgbToOklab(...rgb);
   }
   for (let i = 0, p = 0; i < region.length; i += 1, p += 4) {
     const id = region[i];
-    const target = rgb[id];
-    if (!target) {
+    const target = lab[id];
+    const targetRgb = plain[id];
+    const cov = cover[i] / 255;
+    if (!target || cov < 0.02) {
       out[p] = src[p];
       out[p + 1] = src[p + 1];
       out[p + 2] = src[p + 2];
       out[p + 3] = 255;
       continue;
     }
-    const span = Math.max(0.05, (range[id]?.[1] ?? 1) - (range[id]?.[0] ?? 0));
-    const norm = Math.min(1, Math.max(0, (lum[i] - (range[id]?.[0] ?? 0)) / span));
-    const shade = 0.4 + 0.74 * norm;
-    out[p] = target[0] * shade;
-    out[p + 1] = target[1] * shade;
-    out[p + 2] = target[2] * shade;
+    const tL = target[0];
+    // Lift near-black and cap near-white so a flat plate still shows the cloth.
+    const tLread = Math.min(0.86, Math.max(0.38, tL));
+    const lift = tLread / Math.max(0.08, tL);
+    const detail = (light[i] - smooth[i]) * 0.75;
+    let L = tLread + (smooth[i] - (mean[id] ?? tLread)) * 0.9 + detail;
+    L = Math.min(0.93, Math.max(0.2, L));
+    const rgb = oklabToRgb(L, target[1] * lift, target[2] * lift);
+    // Multiply keeps weave and pile. OKLab keeps the plate hue when the cloth is flat.
+    rgb[0] = rgb[0] * 0.62 + src[p] * (targetRgb[0] / 255) * 0.38;
+    rgb[1] = rgb[1] * 0.62 + src[p + 1] * (targetRgb[1] / 255) * 0.38;
+    rgb[2] = rgb[2] * 0.62 + src[p + 2] * (targetRgb[2] / 255) * 0.38;
+    let blend = cov;
+    if (translucent.has(Number(id))) blend *= 0.42;
+    out[p] = src[p] * (1 - blend) + rgb[0] * blend;
+    out[p + 1] = src[p + 1] * (1 - blend) + rgb[1] * blend;
+    out[p + 2] = src[p + 2] * (1 - blend) + rgb[2] * blend;
     out[p + 3] = 255;
   }
   if (canvas.width !== w) canvas.width = w;
@@ -86,5 +171,6 @@ export function regionAt(frame, canvas, event) {
   const x = Math.floor(((event.clientX - rect.left) / rect.width) * frame.w);
   const y = Math.floor(((event.clientY - rect.top) / rect.height) * frame.h);
   if (x < 0 || y < 0 || x >= frame.w || y >= frame.h) return 0;
+  if (frame.cover[y * frame.w + x] < 80) return 0;
   return frame.region[y * frame.w + x];
 }

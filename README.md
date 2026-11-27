@@ -82,10 +82,16 @@ The pages are static. To run them on your machine, serve the repository (`python
   <img src="assets/screenshots/palettes.jpg" alt="Palettes page: search, size filters, and plates with a hex and copy button on each color.">
 </p>
 <p align="center">
-  <img src="assets/screenshots/outfit.jpg" alt="Outfit studio: a flat figure in a blazer, shirt, tie, and trousers colored from combination 001.">
+  <img src="assets/screenshots/outfit.jpg" alt="Outfit studio: a photographed blazer, shirt, tie, and trousers recolored from combination 006.">
 </p>
 <p align="center">
-  <img src="assets/screenshots/room.jpg" alt="Room studio: a living room elevation colored from combination 176, with a list of surfaces.">
+  <img src="assets/screenshots/outfit-casual.jpg" alt="Outfit studio: a photographed t-shirt and jeans recolored from combination 006.">
+</p>
+<p align="center">
+  <img src="assets/screenshots/room.jpg" alt="Room studio: a living room photograph colored from combination 176. Curtains stay sheer and the sofa keeps its shading.">
+</p>
+<p align="center">
+  <img src="assets/screenshots/room-bedroom.jpg" alt="Room studio: a bedroom photograph colored from combination 176.">
 </p>
 
 **Spreadsheets.** Download the two CSVs. In Excel, open them directly. In Google Sheets, use File → Import → Upload. The column to copy into a design tool is `display_hex`. In `combinations.csv`, filter `size` to `2`, `3`, or `4`. Empty `color_3` / `color_4` cells mean the combination is shorter than four. Four-color rows are ordered top, left, right, bottom — the way the book prints them, as a cross.
